@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|c:\\users\\vboxuser\\source\\repos\\golahora-windows-proyecto-is\\golahora\\forms\\usercontrols\\ucreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|solutionrelative:golahora\\forms\\usercontrols\\ucreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|c:\\users\\vboxuser\\source\\repos\\golahora-windows-proyecto-is\\golahora\\forms\\usercontrols\\ucreservas2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|solutionrelative:golahora\\forms\\usercontrols\\ucreservas2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|c:\\users\\vboxuser\\source\\repos\\golahora-windows-proyecto-is\\golahora\\forms\\usercontrols\\ucreservas.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|solutionrelative:golahora\\forms\\usercontrols\\ucreservas.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|c:\\users\\vboxuser\\source\\repos\\golahora-windows-proyecto-is\\golahora\\forms\\usercontrols\\ucreservas2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|solutionrelative:golahora\\forms\\usercontrols\\ucreservas2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|c:\\users\\vboxuser\\source\\repos\\golahora-windows-proyecto-is\\golahora\\forms\\registrarcanchaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|solutionrelative:golahora\\forms\\registrarcanchaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|c:\\users\\vboxuser\\source\\repos\\golahora-windows-proyecto-is\\golahora\\forms\\usercontrols\\ucreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|solutionrelative:golahora\\forms\\usercontrols\\ucreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|c:\\users\\vboxuser\\source\\repos\\golahora-windows-proyecto-is\\golahora\\forms\\usercontrols\\ucreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|solutionrelative:golahora\\forms\\usercontrols\\ucreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|c:\\users\\vboxuser\\source\\repos\\golahora-windows-proyecto-is\\golahora\\forms\\registrarreservaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|solutionrelative:golahora\\forms\\registrarreservaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|c:\\users\\vboxuser\\source\\repos\\golahora-windows-proyecto-is\\golahora\\forms\\registrarreservaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|solutionrelative:golahora\\forms\\registrarreservaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|c:\\users\\vboxuser\\source\\repos\\golahora-windows-proyecto-is\\golahora\\forms\\principalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,6 +47,18 @@
       "RelativeMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|solutionrelative:golahora\\forms\\principalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|c:\\users\\vboxuser\\source\\repos\\golahora-windows-proyecto-is\\golahora\\forms\\registrarreservaform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|solutionrelative:golahora\\forms\\registrarreservaform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|c:\\users\\vboxuser\\source\\repos\\golahora-windows-proyecto-is\\golahora\\forms\\registrarcanchaform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|solutionrelative:golahora\\forms\\registrarcanchaform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|c:\\users\\vboxuser\\source\\repos\\golahora-windows-proyecto-is\\golahora\\forms\\registrarcanchaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|solutionrelative:golahora\\forms\\registrarcanchaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|c:\\users\\vboxuser\\source\\repos\\golahora-windows-proyecto-is\\golahora\\forms\\principalform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|solutionrelative:golahora\\forms\\principalform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -22,21 +66,21 @@
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 242,
+      "VerticalTabListWidth": 243,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "PrincipalForm.cs",
               "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\PrincipalForm.cs",
               "RelativeDocumentMoniker": "GolAhora\\Forms\\PrincipalForm.cs",
               "ToolTip": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\PrincipalForm.cs",
               "RelativeToolTip": "GolAhora\\Forms\\PrincipalForm.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAIwEAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-24T20:43:00.404Z",
               "IsPinned": true,
@@ -44,20 +88,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "PrincipalForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\PrincipalForm.Designer.cs",
               "RelativeDocumentMoniker": "GolAhora\\Forms\\PrincipalForm.Designer.cs",
               "ToolTip": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\PrincipalForm.Designer.cs",
               "RelativeToolTip": "GolAhora\\Forms\\PrincipalForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK4AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-24T20:43:01.307Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "PrincipalForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\PrincipalForm.cs",
               "RelativeDocumentMoniker": "GolAhora\\Forms\\PrincipalForm.cs",
@@ -65,18 +110,19 @@
               "RelativeToolTip": "GolAhora\\Forms\\PrincipalForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-25T06:58:44.035Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ucReportes.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\UserControls\\ucReportes.cs",
-              "RelativeDocumentMoniker": "GolAhora\\Forms\\UserControls\\ucReportes.cs",
-              "ToolTip": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\UserControls\\ucReportes.cs [Design]",
-              "RelativeToolTip": "GolAhora\\Forms\\UserControls\\ucReportes.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "ucReservas2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\UserControls\\ucReservas2.cs",
+              "RelativeDocumentMoniker": "GolAhora\\Forms\\UserControls\\ucReservas2.cs",
+              "ToolTip": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\UserControls\\ucReservas2.cs [Design]",
+              "RelativeToolTip": "GolAhora\\Forms\\UserControls\\ucReservas2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T10:44:18.98Z",
+              "WhenOpened": "2026-05-25T18:29:40.259Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -86,6 +132,145 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ucReservas2.cs",
+              "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\UserControls\\ucReservas2.cs",
+              "RelativeDocumentMoniker": "GolAhora\\Forms\\UserControls\\ucReservas2.cs",
+              "ToolTip": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\UserControls\\ucReservas2.cs",
+              "RelativeToolTip": "GolAhora\\Forms\\UserControls\\ucReservas2.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T17:55:49.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegistrarReservaForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\RegistrarReservaForm.Designer.cs",
+              "RelativeDocumentMoniker": "GolAhora\\Forms\\RegistrarReservaForm.Designer.cs",
+              "ToolTip": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\RegistrarReservaForm.Designer.cs",
+              "RelativeToolTip": "GolAhora\\Forms\\RegistrarReservaForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T17:32:13.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RegistrarCanchaForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\RegistrarCanchaForm.Designer.cs",
+              "RelativeDocumentMoniker": "GolAhora\\Forms\\RegistrarCanchaForm.Designer.cs",
+              "ToolTip": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\RegistrarCanchaForm.Designer.cs",
+              "RelativeToolTip": "GolAhora\\Forms\\RegistrarCanchaForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T17:32:01.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegistrarCanchaForm.cs",
+              "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\RegistrarCanchaForm.cs",
+              "RelativeDocumentMoniker": "GolAhora\\Forms\\RegistrarCanchaForm.cs",
+              "ToolTip": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\RegistrarCanchaForm.cs",
+              "RelativeToolTip": "GolAhora\\Forms\\RegistrarCanchaForm.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T17:29:43.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RegistrarCanchaForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\RegistrarCanchaForm.cs",
+              "RelativeDocumentMoniker": "GolAhora\\Forms\\RegistrarCanchaForm.cs",
+              "ToolTip": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\RegistrarCanchaForm.cs [Design]",
+              "RelativeToolTip": "GolAhora\\Forms\\RegistrarCanchaForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T17:29:39.156Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegistrarReservaForm.cs",
+              "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\RegistrarReservaForm.cs",
+              "RelativeDocumentMoniker": "GolAhora\\Forms\\RegistrarReservaForm.cs",
+              "ToolTip": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\RegistrarReservaForm.cs",
+              "RelativeToolTip": "GolAhora\\Forms\\RegistrarReservaForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T17:24:45.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ucReservas.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\UserControls\\ucReservas.Designer.cs",
+              "RelativeDocumentMoniker": "GolAhora\\Forms\\UserControls\\ucReservas.Designer.cs",
+              "ToolTip": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\UserControls\\ucReservas.Designer.cs",
+              "RelativeToolTip": "GolAhora\\Forms\\UserControls\\ucReservas.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T17:17:31.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ucReservas.cs",
+              "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\UserControls\\ucReservas.cs",
+              "RelativeDocumentMoniker": "GolAhora\\Forms\\UserControls\\ucReservas.cs",
+              "ToolTip": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\UserControls\\ucReservas.cs",
+              "RelativeToolTip": "GolAhora\\Forms\\UserControls\\ucReservas.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAAAKgAAAB5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T17:17:30.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RegistrarReservaForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\RegistrarReservaForm.cs",
+              "RelativeDocumentMoniker": "GolAhora\\Forms\\RegistrarReservaForm.cs",
+              "ToolTip": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\RegistrarReservaForm.cs [Design]",
+              "RelativeToolTip": "GolAhora\\Forms\\RegistrarReservaForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T17:11:33.553Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ucReservas.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\UserControls\\ucReservas.cs",
+              "RelativeDocumentMoniker": "GolAhora\\Forms\\UserControls\\ucReservas.cs",
+              "ToolTip": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\UserControls\\ucReservas.cs [Design]",
+              "RelativeToolTip": "GolAhora\\Forms\\UserControls\\ucReservas.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T17:10:19.23Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ucReportes.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\UserControls\\ucReportes.cs",
+              "RelativeDocumentMoniker": "GolAhora\\Forms\\UserControls\\ucReportes.cs",
+              "ToolTip": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\UserControls\\ucReportes.cs [Design]",
+              "RelativeToolTip": "GolAhora\\Forms\\UserControls\\ucReportes.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T17:10:17.962Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

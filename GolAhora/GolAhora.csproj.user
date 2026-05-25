@@ -112,6 +112,9 @@
     <Compile Update="Forms\RegistrarProfesorForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\RegistrarReservaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\RegistrarResultadosLigaForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +133,9 @@
     <Compile Update="Forms\ReporteAsistenciaEntrenamientoForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\UserControls\ucDescuentos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Forms\UserControls\ucCanchas.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -142,7 +148,7 @@
     <Compile Update="Forms\UserControls\ucCompetencias.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Forms\UserControls\ucHome.cs">
+    <Compile Update="Forms\UserControls\ucLobby.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Forms\UserControls\ucRecibos.cs">
@@ -152,6 +158,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Forms\UserControls\ucReservas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\UserControls\ucReservas2.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Forms\UserControls\ucUsuarios.cs">

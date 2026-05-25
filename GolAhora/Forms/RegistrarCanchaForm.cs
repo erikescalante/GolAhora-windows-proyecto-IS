@@ -23,7 +23,13 @@ namespace GolAhora.Forms
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             var nombreCancha = txtNombreCancha.Text;
-            MessageBox.Show($"La cancha {nombreCancha} se registró correctamente", "Registro de Cancha", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            MessageBox.Show(
+                $"La cancha {nombreCancha} se registró correctamente",
+                "Registro de Cancha",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+            
             this.Close();
         }
 

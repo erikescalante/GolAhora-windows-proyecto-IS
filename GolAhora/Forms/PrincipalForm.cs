@@ -18,6 +18,10 @@ namespace GolAhora.Forms
         public PrincipalForm()
         {
             InitializeComponent();
+
+            //al abrir la ventana, se muestra el panel de lobby por defecto (inaccesible una vez cerrado)
+            //cuando se cambia de panel, se elimina esta pantalla del contenedor, por lo que no se puede volver a acceder a ella
+            ChangePanel(new ucLobby());
         }
 
         //cambiar el panel del contenedor por el que se le pase por parámetro
@@ -39,11 +43,25 @@ namespace GolAhora.Forms
         }
 
         //eventos de click de cada botón del menú, que llaman a ChangePanel con el UserControl correspondiente
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            UserControl pantalla = Browser.Instance.GetView<ucUsuarios>();
+            ChangePanel(pantalla);
+            btnUsuarios.Enabled = false;
+        }
+        
         private void btnReservas_Click(object sender, EventArgs e)
         {
-            UserControl pantalla = Browser.Instance.GetView<ucReservas>();
+            UserControl pantalla = Browser.Instance.GetView<ucReservas2>();
             ChangePanel(pantalla);
             btnReservas.Enabled = false;
+        }
+
+        private void btnDescuentos_Click(object sender, EventArgs e)
+        {
+            UserControl pantalla = Browser.Instance.GetView<ucDescuentos>();
+            ChangePanel(pantalla);
+            btnDescuentos.Enabled = false;
         }
 
         private void btnCanchas_Click(object sender, EventArgs e)
@@ -51,13 +69,6 @@ namespace GolAhora.Forms
             UserControl pantalla = Browser.Instance.GetView<ucCanchas>();
             ChangePanel(pantalla);
             btnCanchas.Enabled = false;
-        }
-
-        private void btnUsuarios_Click(object sender, EventArgs e)
-        {
-            UserControl pantalla = Browser.Instance.GetView<ucUsuarios>();
-            ChangePanel(pantalla);
-            btnUsuarios.Enabled = false;
         }
 
         private void btnCapacitaciones_Click(object sender, EventArgs e)
@@ -94,13 +105,6 @@ namespace GolAhora.Forms
             UserControl pantalla = Browser.Instance.GetView<ucReportes>();
             ChangePanel(pantalla);
             btnReportes.Enabled = false;
-        }
-
-        private void btnDescuentos_Click(object sender, EventArgs e)
-        {
-            UserControl pantalla = Browser.Instance.GetView<ucReportes>();
-            ChangePanel(pantalla);
-            btnDescuentos.Enabled = false;
         }
 
         private void PrincipalForm_FormClosed(object sender, FormClosedEventArgs e) => Application.Exit();

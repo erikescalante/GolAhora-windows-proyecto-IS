@@ -49,8 +49,8 @@ namespace GolAhora.Forms
             btnCobros = new ToolStripButton();
             btnRecibos = new ToolStripButton();
             btnReportes = new ToolStripButton();
-            statusStrip1 = new StatusStrip();
-            imageList1 = new ImageList(components);
+            statusStrip = new StatusStrip();
+            imageListLateralMenu = new ImageList(components);
             topMenu.SuspendLayout();
             lateralMenu.SuspendLayout();
             SuspendLayout();
@@ -230,23 +230,23 @@ namespace GolAhora.Forms
             btnReportes.Text = "Reportes";
             btnReportes.Click += btnReportes_Click;
             // 
-            // statusStrip1
+            // statusStrip
             // 
-            statusStrip1.BackColor = SystemColors.ActiveCaption;
-            statusStrip1.Location = new Point(0, 479);
-            statusStrip1.Name = "statusStrip1";
-            statusStrip1.Padding = new Padding(1, 0, 16, 0);
-            statusStrip1.Size = new Size(899, 22);
-            statusStrip1.TabIndex = 7;
+            statusStrip.BackColor = SystemColors.ActiveCaption;
+            statusStrip.Location = new Point(0, 479);
+            statusStrip.Name = "statusStrip";
+            statusStrip.Padding = new Padding(1, 0, 16, 0);
+            statusStrip.Size = new Size(899, 22);
+            statusStrip.TabIndex = 7;
             // 
-            // imageList1
+            // imageListLateralMenu
             // 
-            imageList1.ColorDepth = ColorDepth.Depth8Bit;
-            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
-            imageList1.TransparentColor = Color.Transparent;
-            imageList1.Images.SetKeyName(0, "home.png");
-            imageList1.Images.SetKeyName(1, "next.png");
-            imageList1.Images.SetKeyName(2, "back-button.png");
+            imageListLateralMenu.ColorDepth = ColorDepth.Depth8Bit;
+            imageListLateralMenu.ImageStream = (ImageListStreamer)resources.GetObject("imageListLateralMenu.ImageStream");
+            imageListLateralMenu.TransparentColor = Color.Transparent;
+            imageListLateralMenu.Images.SetKeyName(0, "home.png");
+            imageListLateralMenu.Images.SetKeyName(1, "next.png");
+            imageListLateralMenu.Images.SetKeyName(2, "back-button.png");
             // 
             // PrincipalForm
             // 
@@ -254,7 +254,7 @@ namespace GolAhora.Forms
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(899, 501);
-            Controls.Add(statusStrip1);
+            Controls.Add(statusStrip);
             Controls.Add(lateralMenu);
             Controls.Add(topMenu);
             Controls.Add(panelContenedor);
@@ -292,8 +292,8 @@ namespace GolAhora.Forms
         private System.Windows.Forms.ToolStripMenuItem sobreNosotrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ImageList imageListLateralMenu;
         private System.Windows.Forms.ToolStripButton btnCobros;
         private System.Windows.Forms.ToolStripButton btnRecibos;
         private System.Windows.Forms.ToolStripButton btnReportes;

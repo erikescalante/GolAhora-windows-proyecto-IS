@@ -40,7 +40,6 @@ C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\n
 C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.UserControls.ucCapacitaciones.resources
 C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.UserControls.ucCobros.resources
 C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.UserControls.ucCompetencias.resources
-C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.UserControls.ucHome.resources
 C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.UserControls.ucRecibos.resources
 C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.UserControls.ucReportes.resources
 C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.UserControls.ucReservas.resources
@@ -86,3 +85,7 @@ C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\n
 C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.RegistrarClienteForm.resources
 C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.RegistrarEntrenadorForm.resources
 C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.RegistrarProfesorForm.resources
+C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.UserControls.ucDescuentos.resources
+C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.UserControls.ucLobby.resources
+C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.RegistrarReservaForm.resources
+C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.UserControls.ucReservas2.resources
