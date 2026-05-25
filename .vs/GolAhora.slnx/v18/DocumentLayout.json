@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|c:\\users\\vboxuser\\source\\repos\\golahora-windows-proyecto-is\\golahora\\forms\\usercontrols\\ucreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|solutionrelative:golahora\\forms\\usercontrols\\ucreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|c:\\users\\vboxuser\\source\\repos\\golahora-windows-proyecto-is\\golahora\\forms\\principalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F369664D-91BD-FFD3-3A2A-1C8C0AE3596B}|GolAhora\\GolAhora.csproj|solutionrelative:golahora\\forms\\principalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PrincipalForm.cs",
               "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\PrincipalForm.cs",
               "RelativeDocumentMoniker": "GolAhora\\Forms\\PrincipalForm.cs",
@@ -40,7 +44,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PrincipalForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\PrincipalForm.Designer.cs",
               "RelativeDocumentMoniker": "GolAhora\\Forms\\PrincipalForm.Designer.cs",
@@ -53,7 +57,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PrincipalForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\PrincipalForm.cs",
               "RelativeDocumentMoniker": "GolAhora\\Forms\\PrincipalForm.cs",
@@ -62,6 +66,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-25T06:58:44.035Z",
               "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ucReportes.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\UserControls\\ucReportes.cs",
+              "RelativeDocumentMoniker": "GolAhora\\Forms\\UserControls\\ucReportes.cs",
+              "ToolTip": "C:\\Users\\vboxuser\\source\\repos\\GolAhora-windows-proyecto-IS\\GolAhora\\Forms\\UserControls\\ucReportes.cs [Design]",
+              "RelativeToolTip": "GolAhora\\Forms\\UserControls\\ucReportes.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T10:44:18.98Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",

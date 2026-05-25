@@ -32,16 +32,16 @@
             btnBuscar = new Button();
             listBoxCanchas = new ListBox();
             lateralMenu = new ToolStrip();
-            btnCanchas = new ToolStripButton();
-            btnCapacitaciones = new ToolStripButton();
-            btnCompetencias = new ToolStripButton();
-            btnCobros = new ToolStripButton();
-            btnReportes = new ToolStripButton();
             toolStripSeparator1 = new ToolStripSeparator();
+            btnCanchas = new ToolStripButton();
             toolStripSeparator2 = new ToolStripSeparator();
-            toolStripSeparator3 = new ToolStripSeparator();
+            btnCapacitaciones = new ToolStripButton();
             toolStripSeparator4 = new ToolStripSeparator();
+            btnCompetencias = new ToolStripButton();
+            toolStripSeparator3 = new ToolStripSeparator();
+            btnCobros = new ToolStripButton();
             toolStripSeparator5 = new ToolStripSeparator();
+            btnReportes = new ToolStripButton();
             toolStripSeparator6 = new ToolStripSeparator();
             cbFiltrado = new ComboBox();
             lateralMenu.SuspendLayout();
@@ -96,6 +96,11 @@
             lateralMenu.TabIndex = 21;
             lateralMenu.Text = "Menú lateral";
             // 
+            // toolStripSeparator1
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(278, 6);
+            // 
             // btnCanchas
             // 
             btnCanchas.AutoSize = false;
@@ -104,6 +109,11 @@
             btnCanchas.Name = "btnCanchas";
             btnCanchas.Size = new Size(241, 54);
             btnCanchas.Text = "Generar repote de tipos de cancha";
+            // 
+            // toolStripSeparator2
+            // 
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new Size(278, 6);
             // 
             // btnCapacitaciones
             // 
@@ -114,6 +124,11 @@
             btnCapacitaciones.Size = new Size(278, 54);
             btnCapacitaciones.Text = "Generar reporte de ingresos";
             // 
+            // toolStripSeparator4
+            // 
+            toolStripSeparator4.Name = "toolStripSeparator4";
+            toolStripSeparator4.Size = new Size(278, 6);
+            // 
             // btnCompetencias
             // 
             btnCompetencias.AutoSize = false;
@@ -122,6 +137,11 @@
             btnCompetencias.Name = "btnCompetencias";
             btnCompetencias.Size = new Size(278, 53);
             btnCompetencias.Text = "Generar reportes de reservas de cancha";
+            // 
+            // toolStripSeparator3
+            // 
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            toolStripSeparator3.Size = new Size(278, 6);
             // 
             // btnCobros
             // 
@@ -132,6 +152,11 @@
             btnCobros.Size = new Size(278, 53);
             btnCobros.Text = "Generar reporte de asistencias a clases";
             // 
+            // toolStripSeparator5
+            // 
+            toolStripSeparator5.Name = "toolStripSeparator5";
+            toolStripSeparator5.Size = new Size(278, 6);
+            // 
             // btnReportes
             // 
             btnReportes.AutoSize = false;
@@ -140,31 +165,6 @@
             btnReportes.Name = "btnReportes";
             btnReportes.Size = new Size(278, 53);
             btnReportes.Text = "Generar reporte de asistencias a entrenamientos";
-            // 
-            // toolStripSeparator1
-            // 
-            toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(278, 6);
-            // 
-            // toolStripSeparator2
-            // 
-            toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new Size(278, 6);
-            // 
-            // toolStripSeparator3
-            // 
-            toolStripSeparator3.Name = "toolStripSeparator3";
-            toolStripSeparator3.Size = new Size(278, 6);
-            // 
-            // toolStripSeparator4
-            // 
-            toolStripSeparator4.Name = "toolStripSeparator4";
-            toolStripSeparator4.Size = new Size(278, 6);
-            // 
-            // toolStripSeparator5
-            // 
-            toolStripSeparator5.Name = "toolStripSeparator5";
-            toolStripSeparator5.Size = new Size(278, 6);
             // 
             // toolStripSeparator6
             // 
