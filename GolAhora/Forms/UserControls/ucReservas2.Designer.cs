@@ -35,6 +35,8 @@
             toolStripSeparator4 = new ToolStripSeparator();
             btnReservar = new ToolStripButton();
             toolStripSeparator1 = new ToolStripSeparator();
+            btnConsultar = new ToolStripButton();
+            toolStripSeparator5 = new ToolStripSeparator();
             btnModificar = new ToolStripButton();
             toolStripSeparator2 = new ToolStripSeparator();
             btnCancelar = new ToolStripButton();
@@ -79,6 +81,8 @@
             listBoxReservas.Name = "listBoxReservas";
             listBoxReservas.Size = new Size(440, 292);
             listBoxReservas.TabIndex = 21;
+            listBoxReservas.SelectedIndexChanged += listBoxReservas_SelectedIndexChanged;
+            listBoxReservas.MouseDown += listBoxReservas_MouseDown;
             // 
             // lateralMenu
             // 
@@ -88,7 +92,7 @@
             lateralMenu.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lateralMenu.GripMargin = new Padding(2, 2, 2, 5);
             lateralMenu.GripStyle = ToolStripGripStyle.Hidden;
-            lateralMenu.Items.AddRange(new ToolStripItem[] { toolStripSeparator4, btnReservar, toolStripSeparator1, btnModificar, toolStripSeparator2, btnCancelar, toolStripSeparator3 });
+            lateralMenu.Items.AddRange(new ToolStripItem[] { toolStripSeparator4, btnReservar, toolStripSeparator1, btnConsultar, toolStripSeparator5, btnModificar, toolStripSeparator2, btnCancelar, toolStripSeparator3 });
             lateralMenu.LayoutStyle = ToolStripLayoutStyle.VerticalStackWithOverflow;
             lateralMenu.Location = new Point(10, 10);
             lateralMenu.Name = "lateralMenu";
@@ -110,7 +114,7 @@
             btnReservar.Image = (Image)resources.GetObject("btnReservar.Image");
             btnReservar.ImageTransparentColor = Color.Magenta;
             btnReservar.Name = "btnReservar";
-            btnReservar.Size = new Size(231, 87);
+            btnReservar.Size = new Size(231, 62);
             btnReservar.Text = "Nueva reserva";
             btnReservar.Click += btnReservar_Click;
             // 
@@ -118,6 +122,23 @@
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
             toolStripSeparator1.Size = new Size(231, 6);
+            // 
+            // btnConsultar
+            // 
+            btnConsultar.AutoSize = false;
+            btnConsultar.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnConsultar.Enabled = false;
+            btnConsultar.Image = (Image)resources.GetObject("btnConsultar.Image");
+            btnConsultar.ImageTransparentColor = Color.Magenta;
+            btnConsultar.Name = "btnConsultar";
+            btnConsultar.Size = new Size(231, 62);
+            btnConsultar.Text = "Consultar reserva";
+            btnConsultar.Click += btnConsultar_Click;
+            // 
+            // toolStripSeparator5
+            // 
+            toolStripSeparator5.Name = "toolStripSeparator5";
+            toolStripSeparator5.Size = new Size(231, 6);
             // 
             // btnModificar
             // 
@@ -127,7 +148,7 @@
             btnModificar.Image = (Image)resources.GetObject("btnModificar.Image");
             btnModificar.ImageTransparentColor = Color.Magenta;
             btnModificar.Name = "btnModificar";
-            btnModificar.Size = new Size(231, 87);
+            btnModificar.Size = new Size(231, 62);
             btnModificar.Text = "Modificar reserva";
             btnModificar.Click += btnModificar_Click;
             // 
@@ -144,7 +165,7 @@
             btnCancelar.Image = (Image)resources.GetObject("btnCancelar.Image");
             btnCancelar.ImageTransparentColor = Color.Magenta;
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(231, 87);
+            btnCancelar.Size = new Size(231, 62);
             btnCancelar.Text = "Cancelar reserva";
             btnCancelar.Click += btnCancelar_Click;
             // 
@@ -207,6 +228,7 @@
             MinimumSize = new Size(723, 421);
             Name = "ucReservas2";
             Size = new Size(723, 421);
+            Click += ucReservas2_Click;
             scReservas.Panel1.ResumeLayout(false);
             scReservas.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)scReservas).EndInit();
@@ -232,5 +254,7 @@
         private ComboBox txtBusqueda;
         private Label lblFiltro;
         private Button btnBuscar;
+        private ToolStripButton btnConsultar;
+        private ToolStripSeparator toolStripSeparator5;
     }
 }

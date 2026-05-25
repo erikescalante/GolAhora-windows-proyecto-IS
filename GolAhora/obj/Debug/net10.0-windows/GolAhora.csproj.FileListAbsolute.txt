@@ -89,3 +89,5 @@ C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\n
 C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.UserControls.ucLobby.resources
 C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.RegistrarReservaForm.resources
 C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.UserControls.ucReservas2.resources
+C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.UserControls.ModificarReservaForm.resources
+C:\Users\vboxuser\source\repos\GolAhora-windows-proyecto-IS\GolAhora\obj\Debug\net10.0-windows\GolAhora.Forms.ConsultarReservaForm.resources

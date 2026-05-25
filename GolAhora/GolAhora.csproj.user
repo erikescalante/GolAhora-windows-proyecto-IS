@@ -37,6 +37,9 @@
     <Compile Update="Forms\ConsultarProfesorForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\ConsultarReservaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\ConsultarTipoDeCanchaForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +134,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\ReporteAsistenciaEntrenamientoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ModificarReservaForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\UserControls\ucDescuentos.cs">
