@@ -18,8 +18,8 @@ namespace GolAhora.Forms
             InitializeComponent();
 
         }
-
-        private async void btnLogin_Click(object sender, EventArgs e)
+        
+        /*private async void btnLogin_Click(object sender, EventArgs e)
         {
             string usuario = txtEmail.Text;
             string contraseña = txtPassword.Text;
@@ -51,8 +51,8 @@ namespace GolAhora.Forms
                     MessageBox.Show("Usuario o contraseña incorrectos");
                 }
             }
-        }
-
+        }*/
+        
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
 
@@ -60,17 +60,18 @@ namespace GolAhora.Forms
 
         private async void btnLogin_Click_1(object sender, EventArgs e)
         {
-            string usuario = txtEmail.Text;
-            string contraseña = txtPassword.Text;
 
+            /*string usuario = txtEmail.Text;
+            string contraseña = txtPassword.Text;
+            
             using (HttpClient client = new HttpClient())
             {
                 client.DefaultRequestHeaders.Add("plataform", "windows");
                 var values = new Dictionary<string, string>
-            {
-                { "email", usuario },
-                { "password", contraseña }
-            };
+                {
+                    { "email", usuario },
+                    { "password", contraseña }
+                };
 
                 var content = new FormUrlEncodedContent(values);
                 var response = await client.PostAsync("http://localhost/api/login", content);
@@ -82,7 +83,7 @@ namespace GolAhora.Forms
                     SessionManager.SessionId = result;
 
                     // Abrir menú principal
-                    MenuPrincipalForm menu = new MenuPrincipalForm();
+                    PrincipalForm menu = new PrincipalForm();
                     menu.Show();
                     this.Hide();
                 }
@@ -90,7 +91,12 @@ namespace GolAhora.Forms
                 {
                     MessageBox.Show("Usuario o contraseña incorrectos");
                 }
-            }
+            }*/
+            // Abrir menú principal
+            PrincipalForm menu = new PrincipalForm();
+            menu.Show();
+            this.Hide();
+
         }
     }
 }

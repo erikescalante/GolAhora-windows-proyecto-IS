@@ -1,14 +1,161 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Form1.cs">
+    <Compile Update="Forms\BajaAlumnoClaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\BajaAlumnoEntrenamientoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\BloquearCanchaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ConfigurarLigaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ConfigurarTorneoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ConsultarAdministradorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ConsultarCanchaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ConsultarClaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ConsultarClienteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ConsultarEntrenadorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ConsultarEntrenamientoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ConsultarProfesorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ConsultarTipoDeCanchaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\InscribirAlumnoClaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\InscribirAlumnoEntrenamientoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\InscribirEquipoLigaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\InscribirEquipoTorneoForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\MenuPrincipalForm.cs">
+    <Compile Update="Forms\ModificarAdministradorForm.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ModificarCanchaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ModificarClaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ModificarClienteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ModificarEntrenadorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ModificarEntrenamientoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ModificarProfesorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ModificarTipoDeCanchaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\PrincipalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RegistrarAdministradorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RegistrarAsistenciaClaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RegistrarAsistenciaEntrenamientoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RegistrarCanchaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RegistrarClaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RegistrarClienteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RegistrarEntrenadorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RegistrarEntrenamientoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RegistrarLigaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RegistrarProfesorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RegistrarResultadosLigaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RegistrarResultadosTorneoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RegistrarTipoDeCanchaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RegistrarTorneoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ReporteAsistenciaClaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ReporteAsistenciaEntrenamientoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\UserControls\ucCanchas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\UserControls\ucCapacitaciones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\UserControls\ucCobros.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\UserControls\ucCompetencias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\UserControls\ucHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\UserControls\ucRecibos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\UserControls\ucReportes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\UserControls\ucReservas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\UserControls\ucUsuarios.cs">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
 </Project>
