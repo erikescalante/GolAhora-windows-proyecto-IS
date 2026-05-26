@@ -28,6 +28,12 @@
     <Compile Update="Forms\ConsultarClienteForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\ConsultarCobroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ConsultarDescuentoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\ConsultarEntrenadorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -35,6 +41,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\ConsultarProfesorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ConsultarReciboForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\ConsultarReservaForm.cs">
@@ -70,6 +79,12 @@
     <Compile Update="Forms\ModificarClienteForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\ModificarCobroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ModificarDescuentoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\ModificarEntrenadorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +92,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\ModificarProfesorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ModificarReciboForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\ModificarTipoDeCanchaForm.cs">
@@ -103,6 +121,12 @@
     <Compile Update="Forms\RegistrarClienteForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\RegistrarCobroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RegistrarDescuentoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\RegistrarEntrenadorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +137,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\RegistrarProfesorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RegistrarReciboForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\RegistrarReservaForm.cs">
@@ -138,6 +165,9 @@
     </Compile>
     <Compile Update="Forms\ModificarReservaForm.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\UserControls\ucCobros2.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Forms\UserControls\ucDescuentos.cs">
       <SubType>UserControl</SubType>

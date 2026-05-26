@@ -29,58 +29,60 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucDescuentos));
-            scReservas = new SplitContainer();
-            listBoxReservas = new ListBox();
+            scDescuentos = new SplitContainer();
+            listBoxDescuentos = new ListBox();
             lateralMenu = new ToolStrip();
             toolStripSeparator4 = new ToolStripSeparator();
-            btnReservar = new ToolStripButton();
+            btnRegistrar = new ToolStripButton();
             toolStripSeparator1 = new ToolStripSeparator();
             btnConsultar = new ToolStripButton();
             toolStripSeparator5 = new ToolStripSeparator();
             btnModificar = new ToolStripButton();
             toolStripSeparator2 = new ToolStripSeparator();
-            btnCancelar = new ToolStripButton();
+            btnEliminar = new ToolStripButton();
             toolStripSeparator3 = new ToolStripSeparator();
             btnBuscar = new Button();
             lblFiltro = new Label();
-            txtBusqueda = new ComboBox();
             cbFiltrado = new ComboBox();
-            ((System.ComponentModel.ISupportInitialize)scReservas).BeginInit();
-            scReservas.Panel1.SuspendLayout();
-            scReservas.Panel2.SuspendLayout();
-            scReservas.SuspendLayout();
+            txtBusqueda = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)scDescuentos).BeginInit();
+            scDescuentos.Panel1.SuspendLayout();
+            scDescuentos.Panel2.SuspendLayout();
+            scDescuentos.SuspendLayout();
             lateralMenu.SuspendLayout();
             SuspendLayout();
             // 
-            // scReservas
+            // scDescuentos
             // 
-            scReservas.Location = new Point(3, 95);
-            scReservas.Name = "scReservas";
+            scDescuentos.Location = new Point(4, 87);
+            scDescuentos.Name = "scDescuentos";
             // 
-            // scReservas.Panel1
+            // scDescuentos.Panel1
             // 
-            scReservas.Panel1.Controls.Add(listBoxReservas);
-            scReservas.Panel1.Padding = new Padding(10, 10, 10, 20);
+            scDescuentos.Panel1.Controls.Add(listBoxDescuentos);
+            scDescuentos.Panel1.Padding = new Padding(10, 10, 10, 20);
             // 
-            // scReservas.Panel2
+            // scDescuentos.Panel2
             // 
-            scReservas.Panel2.Controls.Add(lateralMenu);
-            scReservas.Panel2.Padding = new Padding(10, 10, 10, 20);
-            scReservas.Size = new Size(717, 322);
-            scReservas.SplitterDistance = 460;
-            scReservas.TabIndex = 25;
+            scDescuentos.Panel2.Controls.Add(lateralMenu);
+            scDescuentos.Panel2.Padding = new Padding(10, 10, 10, 20);
+            scDescuentos.Size = new Size(715, 331);
+            scDescuentos.SplitterDistance = 458;
+            scDescuentos.TabIndex = 25;
             // 
-            // listBoxReservas
+            // listBoxDescuentos
             // 
-            listBoxReservas.BackColor = SystemColors.ActiveCaption;
-            listBoxReservas.BorderStyle = BorderStyle.FixedSingle;
-            listBoxReservas.Dock = DockStyle.Fill;
-            listBoxReservas.FormattingEnabled = true;
-            listBoxReservas.Items.AddRange(new object[] { "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200" });
-            listBoxReservas.Location = new Point(10, 10);
-            listBoxReservas.Name = "listBoxReservas";
-            listBoxReservas.Size = new Size(440, 292);
-            listBoxReservas.TabIndex = 21;
+            listBoxDescuentos.BackColor = SystemColors.ActiveCaption;
+            listBoxDescuentos.BorderStyle = BorderStyle.FixedSingle;
+            listBoxDescuentos.Dock = DockStyle.Fill;
+            listBoxDescuentos.FormattingEnabled = true;
+            listBoxDescuentos.Items.AddRange(new object[] { "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%", "id: Fbv5sAw18plK - descripción: promo pago en efectivo - porcentaje: 20%" });
+            listBoxDescuentos.Location = new Point(10, 10);
+            listBoxDescuentos.Name = "listBoxDescuentos";
+            listBoxDescuentos.Size = new Size(438, 301);
+            listBoxDescuentos.TabIndex = 21;
+            listBoxDescuentos.SelectedIndexChanged += listBoxDescuentos_SelectedIndexChanged;
+            listBoxDescuentos.MouseDown += listBoxDescuentos_MouseDown;
             // 
             // lateralMenu
             // 
@@ -90,14 +92,14 @@
             lateralMenu.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lateralMenu.GripMargin = new Padding(2, 2, 2, 5);
             lateralMenu.GripStyle = ToolStripGripStyle.Hidden;
-            lateralMenu.Items.AddRange(new ToolStripItem[] { toolStripSeparator4, btnReservar, toolStripSeparator1, btnConsultar, toolStripSeparator5, btnModificar, toolStripSeparator2, btnCancelar, toolStripSeparator3 });
+            lateralMenu.Items.AddRange(new ToolStripItem[] { toolStripSeparator4, btnRegistrar, toolStripSeparator1, btnConsultar, toolStripSeparator5, btnModificar, toolStripSeparator2, btnEliminar, toolStripSeparator3 });
             lateralMenu.LayoutStyle = ToolStripLayoutStyle.VerticalStackWithOverflow;
             lateralMenu.Location = new Point(10, 10);
             lateralMenu.Name = "lateralMenu";
             lateralMenu.RenderMode = ToolStripRenderMode.System;
             lateralMenu.RightToLeft = RightToLeft.No;
             lateralMenu.Size = new Size(233, 339);
-            lateralMenu.TabIndex = 22;
+            lateralMenu.TabIndex = 23;
             lateralMenu.Text = "Menú lateral";
             // 
             // toolStripSeparator4
@@ -105,15 +107,16 @@
             toolStripSeparator4.Name = "toolStripSeparator4";
             toolStripSeparator4.Size = new Size(231, 6);
             // 
-            // btnReservar
+            // btnRegistrar
             // 
-            btnReservar.AutoSize = false;
-            btnReservar.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            btnReservar.Image = (Image)resources.GetObject("btnReservar.Image");
-            btnReservar.ImageTransparentColor = Color.Magenta;
-            btnReservar.Name = "btnReservar";
-            btnReservar.Size = new Size(231, 62);
-            btnReservar.Text = "Nueva reserva";
+            btnRegistrar.AutoSize = false;
+            btnRegistrar.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnRegistrar.Image = (Image)resources.GetObject("btnRegistrar.Image");
+            btnRegistrar.ImageTransparentColor = Color.Magenta;
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(231, 62);
+            btnRegistrar.Text = "Nuevo descuento";
+            btnRegistrar.Click += btnRegistrar_Click;
             // 
             // toolStripSeparator1
             // 
@@ -129,7 +132,8 @@
             btnConsultar.ImageTransparentColor = Color.Magenta;
             btnConsultar.Name = "btnConsultar";
             btnConsultar.Size = new Size(231, 62);
-            btnConsultar.Text = "Consultar reserva";
+            btnConsultar.Text = "Consultar descuento";
+            btnConsultar.Click += btnConsultar_Click;
             // 
             // toolStripSeparator5
             // 
@@ -145,23 +149,25 @@
             btnModificar.ImageTransparentColor = Color.Magenta;
             btnModificar.Name = "btnModificar";
             btnModificar.Size = new Size(231, 62);
-            btnModificar.Text = "Modificar reserva";
+            btnModificar.Text = "Modificar descuento";
+            btnModificar.Click += btnModificar_Click;
             // 
             // toolStripSeparator2
             // 
             toolStripSeparator2.Name = "toolStripSeparator2";
             toolStripSeparator2.Size = new Size(231, 6);
             // 
-            // btnCancelar
+            // btnEliminar
             // 
-            btnCancelar.AutoSize = false;
-            btnCancelar.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            btnCancelar.Enabled = false;
-            btnCancelar.Image = (Image)resources.GetObject("btnCancelar.Image");
-            btnCancelar.ImageTransparentColor = Color.Magenta;
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(231, 62);
-            btnCancelar.Text = "Cancelar reserva";
+            btnEliminar.AutoSize = false;
+            btnEliminar.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnEliminar.Enabled = false;
+            btnEliminar.Image = (Image)resources.GetObject("btnEliminar.Image");
+            btnEliminar.ImageTransparentColor = Color.Magenta;
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(231, 62);
+            btnEliminar.Text = "Eliminar descuento";
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // toolStripSeparator3
             // 
@@ -176,54 +182,54 @@
             btnBuscar.TabIndex = 24;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // lblFiltro
             // 
             lblFiltro.AutoSize = true;
-            lblFiltro.Location = new Point(336, 8);
+            lblFiltro.Location = new Point(262, 8);
             lblFiltro.Margin = new Padding(4, 0, 4, 0);
             lblFiltro.Name = "lblFiltro";
             lblFiltro.Size = new Size(65, 15);
             lblFiltro.TabIndex = 23;
             lblFiltro.Text = "Filtrar por:";
             // 
-            // txtBusqueda
-            // 
-            txtBusqueda.FormattingEnabled = true;
-            txtBusqueda.Location = new Point(520, 5);
-            txtBusqueda.Margin = new Padding(4, 3, 4, 3);
-            txtBusqueda.Name = "txtBusqueda";
-            txtBusqueda.Size = new Size(98, 23);
-            txtBusqueda.TabIndex = 22;
-            // 
             // cbFiltrado
             // 
             cbFiltrado.DropDownStyle = ComboBoxStyle.DropDownList;
             cbFiltrado.FormattingEnabled = true;
             cbFiltrado.Items.AddRange(new object[] { "Usuario", "Cancha" });
-            cbFiltrado.Location = new Point(409, 5);
+            cbFiltrado.Location = new Point(335, 5);
             cbFiltrado.Margin = new Padding(4, 3, 4, 3);
             cbFiltrado.Name = "cbFiltrado";
             cbFiltrado.Size = new Size(103, 23);
             cbFiltrado.TabIndex = 21;
+            // 
+            // txtBusqueda
+            // 
+            txtBusqueda.Location = new Point(445, 5);
+            txtBusqueda.Name = "txtBusqueda";
+            txtBusqueda.Size = new Size(174, 23);
+            txtBusqueda.TabIndex = 26;
             // 
             // ucDescuentos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            Controls.Add(scReservas);
+            Controls.Add(txtBusqueda);
+            Controls.Add(scDescuentos);
             Controls.Add(btnBuscar);
             Controls.Add(lblFiltro);
-            Controls.Add(txtBusqueda);
             Controls.Add(cbFiltrado);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Name = "ucDescuentos";
             Size = new Size(723, 421);
-            scReservas.Panel1.ResumeLayout(false);
-            scReservas.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)scReservas).EndInit();
-            scReservas.ResumeLayout(false);
+            Click += ucDescuentos_Click;
+            scDescuentos.Panel1.ResumeLayout(false);
+            scDescuentos.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)scDescuentos).EndInit();
+            scDescuentos.ResumeLayout(false);
             lateralMenu.ResumeLayout(false);
             lateralMenu.PerformLayout();
             ResumeLayout(false);
@@ -232,21 +238,21 @@
 
         #endregion
 
-        private SplitContainer scReservas;
-        private ListBox listBoxReservas;
+        private SplitContainer scDescuentos;
+        private ListBox listBoxDescuentos;
+        private Button btnBuscar;
+        private Label lblFiltro;
+        private ComboBox cbFiltrado;
         private ToolStrip lateralMenu;
         private ToolStripSeparator toolStripSeparator4;
-        private ToolStripButton btnReservar;
+        private ToolStripButton btnRegistrar;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripButton btnConsultar;
         private ToolStripSeparator toolStripSeparator5;
         private ToolStripButton btnModificar;
         private ToolStripSeparator toolStripSeparator2;
-        private ToolStripButton btnCancelar;
+        private ToolStripButton btnEliminar;
         private ToolStripSeparator toolStripSeparator3;
-        private Button btnBuscar;
-        private Label lblFiltro;
-        private ComboBox txtBusqueda;
-        private ComboBox cbFiltrado;
+        private TextBox txtBusqueda;
     }
 }

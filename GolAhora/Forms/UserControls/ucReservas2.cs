@@ -64,12 +64,21 @@ namespace GolAhora.Forms.UserControls
             if (listBoxReservas.SelectedIndex != -1)
             {
                 string reserva = listBoxReservas.SelectedItem.ToString();
-                DialogResult res = MessageBox.Show($"¿Seguro que desea dar de baja la reserva:\n{reserva}?\n\nSe aplicará el reembolso automático correspondiente del club.", "Baja de Reserva", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult res = MessageBox.Show(
+                    $"¿Seguro que desea dar de baja la reserva:\n{reserva}?\n\n" +
+                        "Se aplicará el reembolso automático correspondiente del club.", 
+                    "Baja de Reserva", 
+                    MessageBoxButtons.YesNo, 
+                    MessageBoxIcon.Warning);
 
                 if (res == DialogResult.Yes)
                 {
                     listBoxReservas.Items.Remove(listBoxReservas.SelectedItem);
-                    MessageBox.Show("Reserva cancelada y reembolso emitido con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(
+                        "Reserva cancelada y reembolso emitido con éxito.", 
+                        "Éxito", 
+                        MessageBoxButtons.OK, 
+                        MessageBoxIcon.Information);
                 }
             }
         }

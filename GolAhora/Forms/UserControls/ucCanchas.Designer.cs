@@ -29,7 +29,6 @@ partial class ucCanchas
     private void InitializeComponent()
     {
         cbFiltrar = new ComboBox();
-        cbBusqueda = new ComboBox();
         btnBuscar = new Button();
         tcCanchas = new TabControl();
         tabCanchas = new TabPage();
@@ -59,6 +58,8 @@ partial class ucCanchas
         lblAgregarTipo = new Label();
         btnAgregarTipo = new Button();
         cbEstados = new ComboBox();
+        txtBusqueda = new TextBox();
+        lblFiltrado = new Label();
         tcCanchas.SuspendLayout();
         tabCanchas.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)scCanchas).BeginInit();
@@ -74,6 +75,7 @@ partial class ucCanchas
         // 
         // cbFiltrar
         // 
+        cbFiltrar.DropDownStyle = ComboBoxStyle.DropDownList;
         cbFiltrar.FormattingEnabled = true;
         cbFiltrar.Items.AddRange(new object[] { "Tipo", "Todas" });
         cbFiltrar.Location = new Point(337, 5);
@@ -81,16 +83,6 @@ partial class ucCanchas
         cbFiltrar.Name = "cbFiltrar";
         cbFiltrar.Size = new Size(98, 23);
         cbFiltrar.TabIndex = 14;
-        cbFiltrar.Text = "Filtrar por";
-        // 
-        // cbBusqueda
-        // 
-        cbBusqueda.FormattingEnabled = true;
-        cbBusqueda.Location = new Point(443, 5);
-        cbBusqueda.Margin = new Padding(4, 3, 4, 3);
-        cbBusqueda.Name = "cbBusqueda";
-        cbBusqueda.Size = new Size(174, 23);
-        cbBusqueda.TabIndex = 13;
         // 
         // btnBuscar
         // 
@@ -138,6 +130,7 @@ partial class ucCanchas
         // scCanchas.Panel1
         // 
         scCanchas.Panel1.Controls.Add(listBoxCanchas);
+        scCanchas.Panel1.Padding = new Padding(10, 10, 10, 20);
         // 
         // scCanchas.Panel2
         // 
@@ -152,6 +145,7 @@ partial class ucCanchas
         scCanchas.Panel2.Controls.Add(btnConsultarCancha);
         scCanchas.Panel2.Controls.Add(lblAgregarCancha);
         scCanchas.Panel2.Controls.Add(btnAgregarCancha);
+        scCanchas.Panel2.Padding = new Padding(10, 10, 10, 20);
         scCanchas.Size = new Size(715, 331);
         scCanchas.SplitterDistance = 462;
         scCanchas.SplitterWidth = 5;
@@ -161,11 +155,12 @@ partial class ucCanchas
         // 
         listBoxCanchas.BackColor = SystemColors.ActiveCaption;
         listBoxCanchas.BorderStyle = BorderStyle.FixedSingle;
+        listBoxCanchas.Dock = DockStyle.Fill;
         listBoxCanchas.FormattingEnabled = true;
         listBoxCanchas.Items.AddRange(new object[] { "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200" });
-        listBoxCanchas.Location = new Point(4, 3);
+        listBoxCanchas.Location = new Point(10, 10);
         listBoxCanchas.Name = "listBoxCanchas";
-        listBoxCanchas.Size = new Size(455, 317);
+        listBoxCanchas.Size = new Size(442, 301);
         listBoxCanchas.TabIndex = 1;
         listBoxCanchas.SelectedIndexChanged += listBoxCanchas_SelectedIndexChanged;
         listBoxCanchas.MouseDown += listBoxCanchas_MouseDown;
@@ -173,7 +168,7 @@ partial class ucCanchas
         // lblBloquearCancha
         // 
         lblBloquearCancha.AutoSize = true;
-        lblBloquearCancha.Location = new Point(-2, 141);
+        lblBloquearCancha.Location = new Point(8, 151);
         lblBloquearCancha.Margin = new Padding(4, 0, 4, 0);
         lblBloquearCancha.Name = "lblBloquearCancha";
         lblBloquearCancha.Size = new Size(101, 15);
@@ -184,7 +179,7 @@ partial class ucCanchas
         // 
         btnBloquearCancha.BackColor = SystemColors.ControlLight;
         btnBloquearCancha.Enabled = false;
-        btnBloquearCancha.Location = new Point(154, 135);
+        btnBloquearCancha.Location = new Point(154, 145);
         btnBloquearCancha.Margin = new Padding(4, 3, 4, 3);
         btnBloquearCancha.Name = "btnBloquearCancha";
         btnBloquearCancha.Size = new Size(88, 27);
@@ -196,7 +191,7 @@ partial class ucCanchas
         // lblBajaCancha
         // 
         lblBajaCancha.AutoSize = true;
-        lblBajaCancha.Location = new Point(-2, 185);
+        lblBajaCancha.Location = new Point(8, 195);
         lblBajaCancha.Margin = new Padding(4, 0, 4, 0);
         lblBajaCancha.Name = "lblBajaCancha";
         lblBajaCancha.Size = new Size(113, 15);
@@ -207,7 +202,7 @@ partial class ucCanchas
         // 
         btnBajaCancha.BackColor = SystemColors.ControlLight;
         btnBajaCancha.Enabled = false;
-        btnBajaCancha.Location = new Point(154, 179);
+        btnBajaCancha.Location = new Point(154, 189);
         btnBajaCancha.Margin = new Padding(4, 3, 4, 3);
         btnBajaCancha.Name = "btnBajaCancha";
         btnBajaCancha.Size = new Size(88, 27);
@@ -219,7 +214,7 @@ partial class ucCanchas
         // lblModificarCancha
         // 
         lblModificarCancha.AutoSize = true;
-        lblModificarCancha.Location = new Point(-2, 97);
+        lblModificarCancha.Location = new Point(8, 107);
         lblModificarCancha.Margin = new Padding(4, 0, 4, 0);
         lblModificarCancha.Name = "lblModificarCancha";
         lblModificarCancha.Size = new Size(134, 15);
@@ -230,7 +225,7 @@ partial class ucCanchas
         // 
         btnModificarCancha.BackColor = SystemColors.ControlLight;
         btnModificarCancha.Enabled = false;
-        btnModificarCancha.Location = new Point(154, 91);
+        btnModificarCancha.Location = new Point(154, 101);
         btnModificarCancha.Margin = new Padding(4, 3, 4, 3);
         btnModificarCancha.Name = "btnModificarCancha";
         btnModificarCancha.Size = new Size(88, 27);
@@ -242,7 +237,7 @@ partial class ucCanchas
         // lblConsultarCancha
         // 
         lblConsultarCancha.AutoSize = true;
-        lblConsultarCancha.Location = new Point(-2, 53);
+        lblConsultarCancha.Location = new Point(8, 63);
         lblConsultarCancha.Margin = new Padding(4, 0, 4, 0);
         lblConsultarCancha.Name = "lblConsultarCancha";
         lblConsultarCancha.Size = new Size(133, 15);
@@ -253,7 +248,7 @@ partial class ucCanchas
         // 
         btnConsultarCancha.BackColor = SystemColors.ControlLight;
         btnConsultarCancha.Enabled = false;
-        btnConsultarCancha.Location = new Point(154, 47);
+        btnConsultarCancha.Location = new Point(154, 57);
         btnConsultarCancha.Margin = new Padding(4, 3, 4, 3);
         btnConsultarCancha.Name = "btnConsultarCancha";
         btnConsultarCancha.Size = new Size(88, 27);
@@ -265,7 +260,7 @@ partial class ucCanchas
         // lblAgregarCancha
         // 
         lblAgregarCancha.AutoSize = true;
-        lblAgregarCancha.Location = new Point(-2, 9);
+        lblAgregarCancha.Location = new Point(8, 19);
         lblAgregarCancha.Margin = new Padding(4, 0, 4, 0);
         lblAgregarCancha.Name = "lblAgregarCancha";
         lblAgregarCancha.Size = new Size(133, 15);
@@ -275,7 +270,7 @@ partial class ucCanchas
         // btnAgregarCancha
         // 
         btnAgregarCancha.BackColor = SystemColors.ControlLight;
-        btnAgregarCancha.Location = new Point(154, 3);
+        btnAgregarCancha.Location = new Point(154, 13);
         btnAgregarCancha.Margin = new Padding(4, 3, 4, 3);
         btnAgregarCancha.Name = "btnAgregarCancha";
         btnAgregarCancha.Size = new Size(88, 27);
@@ -306,6 +301,7 @@ partial class ucCanchas
         // scTipos.Panel1
         // 
         scTipos.Panel1.Controls.Add(listBoxTiposCancha);
+        scTipos.Panel1.Padding = new Padding(10, 10, 10, 20);
         // 
         // scTipos.Panel2
         // 
@@ -329,11 +325,12 @@ partial class ucCanchas
         // 
         listBoxTiposCancha.BackColor = SystemColors.ActiveCaption;
         listBoxTiposCancha.BorderStyle = BorderStyle.FixedSingle;
+        listBoxTiposCancha.Dock = DockStyle.Fill;
         listBoxTiposCancha.FormattingEnabled = true;
         listBoxTiposCancha.Items.AddRange(new object[] { "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200" });
-        listBoxTiposCancha.Location = new Point(4, 3);
+        listBoxTiposCancha.Location = new Point(10, 10);
         listBoxTiposCancha.Name = "listBoxTiposCancha";
-        listBoxTiposCancha.Size = new Size(455, 317);
+        listBoxTiposCancha.Size = new Size(442, 301);
         listBoxTiposCancha.TabIndex = 1;
         listBoxTiposCancha.SelectedIndexChanged += listBoxTiposCancha_SelectedIndexChanged;
         listBoxTiposCancha.MouseDown += listBoxTiposCancha_MouseDown;
@@ -455,6 +452,7 @@ partial class ucCanchas
         // 
         // cbEstados
         // 
+        cbEstados.DropDownStyle = ComboBoxStyle.DropDownList;
         cbEstados.FormattingEnabled = true;
         cbEstados.Items.AddRange(new object[] { "Activas", "Bloqueadas", "Todas" });
         cbEstados.Location = new Point(259, 5);
@@ -462,16 +460,32 @@ partial class ucCanchas
         cbEstados.Name = "cbEstados";
         cbEstados.Size = new Size(70, 23);
         cbEstados.TabIndex = 15;
-        cbEstados.Text = "Todas";
+        // 
+        // txtBusqueda
+        // 
+        txtBusqueda.Location = new Point(444, 5);
+        txtBusqueda.Name = "txtBusqueda";
+        txtBusqueda.Size = new Size(174, 23);
+        txtBusqueda.TabIndex = 16;
+        // 
+        // lblFiltrado
+        // 
+        lblFiltrado.AutoSize = true;
+        lblFiltrado.Location = new Point(187, 10);
+        lblFiltrado.Name = "lblFiltrado";
+        lblFiltrado.Size = new Size(65, 15);
+        lblFiltrado.TabIndex = 17;
+        lblFiltrado.Text = "Filtrar por:";
         // 
         // ucCanchas
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = SystemColors.ActiveCaption;
+        Controls.Add(lblFiltrado);
+        Controls.Add(txtBusqueda);
         Controls.Add(cbEstados);
         Controls.Add(cbFiltrar);
-        Controls.Add(cbBusqueda);
         Controls.Add(btnBuscar);
         Controls.Add(tcCanchas);
         Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -493,13 +507,13 @@ partial class ucCanchas
         ((System.ComponentModel.ISupportInitialize)scTipos).EndInit();
         scTipos.ResumeLayout(false);
         ResumeLayout(false);
+        PerformLayout();
 
     }
 
     #endregion
 
     private System.Windows.Forms.ComboBox cbFiltrar;
-    private System.Windows.Forms.ComboBox cbBusqueda;
     private System.Windows.Forms.Button btnBuscar;
     private System.Windows.Forms.TabControl tcCanchas;
     private System.Windows.Forms.TabPage tabCanchas;
@@ -529,4 +543,6 @@ partial class ucCanchas
     private ComboBox cbEstados;
     private ListBox listBoxCanchas;
     private ListBox listBoxTiposCancha;
+    private TextBox txtBusqueda;
+    private Label lblFiltrado;
 }

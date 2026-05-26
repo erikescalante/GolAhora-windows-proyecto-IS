@@ -42,9 +42,9 @@
             btnCancelar = new ToolStripButton();
             toolStripSeparator3 = new ToolStripSeparator();
             cbFiltrado = new ComboBox();
-            txtBusqueda = new ComboBox();
-            lblFiltro = new Label();
             btnBuscar = new Button();
+            lblFiltro = new Label();
+            txtBusqueda = new TextBox();
             ((System.ComponentModel.ISupportInitialize)scReservas).BeginInit();
             scReservas.Panel1.SuspendLayout();
             scReservas.Panel2.SuspendLayout();
@@ -54,7 +54,7 @@
             // 
             // scReservas
             // 
-            scReservas.Location = new Point(3, 96);
+            scReservas.Location = new Point(4, 87);
             scReservas.Name = "scReservas";
             // 
             // scReservas.Panel1
@@ -66,8 +66,8 @@
             // 
             scReservas.Panel2.Controls.Add(lateralMenu);
             scReservas.Panel2.Padding = new Padding(10, 10, 10, 20);
-            scReservas.Size = new Size(717, 322);
-            scReservas.SplitterDistance = 460;
+            scReservas.Size = new Size(715, 331);
+            scReservas.SplitterDistance = 458;
             scReservas.TabIndex = 20;
             // 
             // listBoxReservas
@@ -76,10 +76,10 @@
             listBoxReservas.BorderStyle = BorderStyle.FixedSingle;
             listBoxReservas.Dock = DockStyle.Fill;
             listBoxReservas.FormattingEnabled = true;
-            listBoxReservas.Items.AddRange(new object[] { "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200" });
+            listBoxReservas.Items.AddRange(new object[] { "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs", "id: An5ss4pq0 - cliente: totoro gigante - cancha: segunda B - duracion: 2 hs" });
             listBoxReservas.Location = new Point(10, 10);
             listBoxReservas.Name = "listBoxReservas";
-            listBoxReservas.Size = new Size(440, 292);
+            listBoxReservas.Size = new Size(438, 301);
             listBoxReservas.TabIndex = 21;
             listBoxReservas.SelectedIndexChanged += listBoxReservas_SelectedIndexChanged;
             listBoxReservas.MouseDown += listBoxReservas_MouseDown;
@@ -179,30 +179,11 @@
             cbFiltrado.DropDownStyle = ComboBoxStyle.DropDownList;
             cbFiltrado.FormattingEnabled = true;
             cbFiltrado.Items.AddRange(new object[] { "Usuario", "Cancha" });
-            cbFiltrado.Location = new Point(409, 6);
+            cbFiltrado.Location = new Point(335, 6);
             cbFiltrado.Margin = new Padding(4, 3, 4, 3);
             cbFiltrado.Name = "cbFiltrado";
             cbFiltrado.Size = new Size(103, 23);
             cbFiltrado.TabIndex = 10;
-            // 
-            // txtBusqueda
-            // 
-            txtBusqueda.FormattingEnabled = true;
-            txtBusqueda.Location = new Point(520, 6);
-            txtBusqueda.Margin = new Padding(4, 3, 4, 3);
-            txtBusqueda.Name = "txtBusqueda";
-            txtBusqueda.Size = new Size(98, 23);
-            txtBusqueda.TabIndex = 11;
-            // 
-            // lblFiltro
-            // 
-            lblFiltro.AutoSize = true;
-            lblFiltro.Location = new Point(336, 9);
-            lblFiltro.Margin = new Padding(4, 0, 4, 0);
-            lblFiltro.Name = "lblFiltro";
-            lblFiltro.Size = new Size(65, 15);
-            lblFiltro.TabIndex = 18;
-            lblFiltro.Text = "Filtrar por:";
             // 
             // btnBuscar
             // 
@@ -213,15 +194,32 @@
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
             // 
+            // lblFiltro
+            // 
+            lblFiltro.AutoSize = true;
+            lblFiltro.Location = new Point(262, 9);
+            lblFiltro.Margin = new Padding(4, 0, 4, 0);
+            lblFiltro.Name = "lblFiltro";
+            lblFiltro.Size = new Size(65, 15);
+            lblFiltro.TabIndex = 18;
+            lblFiltro.Text = "Filtrar por:";
+            // 
+            // txtBusqueda
+            // 
+            txtBusqueda.Location = new Point(445, 5);
+            txtBusqueda.Name = "txtBusqueda";
+            txtBusqueda.Size = new Size(174, 23);
+            txtBusqueda.TabIndex = 21;
+            // 
             // ucReservas2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
+            Controls.Add(txtBusqueda);
             Controls.Add(scReservas);
             Controls.Add(btnBuscar);
             Controls.Add(lblFiltro);
-            Controls.Add(txtBusqueda);
             Controls.Add(cbFiltrado);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             MaximumSize = new Size(723, 421);
@@ -251,10 +249,10 @@
         private ToolStripButton btnCancelar;
         private ToolStripSeparator toolStripSeparator3;
         private ComboBox cbFiltrado;
-        private ComboBox txtBusqueda;
-        private Label lblFiltro;
         private Button btnBuscar;
         private ToolStripButton btnConsultar;
         private ToolStripSeparator toolStripSeparator5;
+        private Label lblFiltro;
+        private TextBox txtBusqueda;
     }
 }

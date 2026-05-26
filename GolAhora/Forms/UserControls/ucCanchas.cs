@@ -27,10 +27,10 @@ public partial class ucCanchas : UserControl
 
         cbEstados.Enabled = pestañaCanchas;
         cbFiltrar.Enabled = pestañaCanchas;
-        cbBusqueda.Enabled = pestañaCanchas;
+        txtBusqueda.Enabled = pestañaCanchas;
         btnBuscar.Enabled = pestañaCanchas;
 
-        if (!pestañaCanchas) cbBusqueda.Text = string.Empty;
+        if (!pestañaCanchas) txtBusqueda.Text = string.Empty;
     }
 
     private void listBoxCanchas_SelectedIndexChanged(object sender, EventArgs e)

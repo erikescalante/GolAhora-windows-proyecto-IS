@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtBusqueda = new ComboBox();
             btnBuscar = new Button();
             cbFiltrado = new ComboBox();
             tabAdministradores = new TabPage();
@@ -87,6 +86,7 @@
             panelUsuarios = new Panel();
             listBoxUsuarios = new ListBox();
             tcUsuarios = new TabControl();
+            txtBusqueda = new TextBox();
             tabAdministradores.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)scAdministradores).BeginInit();
             scAdministradores.Panel1.SuspendLayout();
@@ -112,15 +112,6 @@
             tcUsuarios.SuspendLayout();
             SuspendLayout();
             // 
-            // txtBusqueda
-            // 
-            txtBusqueda.FormattingEnabled = true;
-            txtBusqueda.Location = new Point(443, 7);
-            txtBusqueda.Margin = new Padding(4, 3, 4, 3);
-            txtBusqueda.Name = "txtBusqueda";
-            txtBusqueda.Size = new Size(174, 23);
-            txtBusqueda.TabIndex = 5;
-            // 
             // btnBuscar
             // 
             btnBuscar.BackColor = SystemColors.ControlLight;
@@ -138,7 +129,7 @@
             // 
             cbFiltrado.FormattingEnabled = true;
             cbFiltrado.Items.AddRange(new object[] { "dni", "Nombre", "Email" });
-            cbFiltrado.Location = new Point(337, 7);
+            cbFiltrado.Location = new Point(339, 6);
             cbFiltrado.Margin = new Padding(4, 3, 4, 3);
             cbFiltrado.Name = "cbFiltrado";
             cbFiltrado.Size = new Size(98, 23);
@@ -167,6 +158,7 @@
             // scAdministradores.Panel1
             // 
             scAdministradores.Panel1.Controls.Add(listBoxAdministradores);
+            scAdministradores.Panel1.Padding = new Padding(10, 10, 10, 20);
             // 
             // scAdministradores.Panel2
             // 
@@ -180,6 +172,7 @@
             scAdministradores.Panel2.Controls.Add(btnConsultarAdmin);
             scAdministradores.Panel2.Controls.Add(label20);
             scAdministradores.Panel2.Controls.Add(btnRegistrarAdmin);
+            scAdministradores.Panel2.Padding = new Padding(10, 10, 10, 20);
             scAdministradores.Size = new Size(717, 331);
             scAdministradores.SplitterDistance = 463;
             scAdministradores.SplitterWidth = 5;
@@ -201,7 +194,7 @@
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(-2, 141);
+            label16.Location = new Point(8, 151);
             label16.Margin = new Padding(4, 0, 4, 0);
             label16.Name = "label16";
             label16.Size = new Size(92, 15);
@@ -212,7 +205,7 @@
             // 
             btnImprimirAdmin.BackColor = SystemColors.ControlLight;
             btnImprimirAdmin.Enabled = false;
-            btnImprimirAdmin.Location = new Point(154, 135);
+            btnImprimirAdmin.Location = new Point(154, 145);
             btnImprimirAdmin.Margin = new Padding(4, 3, 4, 3);
             btnImprimirAdmin.Name = "btnImprimirAdmin";
             btnImprimirAdmin.Size = new Size(88, 27);
@@ -224,7 +217,7 @@
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(-2, 185);
+            label17.Location = new Point(8, 195);
             label17.Margin = new Padding(4, 0, 4, 0);
             label17.Name = "label17";
             label17.Size = new Size(152, 15);
@@ -235,7 +228,7 @@
             // 
             btnBajaAdmin.BackColor = SystemColors.ControlLight;
             btnBajaAdmin.Enabled = false;
-            btnBajaAdmin.Location = new Point(154, 179);
+            btnBajaAdmin.Location = new Point(154, 189);
             btnBajaAdmin.Margin = new Padding(4, 3, 4, 3);
             btnBajaAdmin.Name = "btnBajaAdmin";
             btnBajaAdmin.Size = new Size(88, 27);
@@ -247,7 +240,7 @@
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(-2, 97);
+            label18.Location = new Point(8, 107);
             label18.Margin = new Padding(4, 0, 4, 0);
             label18.Name = "label18";
             label18.Size = new Size(96, 15);
@@ -258,7 +251,7 @@
             // 
             btnModificarAdmin.BackColor = SystemColors.ControlLight;
             btnModificarAdmin.Enabled = false;
-            btnModificarAdmin.Location = new Point(154, 91);
+            btnModificarAdmin.Location = new Point(154, 101);
             btnModificarAdmin.Margin = new Padding(4, 3, 4, 3);
             btnModificarAdmin.Name = "btnModificarAdmin";
             btnModificarAdmin.Size = new Size(88, 27);
@@ -270,7 +263,7 @@
             // label19
             // 
             label19.AutoSize = true;
-            label19.Location = new Point(-2, 53);
+            label19.Location = new Point(8, 63);
             label19.Margin = new Padding(4, 0, 4, 0);
             label19.Name = "label19";
             label19.Size = new Size(95, 15);
@@ -281,7 +274,7 @@
             // 
             btnConsultarAdmin.BackColor = SystemColors.ControlLight;
             btnConsultarAdmin.Enabled = false;
-            btnConsultarAdmin.Location = new Point(154, 47);
+            btnConsultarAdmin.Location = new Point(154, 57);
             btnConsultarAdmin.Margin = new Padding(4, 3, 4, 3);
             btnConsultarAdmin.Name = "btnConsultarAdmin";
             btnConsultarAdmin.Size = new Size(88, 27);
@@ -293,7 +286,7 @@
             // label20
             // 
             label20.AutoSize = true;
-            label20.Location = new Point(-2, 9);
+            label20.Location = new Point(8, 19);
             label20.Margin = new Padding(4, 0, 4, 0);
             label20.Name = "label20";
             label20.Size = new Size(141, 15);
@@ -303,7 +296,7 @@
             // btnRegistrarAdmin
             // 
             btnRegistrarAdmin.BackColor = SystemColors.ControlLight;
-            btnRegistrarAdmin.Location = new Point(154, 3);
+            btnRegistrarAdmin.Location = new Point(154, 13);
             btnRegistrarAdmin.Margin = new Padding(4, 3, 4, 3);
             btnRegistrarAdmin.Name = "btnRegistrarAdmin";
             btnRegistrarAdmin.Size = new Size(88, 27);
@@ -348,6 +341,7 @@
             scEntrenadores.Panel2.Controls.Add(btnConsultarEntrenador);
             scEntrenadores.Panel2.Controls.Add(label15);
             scEntrenadores.Panel2.Controls.Add(btnRegistrarEntrenador);
+            scEntrenadores.Panel2.Padding = new Padding(10, 10, 10, 20);
             scEntrenadores.Size = new Size(715, 331);
             scEntrenadores.SplitterDistance = 462;
             scEntrenadores.SplitterWidth = 5;
@@ -369,7 +363,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(-2, 141);
+            label11.Location = new Point(8, 151);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
             label11.Size = new Size(92, 15);
@@ -380,7 +374,7 @@
             // 
             btnImprimirEntrenador.BackColor = SystemColors.ControlLight;
             btnImprimirEntrenador.Enabled = false;
-            btnImprimirEntrenador.Location = new Point(154, 135);
+            btnImprimirEntrenador.Location = new Point(154, 145);
             btnImprimirEntrenador.Margin = new Padding(4, 3, 4, 3);
             btnImprimirEntrenador.Name = "btnImprimirEntrenador";
             btnImprimirEntrenador.Size = new Size(88, 27);
@@ -392,7 +386,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(-2, 185);
+            label12.Location = new Point(8, 195);
             label12.Margin = new Padding(4, 0, 4, 0);
             label12.Name = "label12";
             label12.Size = new Size(138, 15);
@@ -403,7 +397,7 @@
             // 
             btnBajaEntrenador.BackColor = SystemColors.ControlLight;
             btnBajaEntrenador.Enabled = false;
-            btnBajaEntrenador.Location = new Point(154, 179);
+            btnBajaEntrenador.Location = new Point(154, 189);
             btnBajaEntrenador.Margin = new Padding(4, 3, 4, 3);
             btnBajaEntrenador.Name = "btnBajaEntrenador";
             btnBajaEntrenador.Size = new Size(88, 27);
@@ -415,7 +409,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(-2, 97);
+            label13.Location = new Point(8, 107);
             label13.Margin = new Padding(4, 0, 4, 0);
             label13.Name = "label13";
             label13.Size = new Size(96, 15);
@@ -426,7 +420,7 @@
             // 
             btnModificarEntrenador.BackColor = SystemColors.ControlLight;
             btnModificarEntrenador.Enabled = false;
-            btnModificarEntrenador.Location = new Point(154, 91);
+            btnModificarEntrenador.Location = new Point(154, 101);
             btnModificarEntrenador.Margin = new Padding(4, 3, 4, 3);
             btnModificarEntrenador.Name = "btnModificarEntrenador";
             btnModificarEntrenador.Size = new Size(88, 27);
@@ -438,7 +432,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(-2, 53);
+            label14.Location = new Point(8, 63);
             label14.Margin = new Padding(4, 0, 4, 0);
             label14.Name = "label14";
             label14.Size = new Size(95, 15);
@@ -449,7 +443,7 @@
             // 
             btnConsultarEntrenador.BackColor = SystemColors.ControlLight;
             btnConsultarEntrenador.Enabled = false;
-            btnConsultarEntrenador.Location = new Point(154, 47);
+            btnConsultarEntrenador.Location = new Point(154, 57);
             btnConsultarEntrenador.Margin = new Padding(4, 3, 4, 3);
             btnConsultarEntrenador.Name = "btnConsultarEntrenador";
             btnConsultarEntrenador.Size = new Size(88, 27);
@@ -461,7 +455,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(-2, 9);
+            label15.Location = new Point(8, 19);
             label15.Margin = new Padding(4, 0, 4, 0);
             label15.Name = "label15";
             label15.Size = new Size(127, 15);
@@ -471,7 +465,7 @@
             // btnRegistrarEntrenador
             // 
             btnRegistrarEntrenador.BackColor = SystemColors.ControlLight;
-            btnRegistrarEntrenador.Location = new Point(154, 3);
+            btnRegistrarEntrenador.Location = new Point(154, 13);
             btnRegistrarEntrenador.Margin = new Padding(4, 3, 4, 3);
             btnRegistrarEntrenador.Name = "btnRegistrarEntrenador";
             btnRegistrarEntrenador.Size = new Size(88, 27);
@@ -502,6 +496,7 @@
             // scProfesores.Panel1
             // 
             scProfesores.Panel1.Controls.Add(listBoxProfesores);
+            scProfesores.Panel1.Padding = new Padding(10, 10, 10, 20);
             // 
             // scProfesores.Panel2
             // 
@@ -516,6 +511,7 @@
             scProfesores.Panel2.Controls.Add(btnConsultarProfesor);
             scProfesores.Panel2.Controls.Add(label10);
             scProfesores.Panel2.Controls.Add(btnRegistrarProfesor);
+            scProfesores.Panel2.Padding = new Padding(10, 10, 10, 20);
             scProfesores.Size = new Size(715, 331);
             scProfesores.SplitterDistance = 462;
             scProfesores.SplitterWidth = 5;
@@ -537,7 +533,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(-2, 141);
+            label6.Location = new Point(8, 151);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
             label6.Size = new Size(92, 15);
@@ -548,7 +544,7 @@
             // 
             btnImprimirProfesor.BackColor = SystemColors.ControlLight;
             btnImprimirProfesor.Enabled = false;
-            btnImprimirProfesor.Location = new Point(154, 135);
+            btnImprimirProfesor.Location = new Point(146, 145);
             btnImprimirProfesor.Margin = new Padding(4, 3, 4, 3);
             btnImprimirProfesor.Name = "btnImprimirProfesor";
             btnImprimirProfesor.Size = new Size(88, 27);
@@ -560,7 +556,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(-2, 185);
+            label7.Location = new Point(8, 195);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
             label7.Size = new Size(123, 15);
@@ -571,7 +567,7 @@
             // 
             btnBajaProfesor.BackColor = SystemColors.ControlLight;
             btnBajaProfesor.Enabled = false;
-            btnBajaProfesor.Location = new Point(154, 179);
+            btnBajaProfesor.Location = new Point(146, 189);
             btnBajaProfesor.Margin = new Padding(4, 3, 4, 3);
             btnBajaProfesor.Name = "btnBajaProfesor";
             btnBajaProfesor.Size = new Size(88, 27);
@@ -583,7 +579,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(-2, 97);
+            label8.Location = new Point(8, 107);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
             label8.Size = new Size(96, 15);
@@ -594,7 +590,7 @@
             // 
             btnModificarProfesor.BackColor = SystemColors.ControlLight;
             btnModificarProfesor.Enabled = false;
-            btnModificarProfesor.Location = new Point(154, 91);
+            btnModificarProfesor.Location = new Point(146, 101);
             btnModificarProfesor.Margin = new Padding(4, 3, 4, 3);
             btnModificarProfesor.Name = "btnModificarProfesor";
             btnModificarProfesor.Size = new Size(88, 27);
@@ -606,7 +602,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(-2, 53);
+            label9.Location = new Point(8, 63);
             label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
             label9.Size = new Size(95, 15);
@@ -617,7 +613,7 @@
             // 
             btnConsultarProfesor.BackColor = SystemColors.ControlLight;
             btnConsultarProfesor.Enabled = false;
-            btnConsultarProfesor.Location = new Point(154, 47);
+            btnConsultarProfesor.Location = new Point(146, 57);
             btnConsultarProfesor.Margin = new Padding(4, 3, 4, 3);
             btnConsultarProfesor.Name = "btnConsultarProfesor";
             btnConsultarProfesor.Size = new Size(88, 27);
@@ -629,7 +625,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(-2, 9);
+            label10.Location = new Point(8, 19);
             label10.Margin = new Padding(4, 0, 4, 0);
             label10.Name = "label10";
             label10.Size = new Size(112, 15);
@@ -639,7 +635,7 @@
             // btnRegistrarProfesor
             // 
             btnRegistrarProfesor.BackColor = SystemColors.ControlLight;
-            btnRegistrarProfesor.Location = new Point(154, 3);
+            btnRegistrarProfesor.Location = new Point(146, 13);
             btnRegistrarProfesor.Margin = new Padding(4, 3, 4, 3);
             btnRegistrarProfesor.Name = "btnRegistrarProfesor";
             btnRegistrarProfesor.Size = new Size(88, 27);
@@ -670,6 +666,7 @@
             // scClientes.Panel1
             // 
             scClientes.Panel1.Controls.Add(listBoxClientes);
+            scClientes.Panel1.Padding = new Padding(10, 10, 10, 20);
             // 
             // scClientes.Panel2
             // 
@@ -684,6 +681,7 @@
             scClientes.Panel2.Controls.Add(btnConsultarCliente);
             scClientes.Panel2.Controls.Add(label5);
             scClientes.Panel2.Controls.Add(btnRegistrarCliente);
+            scClientes.Panel2.Padding = new Padding(10);
             scClientes.Size = new Size(715, 331);
             scClientes.SplitterDistance = 462;
             scClientes.SplitterWidth = 5;
@@ -693,11 +691,12 @@
             // 
             listBoxClientes.BackColor = SystemColors.ActiveCaption;
             listBoxClientes.BorderStyle = BorderStyle.FixedSingle;
+            listBoxClientes.Dock = DockStyle.Fill;
             listBoxClientes.FormattingEnabled = true;
             listBoxClientes.Items.AddRange(new object[] { "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente" });
-            listBoxClientes.Location = new Point(4, 3);
+            listBoxClientes.Location = new Point(10, 10);
             listBoxClientes.Name = "listBoxClientes";
-            listBoxClientes.Size = new Size(455, 317);
+            listBoxClientes.Size = new Size(442, 301);
             listBoxClientes.TabIndex = 2;
             listBoxClientes.SelectedIndexChanged += listBoxClientes_SelectedIndexChanged;
             listBoxClientes.MouseDown += listBoxClientes_MouseDown;
@@ -705,7 +704,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(-2, 141);
+            label1.Location = new Point(8, 151);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(92, 15);
@@ -716,7 +715,7 @@
             // 
             btnImprimirCliente.BackColor = SystemColors.ControlLight;
             btnImprimirCliente.Enabled = false;
-            btnImprimirCliente.Location = new Point(154, 135);
+            btnImprimirCliente.Location = new Point(146, 145);
             btnImprimirCliente.Margin = new Padding(4, 3, 4, 3);
             btnImprimirCliente.Name = "btnImprimirCliente";
             btnImprimirCliente.Size = new Size(88, 27);
@@ -728,7 +727,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(-2, 185);
+            label2.Location = new Point(8, 195);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(113, 15);
@@ -739,7 +738,7 @@
             // 
             btnBajaCliente.BackColor = SystemColors.ControlLight;
             btnBajaCliente.Enabled = false;
-            btnBajaCliente.Location = new Point(154, 179);
+            btnBajaCliente.Location = new Point(146, 189);
             btnBajaCliente.Margin = new Padding(4, 3, 4, 3);
             btnBajaCliente.Name = "btnBajaCliente";
             btnBajaCliente.Size = new Size(88, 27);
@@ -751,7 +750,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(-2, 97);
+            label3.Location = new Point(8, 107);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(96, 15);
@@ -762,7 +761,7 @@
             // 
             btnModificarCliente.BackColor = SystemColors.ControlLight;
             btnModificarCliente.Enabled = false;
-            btnModificarCliente.Location = new Point(154, 91);
+            btnModificarCliente.Location = new Point(146, 101);
             btnModificarCliente.Margin = new Padding(4, 3, 4, 3);
             btnModificarCliente.Name = "btnModificarCliente";
             btnModificarCliente.Size = new Size(88, 27);
@@ -774,7 +773,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(-2, 53);
+            label4.Location = new Point(8, 63);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(95, 15);
@@ -785,7 +784,7 @@
             // 
             btnConsultarCliente.BackColor = SystemColors.ControlLight;
             btnConsultarCliente.Enabled = false;
-            btnConsultarCliente.Location = new Point(154, 47);
+            btnConsultarCliente.Location = new Point(146, 57);
             btnConsultarCliente.Margin = new Padding(4, 3, 4, 3);
             btnConsultarCliente.Name = "btnConsultarCliente";
             btnConsultarCliente.Size = new Size(88, 27);
@@ -797,7 +796,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(-2, 9);
+            label5.Location = new Point(8, 19);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
             label5.Size = new Size(102, 15);
@@ -807,7 +806,7 @@
             // btnRegistrarCliente
             // 
             btnRegistrarCliente.BackColor = SystemColors.ControlLight;
-            btnRegistrarCliente.Location = new Point(154, 3);
+            btnRegistrarCliente.Location = new Point(146, 13);
             btnRegistrarCliente.Margin = new Padding(4, 3, 4, 3);
             btnRegistrarCliente.Name = "btnRegistrarCliente";
             btnRegistrarCliente.Size = new Size(88, 27);
@@ -832,6 +831,7 @@
             panelUsuarios.Controls.Add(listBoxUsuarios);
             panelUsuarios.Location = new Point(6, 3);
             panelUsuarios.Name = "panelUsuarios";
+            panelUsuarios.Padding = new Padding(10, 10, 10, 20);
             panelUsuarios.Size = new Size(714, 328);
             panelUsuarios.TabIndex = 0;
             // 
@@ -839,11 +839,12 @@
             // 
             listBoxUsuarios.BackColor = SystemColors.ActiveCaption;
             listBoxUsuarios.BorderStyle = BorderStyle.FixedSingle;
+            listBoxUsuarios.Dock = DockStyle.Fill;
             listBoxUsuarios.FormattingEnabled = true;
             listBoxUsuarios.Items.AddRange(new object[] { "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador", "nombre: erik Escalante - dni: 46628150 - genero: hombre - edad: 21- tipo: cliente", "nombre: robert smith - dni: 05182664 - genero: hombre - edad: 67 - tipo: profesor", "nombre: isaac asimov - dni: 36390146 - genero: robot - edad: 72 - tipo: entrenador", "nombre: agustina cepeda - dni 46109363 - genero: mujer - edad 21 - tipo: administrador" });
-            listBoxUsuarios.Location = new Point(3, 6);
+            listBoxUsuarios.Location = new Point(10, 10);
             listBoxUsuarios.Name = "listBoxUsuarios";
-            listBoxUsuarios.Size = new Size(704, 317);
+            listBoxUsuarios.Size = new Size(694, 298);
             listBoxUsuarios.TabIndex = 4;
             // 
             // tcUsuarios
@@ -861,13 +862,20 @@
             tcUsuarios.TabIndex = 0;
             tcUsuarios.Click += tcUsuarios_Click;
             // 
+            // txtBusqueda
+            // 
+            txtBusqueda.Location = new Point(444, 6);
+            txtBusqueda.Name = "txtBusqueda";
+            txtBusqueda.Size = new Size(174, 23);
+            txtBusqueda.TabIndex = 7;
+            // 
             // ucUsuarios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            Controls.Add(cbFiltrado);
             Controls.Add(txtBusqueda);
+            Controls.Add(cbFiltrado);
             Controls.Add(btnBuscar);
             Controls.Add(tcUsuarios);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -903,11 +911,11 @@
             panelUsuarios.ResumeLayout(false);
             tcUsuarios.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox txtBusqueda;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.ComboBox cbFiltrado;
         private TabPage tabAdministradores;
@@ -967,5 +975,6 @@
         private ListBox listBoxClientes;
         private Panel panelUsuarios;
         private ListBox listBoxUsuarios;
+        private TextBox txtBusqueda;
     }
 }

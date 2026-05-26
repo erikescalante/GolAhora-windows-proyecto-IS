@@ -64,9 +64,10 @@
             label14 = new Label();
             btnRegistrarEntrenamiento = new Button();
             cbFiltrado = new ComboBox();
-            txtBusqueda = new ComboBox();
             btnBuscar = new Button();
             cbEstado = new ComboBox();
+            txtBusqueda = new TextBox();
+            lblFiltrado = new Label();
             tcCapacitaciones.SuspendLayout();
             tabClases.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)scClases).BeginInit();
@@ -114,6 +115,7 @@
             // scClases.Panel1
             // 
             scClases.Panel1.Controls.Add(listBoxClases);
+            scClases.Panel1.Padding = new Padding(10, 10, 10, 20);
             // 
             // scClases.Panel2
             // 
@@ -131,6 +133,7 @@
             scClases.Panel2.Controls.Add(btnConsultarClase);
             scClases.Panel2.Controls.Add(label7);
             scClases.Panel2.Controls.Add(btnRegistrarClase);
+            scClases.Panel2.Padding = new Padding(10, 10, 10, 20);
             scClases.Size = new Size(715, 331);
             scClases.SplitterDistance = 462;
             scClases.SplitterWidth = 5;
@@ -140,11 +143,12 @@
             // 
             listBoxClases.BackColor = SystemColors.ActiveCaption;
             listBoxClases.BorderStyle = BorderStyle.FixedSingle;
+            listBoxClases.Dock = DockStyle.Fill;
             listBoxClases.FormattingEnabled = true;
             listBoxClases.Items.AddRange(new object[] { "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual", "id: js08SnsM5s - tipo: clase - horario: lunes 15 hs - estado: actual" });
-            listBoxClases.Location = new Point(4, 3);
+            listBoxClases.Location = new Point(10, 10);
             listBoxClases.Name = "listBoxClases";
-            listBoxClases.Size = new Size(455, 317);
+            listBoxClases.Size = new Size(442, 301);
             listBoxClases.TabIndex = 0;
             listBoxClases.SelectedIndexChanged += listBoxClases_SelectedIndexChanged;
             listBoxClases.MouseDown += listBoxClases_MouseDown;
@@ -152,7 +156,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(-3, 230);
+            label1.Location = new Point(7, 240);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(129, 15);
@@ -163,7 +167,7 @@
             // 
             btnBajaAlumnoClase.BackColor = SystemColors.ControlLight;
             btnBajaAlumnoClase.Enabled = false;
-            btnBajaAlumnoClase.Location = new Point(154, 268);
+            btnBajaAlumnoClase.Location = new Point(146, 278);
             btnBajaAlumnoClase.Margin = new Padding(4, 3, 4, 3);
             btnBajaAlumnoClase.Name = "btnBajaAlumnoClase";
             btnBajaAlumnoClase.Size = new Size(88, 27);
@@ -175,7 +179,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(-3, 273);
+            label2.Location = new Point(7, 283);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(116, 15);
@@ -186,7 +190,7 @@
             // 
             btnReporteAsistenciaClase.BackColor = SystemColors.ControlLight;
             btnReporteAsistenciaClase.Enabled = false;
-            btnReporteAsistenciaClase.Location = new Point(154, 224);
+            btnReporteAsistenciaClase.Location = new Point(146, 234);
             btnReporteAsistenciaClase.Margin = new Padding(4, 3, 4, 3);
             btnReporteAsistenciaClase.Name = "btnReporteAsistenciaClase";
             btnReporteAsistenciaClase.Size = new Size(88, 27);
@@ -198,7 +202,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(-3, 142);
+            label3.Location = new Point(7, 152);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(99, 15);
@@ -209,7 +213,7 @@
             // 
             btnInscribirAlumnoClase.BackColor = SystemColors.ControlLight;
             btnInscribirAlumnoClase.Enabled = false;
-            btnInscribirAlumnoClase.Location = new Point(154, 136);
+            btnInscribirAlumnoClase.Location = new Point(146, 146);
             btnInscribirAlumnoClase.Margin = new Padding(4, 3, 4, 3);
             btnInscribirAlumnoClase.Name = "btnInscribirAlumnoClase";
             btnInscribirAlumnoClase.Size = new Size(88, 27);
@@ -221,7 +225,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(-3, 186);
+            label4.Location = new Point(7, 196);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(117, 15);
@@ -232,7 +236,7 @@
             // 
             btnAsistenciaClase.BackColor = SystemColors.ControlLight;
             btnAsistenciaClase.Enabled = false;
-            btnAsistenciaClase.Location = new Point(154, 180);
+            btnAsistenciaClase.Location = new Point(146, 190);
             btnAsistenciaClase.Margin = new Padding(4, 3, 4, 3);
             btnAsistenciaClase.Name = "btnAsistenciaClase";
             btnAsistenciaClase.Size = new Size(88, 27);
@@ -244,7 +248,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(0, 98);
+            label5.Location = new Point(10, 108);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
             label5.Size = new Size(95, 15);
@@ -255,7 +259,7 @@
             // 
             btnModificarClase.BackColor = SystemColors.ControlLight;
             btnModificarClase.Enabled = false;
-            btnModificarClase.Location = new Point(154, 92);
+            btnModificarClase.Location = new Point(146, 102);
             btnModificarClase.Margin = new Padding(4, 3, 4, 3);
             btnModificarClase.Name = "btnModificarClase";
             btnModificarClase.Size = new Size(88, 27);
@@ -267,7 +271,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(-1, 54);
+            label6.Location = new Point(9, 64);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
             label6.Size = new Size(95, 15);
@@ -278,7 +282,7 @@
             // 
             btnConsultarClase.BackColor = SystemColors.ControlLight;
             btnConsultarClase.Enabled = false;
-            btnConsultarClase.Location = new Point(154, 48);
+            btnConsultarClase.Location = new Point(146, 58);
             btnConsultarClase.Margin = new Padding(4, 3, 4, 3);
             btnConsultarClase.Name = "btnConsultarClase";
             btnConsultarClase.Size = new Size(88, 27);
@@ -290,7 +294,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(-1, 9);
+            label7.Location = new Point(9, 19);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
             label7.Size = new Size(99, 15);
@@ -300,7 +304,7 @@
             // btnRegistrarClase
             // 
             btnRegistrarClase.BackColor = SystemColors.ControlLight;
-            btnRegistrarClase.Location = new Point(154, 3);
+            btnRegistrarClase.Location = new Point(146, 13);
             btnRegistrarClase.Margin = new Padding(4, 3, 4, 3);
             btnRegistrarClase.Name = "btnRegistrarClase";
             btnRegistrarClase.Size = new Size(88, 27);
@@ -331,6 +335,7 @@
             // scEntrenamientos.Panel1
             // 
             scEntrenamientos.Panel1.Controls.Add(listBoxEntrenamientos);
+            scEntrenamientos.Panel1.Padding = new Padding(10, 10, 10, 20);
             // 
             // scEntrenamientos.Panel2
             // 
@@ -348,6 +353,7 @@
             scEntrenamientos.Panel2.Controls.Add(btnConsultarEntrenamiento);
             scEntrenamientos.Panel2.Controls.Add(label14);
             scEntrenamientos.Panel2.Controls.Add(btnRegistrarEntrenamiento);
+            scEntrenamientos.Panel2.Padding = new Padding(10, 10, 10, 20);
             scEntrenamientos.Size = new Size(715, 331);
             scEntrenamientos.SplitterDistance = 462;
             scEntrenamientos.SplitterWidth = 5;
@@ -357,11 +363,12 @@
             // 
             listBoxEntrenamientos.BackColor = SystemColors.ActiveCaption;
             listBoxEntrenamientos.BorderStyle = BorderStyle.FixedSingle;
+            listBoxEntrenamientos.Dock = DockStyle.Fill;
             listBoxEntrenamientos.FormattingEnabled = true;
             listBoxEntrenamientos.Items.AddRange(new object[] { "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro", "id 5SZmoI7ma - tipo: entrenamiento - horario: jueves 9 hs - estado: futuro" });
-            listBoxEntrenamientos.Location = new Point(4, 3);
+            listBoxEntrenamientos.Location = new Point(10, 10);
             listBoxEntrenamientos.Name = "listBoxEntrenamientos";
-            listBoxEntrenamientos.Size = new Size(455, 317);
+            listBoxEntrenamientos.Size = new Size(442, 301);
             listBoxEntrenamientos.TabIndex = 1;
             listBoxEntrenamientos.SelectedIndexChanged += listBoxEntrenamientos_SelectedIndexChanged;
             listBoxEntrenamientos.MouseDown += listBoxEntrenamientos_MouseDown;
@@ -369,7 +376,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(-3, 230);
+            label8.Location = new Point(7, 240);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
             label8.Size = new Size(129, 15);
@@ -380,7 +387,7 @@
             // 
             btnBajaAlumnoEntrenamiento.BackColor = SystemColors.ControlLight;
             btnBajaAlumnoEntrenamiento.Enabled = false;
-            btnBajaAlumnoEntrenamiento.Location = new Point(154, 268);
+            btnBajaAlumnoEntrenamiento.Location = new Point(154, 278);
             btnBajaAlumnoEntrenamiento.Margin = new Padding(4, 3, 4, 3);
             btnBajaAlumnoEntrenamiento.Name = "btnBajaAlumnoEntrenamiento";
             btnBajaAlumnoEntrenamiento.Size = new Size(88, 27);
@@ -392,7 +399,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(-3, 273);
+            label9.Location = new Point(7, 283);
             label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
             label9.Size = new Size(116, 15);
@@ -403,7 +410,7 @@
             // 
             btnReporteAsistenciaEntrenamiento.BackColor = SystemColors.ControlLight;
             btnReporteAsistenciaEntrenamiento.Enabled = false;
-            btnReporteAsistenciaEntrenamiento.Location = new Point(154, 224);
+            btnReporteAsistenciaEntrenamiento.Location = new Point(154, 234);
             btnReporteAsistenciaEntrenamiento.Margin = new Padding(4, 3, 4, 3);
             btnReporteAsistenciaEntrenamiento.Name = "btnReporteAsistenciaEntrenamiento";
             btnReporteAsistenciaEntrenamiento.Size = new Size(88, 27);
@@ -415,7 +422,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(-3, 142);
+            label10.Location = new Point(7, 152);
             label10.Margin = new Padding(4, 0, 4, 0);
             label10.Name = "label10";
             label10.Size = new Size(99, 15);
@@ -426,7 +433,7 @@
             // 
             btnInscribirAlumnoEntrenamiento.BackColor = SystemColors.ControlLight;
             btnInscribirAlumnoEntrenamiento.Enabled = false;
-            btnInscribirAlumnoEntrenamiento.Location = new Point(154, 136);
+            btnInscribirAlumnoEntrenamiento.Location = new Point(154, 146);
             btnInscribirAlumnoEntrenamiento.Margin = new Padding(4, 3, 4, 3);
             btnInscribirAlumnoEntrenamiento.Name = "btnInscribirAlumnoEntrenamiento";
             btnInscribirAlumnoEntrenamiento.Size = new Size(88, 27);
@@ -438,7 +445,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(-3, 186);
+            label11.Location = new Point(7, 196);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
             label11.Size = new Size(117, 15);
@@ -449,7 +456,7 @@
             // 
             btnAsistenciaEntrenamiento.BackColor = SystemColors.ControlLight;
             btnAsistenciaEntrenamiento.Enabled = false;
-            btnAsistenciaEntrenamiento.Location = new Point(154, 180);
+            btnAsistenciaEntrenamiento.Location = new Point(154, 190);
             btnAsistenciaEntrenamiento.Margin = new Padding(4, 3, 4, 3);
             btnAsistenciaEntrenamiento.Name = "btnAsistenciaEntrenamiento";
             btnAsistenciaEntrenamiento.Size = new Size(88, 27);
@@ -461,7 +468,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(0, 98);
+            label12.Location = new Point(10, 108);
             label12.Margin = new Padding(4, 0, 4, 0);
             label12.Name = "label12";
             label12.Size = new Size(150, 15);
@@ -472,7 +479,7 @@
             // 
             btnModificarEntrenamiento.BackColor = SystemColors.ControlLight;
             btnModificarEntrenamiento.Enabled = false;
-            btnModificarEntrenamiento.Location = new Point(154, 92);
+            btnModificarEntrenamiento.Location = new Point(154, 102);
             btnModificarEntrenamiento.Margin = new Padding(4, 3, 4, 3);
             btnModificarEntrenamiento.Name = "btnModificarEntrenamiento";
             btnModificarEntrenamiento.Size = new Size(88, 27);
@@ -484,7 +491,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(-1, 54);
+            label13.Location = new Point(9, 64);
             label13.Margin = new Padding(4, 0, 4, 0);
             label13.Name = "label13";
             label13.Size = new Size(95, 15);
@@ -495,7 +502,7 @@
             // 
             btnConsultarEntrenamiento.BackColor = SystemColors.ControlLight;
             btnConsultarEntrenamiento.Enabled = false;
-            btnConsultarEntrenamiento.Location = new Point(154, 48);
+            btnConsultarEntrenamiento.Location = new Point(154, 58);
             btnConsultarEntrenamiento.Margin = new Padding(4, 3, 4, 3);
             btnConsultarEntrenamiento.Name = "btnConsultarEntrenamiento";
             btnConsultarEntrenamiento.Size = new Size(88, 27);
@@ -507,7 +514,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(-1, 9);
+            label14.Location = new Point(9, 19);
             label14.Margin = new Padding(4, 0, 4, 0);
             label14.Name = "label14";
             label14.Size = new Size(156, 15);
@@ -517,7 +524,7 @@
             // btnRegistrarEntrenamiento
             // 
             btnRegistrarEntrenamiento.BackColor = SystemColors.ControlLight;
-            btnRegistrarEntrenamiento.Location = new Point(154, 3);
+            btnRegistrarEntrenamiento.Location = new Point(154, 13);
             btnRegistrarEntrenamiento.Margin = new Padding(4, 3, 4, 3);
             btnRegistrarEntrenamiento.Name = "btnRegistrarEntrenamiento";
             btnRegistrarEntrenamiento.Size = new Size(88, 27);
@@ -528,6 +535,7 @@
             // 
             // cbFiltrado
             // 
+            cbFiltrado.DropDownStyle = ComboBoxStyle.DropDownList;
             cbFiltrado.FormattingEnabled = true;
             cbFiltrado.Items.AddRange(new object[] { "Profesor", "Alumno" });
             cbFiltrado.Location = new Point(337, 6);
@@ -535,16 +543,6 @@
             cbFiltrado.Name = "cbFiltrado";
             cbFiltrado.Size = new Size(98, 23);
             cbFiltrado.TabIndex = 10;
-            cbFiltrado.Text = "Filtrar por";
-            // 
-            // txtBusqueda
-            // 
-            txtBusqueda.FormattingEnabled = true;
-            txtBusqueda.Location = new Point(443, 6);
-            txtBusqueda.Margin = new Padding(4, 3, 4, 3);
-            txtBusqueda.Name = "txtBusqueda";
-            txtBusqueda.Size = new Size(174, 23);
-            txtBusqueda.TabIndex = 9;
             // 
             // btnBuscar
             // 
@@ -561,6 +559,7 @@
             // 
             // cbEstado
             // 
+            cbEstado.DropDownStyle = ComboBoxStyle.DropDownList;
             cbEstado.FormattingEnabled = true;
             cbEstado.Items.AddRange(new object[] { "Todos", "Actuales", "Pasados", "Futuros" });
             cbEstado.Location = new Point(259, 6);
@@ -568,16 +567,32 @@
             cbEstado.Name = "cbEstado";
             cbEstado.Size = new Size(70, 23);
             cbEstado.TabIndex = 11;
-            cbEstado.Text = "Todos";
+            // 
+            // txtBusqueda
+            // 
+            txtBusqueda.Location = new Point(444, 6);
+            txtBusqueda.Name = "txtBusqueda";
+            txtBusqueda.Size = new Size(174, 23);
+            txtBusqueda.TabIndex = 17;
+            // 
+            // lblFiltrado
+            // 
+            lblFiltrado.AutoSize = true;
+            lblFiltrado.Location = new Point(187, 11);
+            lblFiltrado.Name = "lblFiltrado";
+            lblFiltrado.Size = new Size(65, 15);
+            lblFiltrado.TabIndex = 18;
+            lblFiltrado.Text = "Filtrar por:";
             // 
             // ucCapacitaciones
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
+            Controls.Add(lblFiltrado);
+            Controls.Add(txtBusqueda);
             Controls.Add(cbEstado);
             Controls.Add(cbFiltrado);
-            Controls.Add(txtBusqueda);
             Controls.Add(btnBuscar);
             Controls.Add(tcCapacitaciones);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -599,6 +614,7 @@
             ((System.ComponentModel.ISupportInitialize)scEntrenamientos).EndInit();
             scEntrenamientos.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -608,7 +624,6 @@
         private System.Windows.Forms.TabPage tabClases;
         private System.Windows.Forms.TabPage tabEntrenamientos;
         private System.Windows.Forms.ComboBox cbFiltrado;
-        private System.Windows.Forms.ComboBox txtBusqueda;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.SplitContainer scEntrenamientos;
         private System.Windows.Forms.Label label8;
@@ -643,5 +658,7 @@
         private ComboBox cbEstado;
         private ListBox listBoxClases;
         private ListBox listBoxEntrenamientos;
+        private TextBox txtBusqueda;
+        private Label lblFiltrado;
     }
 }

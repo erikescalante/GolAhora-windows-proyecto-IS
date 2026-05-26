@@ -152,19 +152,19 @@ namespace GolAhora.Forms.UserControls
         private void btnImprimirCliente_Click(object sender, EventArgs e)
         {
             MessageBox.Show(
-            $"La impresión de los datos del cliente <<xxx>> está en proceso...",
-            "Imprimir datos de cliente",
-            MessageBoxButtons.OK,
-            MessageBoxIcon.Question);
+                $"La impresión de los datos del cliente <<xxx>> está en proceso...",
+                "Imprimir datos de cliente",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
 
         private void btnBajaCliente_Click(object sender, EventArgs e)
         {
             MessageBox.Show(
-            $"¿Seguro que deseas dar de baja del sistema al cliente <<xxx>>?",
-            "Confirmar baja de cliente",
-            MessageBoxButtons.YesNo,
-            MessageBoxIcon.Question);
+                $"¿Seguro que deseas dar de baja del sistema al cliente <<xxx>>?",
+                "Confirmar baja de cliente",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
         }
 
 
@@ -193,19 +193,19 @@ namespace GolAhora.Forms.UserControls
         private void btnImprimirProfesor_Click(object sender, EventArgs e)
         {
             MessageBox.Show(
-            $"La impresión de los datos del profesor <<xxx>> está en proceso...",
-            "Imprimir datos de profesor",
-            MessageBoxButtons.OK,
-            MessageBoxIcon.Question);
+                $"La impresión de los datos del profesor <<xxx>> está en proceso...",
+                "Imprimir datos de profesor",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
 
         private void btnBajaProfesor_Click(object sender, EventArgs e)
         {
             MessageBox.Show(
-            $"¿Seguro que deseas dar de baja del sistema al profesor <<xxx>>?",
-            "Confirmar baja de profesor",
-            MessageBoxButtons.YesNo,
-            MessageBoxIcon.Question);
+                $"¿Seguro que deseas dar de baja del sistema al profesor <<xxx>>?",
+                "Confirmar baja de profesor",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
         }
 
 
@@ -234,19 +234,19 @@ namespace GolAhora.Forms.UserControls
         private void btnImprimirEntrenador_Click(object sender, EventArgs e)
         {
             MessageBox.Show(
-            $"La impresión de los datos del entrenador <<xxx>> está en proceso...",
-            "Imprimir datos de entrenador",
-            MessageBoxButtons.OK,
-            MessageBoxIcon.Question);
+                $"La impresión de los datos del entrenador <<xxx>> está en proceso...",
+                "Imprimir datos de entrenador",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
 
         private void btnBajaEntrenador_Click(object sender, EventArgs e)
         {
             MessageBox.Show(
-            $"¿Seguro que deseas dar de baja del sistema al entrenador <<xxx>>?",
-            "Confirmar baja de entrenador",
-            MessageBoxButtons.YesNo,
-            MessageBoxIcon.Question);
+                $"¿Seguro que deseas dar de baja del sistema al entrenador <<xxx>>?",
+                "Confirmar baja de entrenador",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
         }
 
 
@@ -275,19 +275,19 @@ namespace GolAhora.Forms.UserControls
         private void btnImprimirAdmin_Click(object sender, EventArgs e)
         {
             MessageBox.Show(
-            $"La impresión de los datos del administrador <<xxx>> está en proceso...",
-            "Imprimir datos de administrador",
-            MessageBoxButtons.OK,
-            MessageBoxIcon.Question);
+                $"La impresión de los datos del administrador <<xxx>> está en proceso...",
+                "Imprimir datos de administrador",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
 
         private void btnBajaAdmin_Click(object sender, EventArgs e)
         {
             MessageBox.Show(
-            $"¿Seguro que deseas dar de baja del sistema al administrador <<xxx>>?",
-            "Confirmar baja de administrador",
-            MessageBoxButtons.YesNo,
-            MessageBoxIcon.Question);
+                $"¿Seguro que deseas dar de baja del sistema al administrador <<xxx>>?",
+                "Confirmar baja de administrador",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
         }
     }
 }

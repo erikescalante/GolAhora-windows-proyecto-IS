@@ -87,7 +87,7 @@ namespace GolAhora.Forms
 
         private void btnCobros_Click(object sender, EventArgs e)
         {
-            UserControl pantalla = Browser.Instance.GetView<ucCobros>();
+            UserControl pantalla = Browser.Instance.GetView<ucCobros2>();
             ChangePanel(pantalla);
             btnCobros.Enabled = false;
         }

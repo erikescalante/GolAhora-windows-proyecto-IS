@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cbBusqueda = new ComboBox();
             btnBuscar = new Button();
             cbFiltrado = new ComboBox();
             lateralMenu = new ToolStrip();
@@ -44,22 +43,15 @@
             btnReportes = new ToolStripButton();
             toolStripSeparator6 = new ToolStripSeparator();
             listBoxCanchas = new ListBox();
-            splitContainer1 = new SplitContainer();
+            scReportes = new SplitContainer();
+            txtBusqueda = new TextBox();
+            lblFiltro = new Label();
             lateralMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
-            splitContainer1.Panel1.SuspendLayout();
-            splitContainer1.Panel2.SuspendLayout();
-            splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)scReportes).BeginInit();
+            scReportes.Panel1.SuspendLayout();
+            scReportes.Panel2.SuspendLayout();
+            scReportes.SuspendLayout();
             SuspendLayout();
-            // 
-            // cbBusqueda
-            // 
-            cbBusqueda.FormattingEnabled = true;
-            cbBusqueda.Location = new Point(443, 5);
-            cbBusqueda.Margin = new Padding(4, 3, 4, 3);
-            cbBusqueda.Name = "cbBusqueda";
-            cbBusqueda.Size = new Size(174, 23);
-            cbBusqueda.TabIndex = 17;
             // 
             // btnBuscar
             // 
@@ -74,6 +66,7 @@
             // 
             // cbFiltrado
             // 
+            cbFiltrado.DropDownStyle = ComboBoxStyle.DropDownList;
             cbFiltrado.FormattingEnabled = true;
             cbFiltrado.Items.AddRange(new object[] { "Todos los reportes", "Tipos de cancha", "Ingresos", "Reservas de cancha", "Asistencia a clases", "Asistencia a entrenamientos" });
             cbFiltrado.Location = new Point(259, 5);
@@ -81,7 +74,6 @@
             cbFiltrado.Name = "cbFiltrado";
             cbFiltrado.Size = new Size(176, 23);
             cbFiltrado.TabIndex = 22;
-            cbFiltrado.Text = "Filtrar por";
             // 
             // lateralMenu
             // 
@@ -104,7 +96,7 @@
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(279, 6);
+            toolStripSeparator1.Size = new Size(277, 6);
             // 
             // btnCanchas
             // 
@@ -118,7 +110,7 @@
             // toolStripSeparator2
             // 
             toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new Size(279, 6);
+            toolStripSeparator2.Size = new Size(277, 6);
             // 
             // btnCapacitaciones
             // 
@@ -132,7 +124,7 @@
             // toolStripSeparator4
             // 
             toolStripSeparator4.Name = "toolStripSeparator4";
-            toolStripSeparator4.Size = new Size(279, 6);
+            toolStripSeparator4.Size = new Size(277, 6);
             // 
             // btnCompetencias
             // 
@@ -146,7 +138,7 @@
             // toolStripSeparator3
             // 
             toolStripSeparator3.Name = "toolStripSeparator3";
-            toolStripSeparator3.Size = new Size(279, 6);
+            toolStripSeparator3.Size = new Size(277, 6);
             // 
             // btnCobros
             // 
@@ -160,7 +152,7 @@
             // toolStripSeparator5
             // 
             toolStripSeparator5.Name = "toolStripSeparator5";
-            toolStripSeparator5.Size = new Size(279, 6);
+            toolStripSeparator5.Size = new Size(277, 6);
             // 
             // btnReportes
             // 
@@ -174,7 +166,7 @@
             // toolStripSeparator6
             // 
             toolStripSeparator6.Name = "toolStripSeparator6";
-            toolStripSeparator6.Size = new Size(279, 6);
+            toolStripSeparator6.Size = new Size(277, 6);
             // 
             // listBoxCanchas
             // 
@@ -185,52 +177,70 @@
             listBoxCanchas.Items.AddRange(new object[] { "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200", "id : AhSskAJems54ss4s - Tipo: cancha de 5 - estado : habilitada - capacidad : 200" });
             listBoxCanchas.Location = new Point(10, 10);
             listBoxCanchas.Name = "listBoxCanchas";
-            listBoxCanchas.Size = new Size(413, 292);
+            listBoxCanchas.Size = new Size(411, 301);
             listBoxCanchas.TabIndex = 23;
             // 
-            // splitContainer1
+            // scReportes
             // 
-            splitContainer1.Location = new Point(3, 96);
-            splitContainer1.Name = "splitContainer1";
+            scReportes.Location = new Point(4, 87);
+            scReportes.Name = "scReportes";
             // 
-            // splitContainer1.Panel1
+            // scReportes.Panel1
             // 
-            splitContainer1.Panel1.Controls.Add(listBoxCanchas);
-            splitContainer1.Panel1.Padding = new Padding(10, 10, 10, 20);
+            scReportes.Panel1.Controls.Add(listBoxCanchas);
+            scReportes.Panel1.Padding = new Padding(10, 10, 10, 20);
             // 
-            // splitContainer1.Panel2
+            // scReportes.Panel2
             // 
-            splitContainer1.Panel2.Controls.Add(lateralMenu);
-            splitContainer1.Panel2.Padding = new Padding(10, 10, 10, 20);
-            splitContainer1.Size = new Size(717, 322);
-            splitContainer1.SplitterDistance = 433;
-            splitContainer1.TabIndex = 25;
+            scReportes.Panel2.Controls.Add(lateralMenu);
+            scReportes.Panel2.Padding = new Padding(10, 10, 10, 20);
+            scReportes.Size = new Size(715, 331);
+            scReportes.SplitterDistance = 431;
+            scReportes.TabIndex = 25;
+            // 
+            // txtBusqueda
+            // 
+            txtBusqueda.Location = new Point(444, 5);
+            txtBusqueda.Name = "txtBusqueda";
+            txtBusqueda.Size = new Size(174, 23);
+            txtBusqueda.TabIndex = 26;
+            // 
+            // lblFiltro
+            // 
+            lblFiltro.AutoSize = true;
+            lblFiltro.Location = new Point(186, 10);
+            lblFiltro.Margin = new Padding(4, 0, 4, 0);
+            lblFiltro.Name = "lblFiltro";
+            lblFiltro.Size = new Size(65, 15);
+            lblFiltro.TabIndex = 34;
+            lblFiltro.Text = "Filtrar por:";
             // 
             // ucReportes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
+            Controls.Add(lblFiltro);
+            Controls.Add(txtBusqueda);
             Controls.Add(cbFiltrado);
-            Controls.Add(cbBusqueda);
             Controls.Add(btnBuscar);
-            Controls.Add(splitContainer1);
+            Controls.Add(scReportes);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Margin = new Padding(4, 3, 4, 3);
             Name = "ucReportes";
             Size = new Size(723, 421);
             lateralMenu.ResumeLayout(false);
             lateralMenu.PerformLayout();
-            splitContainer1.Panel1.ResumeLayout(false);
-            splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
-            splitContainer1.ResumeLayout(false);
+            scReportes.Panel1.ResumeLayout(false);
+            scReportes.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)scReportes).EndInit();
+            scReportes.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
 
         }
 
         #endregion
-        private ComboBox cbBusqueda;
         private Button btnBuscar;
         private ComboBox cbFiltrado;
         private ToolStrip lateralMenu;
@@ -246,6 +256,8 @@
         private ToolStripButton btnReportes;
         private ToolStripSeparator toolStripSeparator6;
         private ListBox listBoxCanchas;
-        private SplitContainer splitContainer1;
+        private SplitContainer scReportes;
+        private TextBox txtBusqueda;
+        private Label lblFiltro;
     }
 }
