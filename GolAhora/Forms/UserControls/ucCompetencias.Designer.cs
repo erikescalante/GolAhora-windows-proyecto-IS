@@ -28,49 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucCompetencias));
             tabLigas = new TabPage();
             scLigas = new SplitContainer();
             listBoxLigas = new ListBox();
-            label1 = new Label();
-            btnRegistrarResultadosLiga = new Button();
-            label2 = new Label();
-            btnBajaLiga = new Button();
-            label3 = new Label();
-            btnConfigurarLiga = new Button();
-            label4 = new Label();
-            btnInscribirEquipoLiga = new Button();
-            label5 = new Label();
-            btnRegistrarLiga = new Button();
+            lateralMenuLigas = new ToolStrip();
+            toolStripSeparator6 = new ToolStripSeparator();
+            btnRegistrarLiga = new ToolStripButton();
+            toolStripSeparator1 = new ToolStripSeparator();
+            btnInscribirEquipoLiga = new ToolStripButton();
+            toolStripSeparator2 = new ToolStripSeparator();
+            btnConfigurarLiga = new ToolStripButton();
+            toolStripSeparator3 = new ToolStripSeparator();
+            btnRegistrarResultadosLiga = new ToolStripButton();
+            toolStripSeparator4 = new ToolStripSeparator();
+            btnBajaLiga = new ToolStripButton();
+            toolStripSeparator5 = new ToolStripSeparator();
             tcCompetencias = new TabControl();
             tabTorneos = new TabPage();
             scTorneos = new SplitContainer();
             listBoxTorneos = new ListBox();
-            label6 = new Label();
-            btnRegistrarResultadosTorneo = new Button();
-            label7 = new Label();
-            btnBajaTorneo = new Button();
-            label8 = new Label();
-            btnConfigurarTorneo = new Button();
-            label9 = new Label();
-            btnInscribirEquipoTorneo = new Button();
-            label10 = new Label();
-            btnRegistrarTorneo = new Button();
+            lateralMenuTorneos = new ToolStrip();
+            toolStripSeparator7 = new ToolStripSeparator();
+            btnRegistrarTorneo = new ToolStripButton();
+            toolStripSeparator8 = new ToolStripSeparator();
+            btnInscribirEquipoTorneo = new ToolStripButton();
+            toolStripSeparator9 = new ToolStripSeparator();
+            btnConfigurarTorneo = new ToolStripButton();
+            toolStripSeparator10 = new ToolStripSeparator();
+            btnRegistrarResultadosTorneo = new ToolStripButton();
+            toolStripSeparator11 = new ToolStripSeparator();
+            btnBajaTorneo = new ToolStripButton();
+            toolStripSeparator12 = new ToolStripSeparator();
             cbFiltrado = new ComboBox();
-            btnBuscar = new Button();
             cbEstado = new ComboBox();
             lblFiltrado = new Label();
             txtBusqueda = new TextBox();
+            btnBuscar = new Button();
             tabLigas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)scLigas).BeginInit();
             scLigas.Panel1.SuspendLayout();
             scLigas.Panel2.SuspendLayout();
             scLigas.SuspendLayout();
+            lateralMenuLigas.SuspendLayout();
             tcCompetencias.SuspendLayout();
             tabTorneos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)scTorneos).BeginInit();
             scTorneos.Panel1.SuspendLayout();
             scTorneos.Panel2.SuspendLayout();
             scTorneos.SuspendLayout();
+            lateralMenuTorneos.SuspendLayout();
             SuspendLayout();
             // 
             // tabLigas
@@ -100,16 +107,7 @@
             // scLigas.Panel2
             // 
             scLigas.Panel2.BackColor = Color.Transparent;
-            scLigas.Panel2.Controls.Add(label1);
-            scLigas.Panel2.Controls.Add(btnRegistrarResultadosLiga);
-            scLigas.Panel2.Controls.Add(label2);
-            scLigas.Panel2.Controls.Add(btnBajaLiga);
-            scLigas.Panel2.Controls.Add(label3);
-            scLigas.Panel2.Controls.Add(btnConfigurarLiga);
-            scLigas.Panel2.Controls.Add(label4);
-            scLigas.Panel2.Controls.Add(btnInscribirEquipoLiga);
-            scLigas.Panel2.Controls.Add(label5);
-            scLigas.Panel2.Controls.Add(btnRegistrarLiga);
+            scLigas.Panel2.Controls.Add(lateralMenuLigas);
             scLigas.Panel2.Padding = new Padding(10, 10, 10, 20);
             scLigas.Size = new Size(716, 331);
             scLigas.SplitterDistance = 462;
@@ -130,119 +128,112 @@
             listBoxLigas.SelectedIndexChanged += listBoxLigas_SelectedIndexChanged;
             listBoxLigas.MouseDown += listBoxLigas_MouseDown;
             // 
-            // label1
+            // lateralMenuLigas
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(8, 151);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(121, 15);
-            label1.TabIndex = 20;
-            label1.Text = "Registrar resultados:";
+            lateralMenuLigas.AutoSize = false;
+            lateralMenuLigas.BackColor = SystemColors.ActiveCaption;
+            lateralMenuLigas.Dock = DockStyle.None;
+            lateralMenuLigas.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lateralMenuLigas.GripMargin = new Padding(2, 2, 2, 5);
+            lateralMenuLigas.GripStyle = ToolStripGripStyle.Hidden;
+            lateralMenuLigas.Items.AddRange(new ToolStripItem[] { toolStripSeparator6, btnRegistrarLiga, toolStripSeparator1, btnInscribirEquipoLiga, toolStripSeparator2, btnConfigurarLiga, toolStripSeparator3, btnRegistrarResultadosLiga, toolStripSeparator4, btnBajaLiga, toolStripSeparator5 });
+            lateralMenuLigas.LayoutStyle = ToolStripLayoutStyle.VerticalStackWithOverflow;
+            lateralMenuLigas.Location = new Point(10, 10);
+            lateralMenuLigas.Name = "lateralMenuLigas";
+            lateralMenuLigas.RenderMode = ToolStripRenderMode.System;
+            lateralMenuLigas.RightToLeft = RightToLeft.No;
+            lateralMenuLigas.Size = new Size(229, 350);
+            lateralMenuLigas.TabIndex = 24;
+            lateralMenuLigas.Text = "Menú lateral";
             // 
-            // btnRegistrarResultadosLiga
+            // toolStripSeparator6
             // 
-            btnRegistrarResultadosLiga.BackColor = SystemColors.ControlLight;
-            btnRegistrarResultadosLiga.Enabled = false;
-            btnRegistrarResultadosLiga.Location = new Point(154, 145);
-            btnRegistrarResultadosLiga.Margin = new Padding(4, 3, 4, 3);
-            btnRegistrarResultadosLiga.Name = "btnRegistrarResultadosLiga";
-            btnRegistrarResultadosLiga.Size = new Size(88, 27);
-            btnRegistrarResultadosLiga.TabIndex = 19;
-            btnRegistrarResultadosLiga.Text = "Registrar";
-            btnRegistrarResultadosLiga.UseVisualStyleBackColor = false;
-            btnRegistrarResultadosLiga.Click += btnRegistrarResultadosLiga_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(8, 195);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(94, 15);
-            label2.TabIndex = 18;
-            label2.Text = "Dar de baja liga:";
-            // 
-            // btnBajaLiga
-            // 
-            btnBajaLiga.BackColor = SystemColors.ControlLight;
-            btnBajaLiga.Enabled = false;
-            btnBajaLiga.Location = new Point(154, 189);
-            btnBajaLiga.Margin = new Padding(4, 3, 4, 3);
-            btnBajaLiga.Name = "btnBajaLiga";
-            btnBajaLiga.Size = new Size(88, 27);
-            btnBajaLiga.TabIndex = 17;
-            btnBajaLiga.Text = "Baja";
-            btnBajaLiga.UseVisualStyleBackColor = false;
-            btnBajaLiga.Click += btnBajaLiga_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(8, 107);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(91, 15);
-            label3.TabIndex = 16;
-            label3.Text = "Configurar liga:";
-            // 
-            // btnConfigurarLiga
-            // 
-            btnConfigurarLiga.BackColor = SystemColors.ControlLight;
-            btnConfigurarLiga.Enabled = false;
-            btnConfigurarLiga.Location = new Point(154, 101);
-            btnConfigurarLiga.Margin = new Padding(4, 3, 4, 3);
-            btnConfigurarLiga.Name = "btnConfigurarLiga";
-            btnConfigurarLiga.Size = new Size(88, 27);
-            btnConfigurarLiga.TabIndex = 15;
-            btnConfigurarLiga.Text = "Configurar";
-            btnConfigurarLiga.UseVisualStyleBackColor = false;
-            btnConfigurarLiga.Click += btnConfigurarLiga_Click;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(8, 63);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(96, 15);
-            label4.TabIndex = 14;
-            label4.Text = "Inscribir equipo:";
-            // 
-            // btnInscribirEquipoLiga
-            // 
-            btnInscribirEquipoLiga.BackColor = SystemColors.ControlLight;
-            btnInscribirEquipoLiga.Enabled = false;
-            btnInscribirEquipoLiga.Location = new Point(154, 57);
-            btnInscribirEquipoLiga.Margin = new Padding(4, 3, 4, 3);
-            btnInscribirEquipoLiga.Name = "btnInscribirEquipoLiga";
-            btnInscribirEquipoLiga.Size = new Size(88, 27);
-            btnInscribirEquipoLiga.TabIndex = 13;
-            btnInscribirEquipoLiga.Text = "Inscribir";
-            btnInscribirEquipoLiga.UseVisualStyleBackColor = false;
-            btnInscribirEquipoLiga.Click += btnInscribirEquipoLiga_Click;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(8, 19);
-            label5.Margin = new Padding(4, 0, 4, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(120, 15);
-            label5.TabIndex = 12;
-            label5.Text = "Registrar nueva liga:";
+            toolStripSeparator6.Name = "toolStripSeparator6";
+            toolStripSeparator6.Size = new Size(227, 6);
             // 
             // btnRegistrarLiga
             // 
-            btnRegistrarLiga.BackColor = SystemColors.ControlLight;
-            btnRegistrarLiga.Location = new Point(154, 13);
-            btnRegistrarLiga.Margin = new Padding(4, 3, 4, 3);
+            btnRegistrarLiga.AutoSize = false;
+            btnRegistrarLiga.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnRegistrarLiga.Image = (Image)resources.GetObject("btnRegistrarLiga.Image");
+            btnRegistrarLiga.ImageTransparentColor = Color.Magenta;
             btnRegistrarLiga.Name = "btnRegistrarLiga";
-            btnRegistrarLiga.Size = new Size(88, 27);
-            btnRegistrarLiga.TabIndex = 11;
-            btnRegistrarLiga.Text = "Registrar ";
-            btnRegistrarLiga.UseVisualStyleBackColor = false;
+            btnRegistrarLiga.Size = new Size(227, 48);
+            btnRegistrarLiga.Text = "Nueva liga";
             btnRegistrarLiga.Click += btnRegistrarLiga_Click;
+            // 
+            // toolStripSeparator1
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(227, 6);
+            // 
+            // btnInscribirEquipoLiga
+            // 
+            btnInscribirEquipoLiga.AutoSize = false;
+            btnInscribirEquipoLiga.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnInscribirEquipoLiga.Enabled = false;
+            btnInscribirEquipoLiga.Image = (Image)resources.GetObject("btnInscribirEquipoLiga.Image");
+            btnInscribirEquipoLiga.ImageTransparentColor = Color.Magenta;
+            btnInscribirEquipoLiga.Name = "btnInscribirEquipoLiga";
+            btnInscribirEquipoLiga.Size = new Size(227, 48);
+            btnInscribirEquipoLiga.Text = "Inscribir equipo a liga";
+            btnInscribirEquipoLiga.Click += btnInscribirEquipoLiga_Click;
+            // 
+            // toolStripSeparator2
+            // 
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new Size(227, 6);
+            // 
+            // btnConfigurarLiga
+            // 
+            btnConfigurarLiga.AutoSize = false;
+            btnConfigurarLiga.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnConfigurarLiga.Enabled = false;
+            btnConfigurarLiga.Image = (Image)resources.GetObject("btnConfigurarLiga.Image");
+            btnConfigurarLiga.ImageTransparentColor = Color.Magenta;
+            btnConfigurarLiga.Name = "btnConfigurarLiga";
+            btnConfigurarLiga.Size = new Size(227, 48);
+            btnConfigurarLiga.Text = "Configurar liga";
+            btnConfigurarLiga.Click += btnConfigurarLiga_Click;
+            // 
+            // toolStripSeparator3
+            // 
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            toolStripSeparator3.Size = new Size(227, 6);
+            // 
+            // btnRegistrarResultadosLiga
+            // 
+            btnRegistrarResultadosLiga.AutoSize = false;
+            btnRegistrarResultadosLiga.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnRegistrarResultadosLiga.Enabled = false;
+            btnRegistrarResultadosLiga.Image = (Image)resources.GetObject("btnRegistrarResultadosLiga.Image");
+            btnRegistrarResultadosLiga.ImageTransparentColor = Color.Magenta;
+            btnRegistrarResultadosLiga.Name = "btnRegistrarResultadosLiga";
+            btnRegistrarResultadosLiga.Size = new Size(227, 48);
+            btnRegistrarResultadosLiga.Text = "Registrar resultados de liga";
+            btnRegistrarResultadosLiga.Click += btnRegistrarResultadosLiga_Click;
+            // 
+            // toolStripSeparator4
+            // 
+            toolStripSeparator4.Name = "toolStripSeparator4";
+            toolStripSeparator4.Size = new Size(227, 6);
+            // 
+            // btnBajaLiga
+            // 
+            btnBajaLiga.AutoSize = false;
+            btnBajaLiga.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnBajaLiga.Enabled = false;
+            btnBajaLiga.Image = (Image)resources.GetObject("btnBajaLiga.Image");
+            btnBajaLiga.ImageTransparentColor = Color.Magenta;
+            btnBajaLiga.Name = "btnBajaLiga";
+            btnBajaLiga.Size = new Size(227, 48);
+            btnBajaLiga.Text = "Dar de baja liga";
+            btnBajaLiga.Click += btnBajaLiga_Click;
+            // 
+            // toolStripSeparator5
+            // 
+            toolStripSeparator5.Name = "toolStripSeparator5";
+            toolStripSeparator5.Size = new Size(227, 6);
             // 
             // tcCompetencias
             // 
@@ -283,16 +274,7 @@
             // scTorneos.Panel2
             // 
             scTorneos.Panel2.BackColor = Color.Transparent;
-            scTorneos.Panel2.Controls.Add(label6);
-            scTorneos.Panel2.Controls.Add(btnRegistrarResultadosTorneo);
-            scTorneos.Panel2.Controls.Add(label7);
-            scTorneos.Panel2.Controls.Add(btnBajaTorneo);
-            scTorneos.Panel2.Controls.Add(label8);
-            scTorneos.Panel2.Controls.Add(btnConfigurarTorneo);
-            scTorneos.Panel2.Controls.Add(label9);
-            scTorneos.Panel2.Controls.Add(btnInscribirEquipoTorneo);
-            scTorneos.Panel2.Controls.Add(label10);
-            scTorneos.Panel2.Controls.Add(btnRegistrarTorneo);
+            scTorneos.Panel2.Controls.Add(lateralMenuTorneos);
             scTorneos.Panel2.Padding = new Padding(10, 10, 10, 20);
             scTorneos.Size = new Size(716, 331);
             scTorneos.SplitterDistance = 462;
@@ -313,150 +295,130 @@
             listBoxTorneos.SelectedIndexChanged += listBoxTorneos_SelectedIndexChanged;
             listBoxTorneos.MouseDown += listBoxTorneos_MouseDown;
             // 
-            // label6
+            // lateralMenuTorneos
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(8, 151);
-            label6.Margin = new Padding(4, 0, 4, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(121, 15);
-            label6.TabIndex = 20;
-            label6.Text = "Registrar resultados:";
+            lateralMenuTorneos.AutoSize = false;
+            lateralMenuTorneos.BackColor = SystemColors.ActiveCaption;
+            lateralMenuTorneos.Dock = DockStyle.None;
+            lateralMenuTorneos.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lateralMenuTorneos.GripMargin = new Padding(2, 2, 2, 5);
+            lateralMenuTorneos.GripStyle = ToolStripGripStyle.Hidden;
+            lateralMenuTorneos.Items.AddRange(new ToolStripItem[] { toolStripSeparator7, btnRegistrarTorneo, toolStripSeparator8, btnInscribirEquipoTorneo, toolStripSeparator9, btnConfigurarTorneo, toolStripSeparator10, btnRegistrarResultadosTorneo, toolStripSeparator11, btnBajaTorneo, toolStripSeparator12 });
+            lateralMenuTorneos.LayoutStyle = ToolStripLayoutStyle.VerticalStackWithOverflow;
+            lateralMenuTorneos.Location = new Point(10, 10);
+            lateralMenuTorneos.Name = "lateralMenuTorneos";
+            lateralMenuTorneos.RenderMode = ToolStripRenderMode.System;
+            lateralMenuTorneos.RightToLeft = RightToLeft.No;
+            lateralMenuTorneos.Size = new Size(229, 350);
+            lateralMenuTorneos.TabIndex = 25;
+            lateralMenuTorneos.Text = "Menú lateral";
             // 
-            // btnRegistrarResultadosTorneo
+            // toolStripSeparator7
             // 
-            btnRegistrarResultadosTorneo.BackColor = SystemColors.ControlLight;
-            btnRegistrarResultadosTorneo.Enabled = false;
-            btnRegistrarResultadosTorneo.Location = new Point(154, 145);
-            btnRegistrarResultadosTorneo.Margin = new Padding(4, 3, 4, 3);
-            btnRegistrarResultadosTorneo.Name = "btnRegistrarResultadosTorneo";
-            btnRegistrarResultadosTorneo.Size = new Size(88, 27);
-            btnRegistrarResultadosTorneo.TabIndex = 19;
-            btnRegistrarResultadosTorneo.Text = "Registrar";
-            btnRegistrarResultadosTorneo.UseVisualStyleBackColor = false;
-            btnRegistrarResultadosTorneo.Click += btnRegistrarResultadosTorneo_Click;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(8, 195);
-            label7.Margin = new Padding(4, 0, 4, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(113, 15);
-            label7.TabIndex = 18;
-            label7.Text = "Dar de baja torneo:";
-            // 
-            // btnBajaTorneo
-            // 
-            btnBajaTorneo.BackColor = SystemColors.ControlLight;
-            btnBajaTorneo.Enabled = false;
-            btnBajaTorneo.Location = new Point(154, 189);
-            btnBajaTorneo.Margin = new Padding(4, 3, 4, 3);
-            btnBajaTorneo.Name = "btnBajaTorneo";
-            btnBajaTorneo.Size = new Size(88, 27);
-            btnBajaTorneo.TabIndex = 17;
-            btnBajaTorneo.Text = "Baja";
-            btnBajaTorneo.UseVisualStyleBackColor = false;
-            btnBajaTorneo.Click += btnBajaTorneo_Click;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(8, 107);
-            label8.Margin = new Padding(4, 0, 4, 0);
-            label8.Name = "label8";
-            label8.Size = new Size(110, 15);
-            label8.TabIndex = 16;
-            label8.Text = "Configurar torneo:";
-            // 
-            // btnConfigurarTorneo
-            // 
-            btnConfigurarTorneo.BackColor = SystemColors.ControlLight;
-            btnConfigurarTorneo.Enabled = false;
-            btnConfigurarTorneo.Location = new Point(154, 101);
-            btnConfigurarTorneo.Margin = new Padding(4, 3, 4, 3);
-            btnConfigurarTorneo.Name = "btnConfigurarTorneo";
-            btnConfigurarTorneo.Size = new Size(88, 27);
-            btnConfigurarTorneo.TabIndex = 15;
-            btnConfigurarTorneo.Text = "Configurar";
-            btnConfigurarTorneo.UseVisualStyleBackColor = false;
-            btnConfigurarTorneo.Click += btnConfigurarTorneo_Click;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(8, 63);
-            label9.Margin = new Padding(4, 0, 4, 0);
-            label9.Name = "label9";
-            label9.Size = new Size(96, 15);
-            label9.TabIndex = 14;
-            label9.Text = "Inscribir equipo:";
-            // 
-            // btnInscribirEquipoTorneo
-            // 
-            btnInscribirEquipoTorneo.BackColor = SystemColors.ControlLight;
-            btnInscribirEquipoTorneo.Enabled = false;
-            btnInscribirEquipoTorneo.Location = new Point(154, 57);
-            btnInscribirEquipoTorneo.Margin = new Padding(4, 3, 4, 3);
-            btnInscribirEquipoTorneo.Name = "btnInscribirEquipoTorneo";
-            btnInscribirEquipoTorneo.Size = new Size(88, 27);
-            btnInscribirEquipoTorneo.TabIndex = 13;
-            btnInscribirEquipoTorneo.Text = "Inscribir";
-            btnInscribirEquipoTorneo.UseVisualStyleBackColor = false;
-            btnInscribirEquipoTorneo.Click += btnInscribirEquipoTorneo_Click;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(8, 19);
-            label10.Margin = new Padding(4, 0, 4, 0);
-            label10.Name = "label10";
-            label10.Size = new Size(140, 15);
-            label10.TabIndex = 12;
-            label10.Text = "Registrar nuevo torneo:";
+            toolStripSeparator7.Name = "toolStripSeparator7";
+            toolStripSeparator7.Size = new Size(227, 6);
             // 
             // btnRegistrarTorneo
             // 
-            btnRegistrarTorneo.BackColor = SystemColors.ControlLight;
-            btnRegistrarTorneo.Location = new Point(154, 13);
-            btnRegistrarTorneo.Margin = new Padding(4, 3, 4, 3);
+            btnRegistrarTorneo.AutoSize = false;
+            btnRegistrarTorneo.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnRegistrarTorneo.Image = (Image)resources.GetObject("btnRegistrarTorneo.Image");
+            btnRegistrarTorneo.ImageTransparentColor = Color.Magenta;
             btnRegistrarTorneo.Name = "btnRegistrarTorneo";
-            btnRegistrarTorneo.Size = new Size(88, 27);
-            btnRegistrarTorneo.TabIndex = 11;
-            btnRegistrarTorneo.Text = "Registrar ";
-            btnRegistrarTorneo.UseVisualStyleBackColor = false;
+            btnRegistrarTorneo.Size = new Size(227, 48);
+            btnRegistrarTorneo.Text = "Nuevo torneo";
             btnRegistrarTorneo.Click += btnRegistrarTorneo_Click;
+            // 
+            // toolStripSeparator8
+            // 
+            toolStripSeparator8.Name = "toolStripSeparator8";
+            toolStripSeparator8.Size = new Size(227, 6);
+            // 
+            // btnInscribirEquipoTorneo
+            // 
+            btnInscribirEquipoTorneo.AutoSize = false;
+            btnInscribirEquipoTorneo.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnInscribirEquipoTorneo.Enabled = false;
+            btnInscribirEquipoTorneo.Image = (Image)resources.GetObject("btnInscribirEquipoTorneo.Image");
+            btnInscribirEquipoTorneo.ImageTransparentColor = Color.Magenta;
+            btnInscribirEquipoTorneo.Name = "btnInscribirEquipoTorneo";
+            btnInscribirEquipoTorneo.Size = new Size(227, 48);
+            btnInscribirEquipoTorneo.Text = "Inscribir equipo a torneo";
+            btnInscribirEquipoTorneo.Click += btnInscribirEquipoTorneo_Click;
+            // 
+            // toolStripSeparator9
+            // 
+            toolStripSeparator9.Name = "toolStripSeparator9";
+            toolStripSeparator9.Size = new Size(227, 6);
+            // 
+            // btnConfigurarTorneo
+            // 
+            btnConfigurarTorneo.AutoSize = false;
+            btnConfigurarTorneo.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnConfigurarTorneo.Enabled = false;
+            btnConfigurarTorneo.Image = (Image)resources.GetObject("btnConfigurarTorneo.Image");
+            btnConfigurarTorneo.ImageTransparentColor = Color.Magenta;
+            btnConfigurarTorneo.Name = "btnConfigurarTorneo";
+            btnConfigurarTorneo.Size = new Size(227, 48);
+            btnConfigurarTorneo.Text = "Configurar torneo";
+            btnConfigurarTorneo.Click += btnConfigurarTorneo_Click;
+            // 
+            // toolStripSeparator10
+            // 
+            toolStripSeparator10.Name = "toolStripSeparator10";
+            toolStripSeparator10.Size = new Size(227, 6);
+            // 
+            // btnRegistrarResultadosTorneo
+            // 
+            btnRegistrarResultadosTorneo.AutoSize = false;
+            btnRegistrarResultadosTorneo.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnRegistrarResultadosTorneo.Enabled = false;
+            btnRegistrarResultadosTorneo.Image = (Image)resources.GetObject("btnRegistrarResultadosTorneo.Image");
+            btnRegistrarResultadosTorneo.ImageTransparentColor = Color.Magenta;
+            btnRegistrarResultadosTorneo.Name = "btnRegistrarResultadosTorneo";
+            btnRegistrarResultadosTorneo.Size = new Size(227, 48);
+            btnRegistrarResultadosTorneo.Text = "Registrar resultados de torneo";
+            btnRegistrarResultadosTorneo.Click += btnRegistrarResultadosTorneo_Click;
+            // 
+            // toolStripSeparator11
+            // 
+            toolStripSeparator11.Name = "toolStripSeparator11";
+            toolStripSeparator11.Size = new Size(227, 6);
+            // 
+            // btnBajaTorneo
+            // 
+            btnBajaTorneo.AutoSize = false;
+            btnBajaTorneo.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnBajaTorneo.Enabled = false;
+            btnBajaTorneo.Image = (Image)resources.GetObject("btnBajaTorneo.Image");
+            btnBajaTorneo.ImageTransparentColor = Color.Magenta;
+            btnBajaTorneo.Name = "btnBajaTorneo";
+            btnBajaTorneo.Size = new Size(227, 48);
+            btnBajaTorneo.Text = "Dar de baja torneo";
+            btnBajaTorneo.Click += btnBajaTorneo_Click;
+            // 
+            // toolStripSeparator12
+            // 
+            toolStripSeparator12.Name = "toolStripSeparator12";
+            toolStripSeparator12.Size = new Size(227, 6);
             // 
             // cbFiltrado
             // 
             cbFiltrado.DropDownStyle = ComboBoxStyle.DropDownList;
             cbFiltrado.FormattingEnabled = true;
             cbFiltrado.Items.AddRange(new object[] { "nombre", "id" });
-            cbFiltrado.Location = new Point(337, 6);
+            cbFiltrado.Location = new Point(339, 6);
             cbFiltrado.Margin = new Padding(4, 3, 4, 3);
             cbFiltrado.Name = "cbFiltrado";
             cbFiltrado.Size = new Size(98, 23);
             cbFiltrado.TabIndex = 10;
-            // 
-            // btnBuscar
-            // 
-            btnBuscar.BackColor = SystemColors.ControlLight;
-            btnBuscar.FlatStyle = FlatStyle.System;
-            btnBuscar.Location = new Point(625, 6);
-            btnBuscar.Margin = new Padding(4, 3, 4, 3);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(88, 24);
-            btnBuscar.TabIndex = 8;
-            btnBuscar.Text = "Buscar";
-            btnBuscar.UseVisualStyleBackColor = false;
-            btnBuscar.Click += btnBuscar_Click;
             // 
             // cbEstado
             // 
             cbEstado.DropDownStyle = ComboBoxStyle.DropDownList;
             cbEstado.FormattingEnabled = true;
             cbEstado.Items.AddRange(new object[] { "Todos", "En juego", "Jugados", "Por jugar" });
-            cbEstado.Location = new Point(259, 6);
+            cbEstado.Location = new Point(261, 6);
             cbEstado.Margin = new Padding(4, 3, 4, 3);
             cbEstado.Name = "cbEstado";
             cbEstado.Size = new Size(70, 23);
@@ -465,7 +427,7 @@
             // lblFiltrado
             // 
             lblFiltrado.AutoSize = true;
-            lblFiltrado.Location = new Point(187, 11);
+            lblFiltrado.Location = new Point(189, 10);
             lblFiltrado.Name = "lblFiltrado";
             lblFiltrado.Size = new Size(65, 15);
             lblFiltrado.TabIndex = 18;
@@ -478,16 +440,26 @@
             txtBusqueda.Size = new Size(174, 23);
             txtBusqueda.TabIndex = 19;
             // 
+            // btnBuscar
+            // 
+            btnBuscar.Enabled = false;
+            btnBuscar.Location = new Point(624, 6);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(75, 23);
+            btnBuscar.TabIndex = 35;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
+            // 
             // ucCompetencias
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
+            Controls.Add(btnBuscar);
             Controls.Add(txtBusqueda);
             Controls.Add(lblFiltrado);
             Controls.Add(cbEstado);
             Controls.Add(cbFiltrado);
-            Controls.Add(btnBuscar);
             Controls.Add(tcCompetencias);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Margin = new Padding(4, 3, 4, 3);
@@ -497,16 +469,18 @@
             tabLigas.ResumeLayout(false);
             scLigas.Panel1.ResumeLayout(false);
             scLigas.Panel2.ResumeLayout(false);
-            scLigas.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)scLigas).EndInit();
             scLigas.ResumeLayout(false);
+            lateralMenuLigas.ResumeLayout(false);
+            lateralMenuLigas.PerformLayout();
             tcCompetencias.ResumeLayout(false);
             tabTorneos.ResumeLayout(false);
             scTorneos.Panel1.ResumeLayout(false);
             scTorneos.Panel2.ResumeLayout(false);
-            scTorneos.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)scTorneos).EndInit();
             scTorneos.ResumeLayout(false);
+            lateralMenuTorneos.ResumeLayout(false);
+            lateralMenuTorneos.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
 
@@ -517,34 +491,38 @@
         private System.Windows.Forms.TabPage tabLigas;
         private System.Windows.Forms.TabControl tcCompetencias;
         private System.Windows.Forms.ComboBox cbFiltrado;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TabPage tabTorneos;
         private System.Windows.Forms.SplitContainer scTorneos;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnRegistrarResultadosTorneo;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnBajaTorneo;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btnConfigurarTorneo;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnInscribirEquipoTorneo;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button btnRegistrarTorneo;
         private System.Windows.Forms.SplitContainer scLigas;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnRegistrarResultadosLiga;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnBajaLiga;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnConfigurarLiga;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnInscribirEquipoLiga;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnRegistrarLiga;
         private ComboBox cbEstado;
         private ListBox listBoxLigas;
         private ListBox listBoxTorneos;
         private Label lblFiltrado;
         private TextBox txtBusqueda;
+        private ToolStrip lateralMenuLigas;
+        private ToolStripSeparator toolStripSeparator6;
+        private ToolStripButton btnRegistrarLiga;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripButton btnInscribirEquipoLiga;
+        private ToolStripSeparator toolStripSeparator2;
+        private ToolStripButton btnConfigurarLiga;
+        private ToolStripSeparator toolStripSeparator3;
+        private ToolStripButton btnRegistrarResultadosLiga;
+        private ToolStripSeparator toolStripSeparator4;
+        private ToolStripButton btnBajaLiga;
+        private ToolStripSeparator toolStripSeparator5;
+        private ToolStrip lateralMenuTorneos;
+        private ToolStripSeparator toolStripSeparator7;
+        private ToolStripButton btnRegistrarTorneo;
+        private ToolStripSeparator toolStripSeparator8;
+        private ToolStripButton btnInscribirEquipoTorneo;
+        private ToolStripSeparator toolStripSeparator9;
+        private ToolStripButton btnConfigurarTorneo;
+        private ToolStripSeparator toolStripSeparator10;
+        private ToolStripButton btnRegistrarResultadosTorneo;
+        private ToolStripSeparator toolStripSeparator11;
+        private ToolStripButton btnBajaTorneo;
+        private ToolStripSeparator toolStripSeparator12;
+        private Button btnBuscar;
     }
 }

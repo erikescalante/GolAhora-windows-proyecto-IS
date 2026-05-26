@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnBuscar = new Button();
             cbFiltrado = new ComboBox();
             lateralMenu = new ToolStrip();
             toolStripSeparator1 = new ToolStripSeparator();
@@ -46,6 +45,7 @@
             scReportes = new SplitContainer();
             txtBusqueda = new TextBox();
             lblFiltro = new Label();
+            btnBuscar = new Button();
             lateralMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)scReportes).BeginInit();
             scReportes.Panel1.SuspendLayout();
@@ -53,23 +53,12 @@
             scReportes.SuspendLayout();
             SuspendLayout();
             // 
-            // btnBuscar
-            // 
-            btnBuscar.BackColor = SystemColors.ControlLight;
-            btnBuscar.Location = new Point(625, 5);
-            btnBuscar.Margin = new Padding(4, 3, 4, 3);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(88, 24);
-            btnBuscar.TabIndex = 16;
-            btnBuscar.Text = "Buscar";
-            btnBuscar.UseVisualStyleBackColor = false;
-            // 
             // cbFiltrado
             // 
             cbFiltrado.DropDownStyle = ComboBoxStyle.DropDownList;
             cbFiltrado.FormattingEnabled = true;
             cbFiltrado.Items.AddRange(new object[] { "Todos los reportes", "Tipos de cancha", "Ingresos", "Reservas de cancha", "Asistencia a clases", "Asistencia a entrenamientos" });
-            cbFiltrado.Location = new Point(259, 5);
+            cbFiltrado.Location = new Point(261, 6);
             cbFiltrado.Margin = new Padding(4, 3, 4, 3);
             cbFiltrado.Name = "cbFiltrado";
             cbFiltrado.Size = new Size(176, 23);
@@ -105,7 +94,7 @@
             btnCanchas.ImageTransparentColor = Color.Magenta;
             btnCanchas.Name = "btnCanchas";
             btnCanchas.Size = new Size(277, 48);
-            btnCanchas.Text = "Generar repote de tipos de cancha";
+            btnCanchas.Text = "Generar reporte de tipos de cancha";
             // 
             // toolStripSeparator2
             // 
@@ -200,7 +189,7 @@
             // 
             // txtBusqueda
             // 
-            txtBusqueda.Location = new Point(444, 5);
+            txtBusqueda.Location = new Point(444, 6);
             txtBusqueda.Name = "txtBusqueda";
             txtBusqueda.Size = new Size(174, 23);
             txtBusqueda.TabIndex = 26;
@@ -208,22 +197,32 @@
             // lblFiltro
             // 
             lblFiltro.AutoSize = true;
-            lblFiltro.Location = new Point(186, 10);
+            lblFiltro.Location = new Point(188, 10);
             lblFiltro.Margin = new Padding(4, 0, 4, 0);
             lblFiltro.Name = "lblFiltro";
             lblFiltro.Size = new Size(65, 15);
             lblFiltro.TabIndex = 34;
             lblFiltro.Text = "Filtrar por:";
             // 
+            // btnBuscar
+            // 
+            btnBuscar.Enabled = false;
+            btnBuscar.Location = new Point(624, 6);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(75, 23);
+            btnBuscar.TabIndex = 35;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
+            // 
             // ucReportes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
+            Controls.Add(btnBuscar);
             Controls.Add(lblFiltro);
             Controls.Add(txtBusqueda);
             Controls.Add(cbFiltrado);
-            Controls.Add(btnBuscar);
             Controls.Add(scReportes);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Margin = new Padding(4, 3, 4, 3);
@@ -241,7 +240,6 @@
         }
 
         #endregion
-        private Button btnBuscar;
         private ComboBox cbFiltrado;
         private ToolStrip lateralMenu;
         private ToolStripSeparator toolStripSeparator1;
@@ -259,5 +257,6 @@
         private SplitContainer scReportes;
         private TextBox txtBusqueda;
         private Label lblFiltro;
+        private Button btnBuscar;
     }
 }

@@ -28,49 +28,56 @@ partial class ucCanchas
     /// </summary>
     private void InitializeComponent()
     {
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucCanchas));
         cbFiltrar = new ComboBox();
-        btnBuscar = new Button();
         tcCanchas = new TabControl();
         tabCanchas = new TabPage();
         scCanchas = new SplitContainer();
         listBoxCanchas = new ListBox();
-        lblBloquearCancha = new Label();
-        btnBloquearCancha = new Button();
-        lblBajaCancha = new Label();
-        btnBajaCancha = new Button();
-        lblModificarCancha = new Label();
-        btnModificarCancha = new Button();
-        lblConsultarCancha = new Label();
-        btnConsultarCancha = new Button();
-        lblAgregarCancha = new Label();
-        btnAgregarCancha = new Button();
+        lateralMenuTorneos = new ToolStrip();
+        toolStripSeparator7 = new ToolStripSeparator();
+        btnRegistrarCancha = new ToolStripButton();
+        toolStripSeparator8 = new ToolStripSeparator();
+        btnConsultarCancha = new ToolStripButton();
+        toolStripSeparator9 = new ToolStripSeparator();
+        btnModificarCancha = new ToolStripButton();
+        toolStripSeparator10 = new ToolStripSeparator();
+        btnBloquearCancha = new ToolStripButton();
+        toolStripSeparator11 = new ToolStripSeparator();
+        btnBajaCancha = new ToolStripButton();
+        toolStripSeparator12 = new ToolStripSeparator();
         tabTiposCancha = new TabPage();
         scTipos = new SplitContainer();
         listBoxTiposCancha = new ListBox();
-        lblReporteTipo = new Label();
-        btnReporteTipos = new Button();
-        lblEliminarTipo = new Label();
-        btnEliminarTipo = new Button();
-        lblModificarTipo = new Label();
-        btnModificarTipo = new Button();
-        lblConsultarTipo = new Label();
-        btnConsultarTipo = new Button();
-        lblAgregarTipo = new Label();
-        btnAgregarTipo = new Button();
+        lateralMenuTipos = new ToolStrip();
+        toolStripSeparator1 = new ToolStripSeparator();
+        btnRegistrarTipo = new ToolStripButton();
+        toolStripSeparator2 = new ToolStripSeparator();
+        btnReporteTipos = new ToolStripButton();
+        toolStripSeparator3 = new ToolStripSeparator();
+        btnConsultarTipo = new ToolStripButton();
+        toolStripSeparator4 = new ToolStripSeparator();
+        btnModificarTipo = new ToolStripButton();
+        toolStripSeparator5 = new ToolStripSeparator();
+        btnEliminarTipo = new ToolStripButton();
+        toolStripSeparator6 = new ToolStripSeparator();
         cbEstados = new ComboBox();
         txtBusqueda = new TextBox();
         lblFiltrado = new Label();
+        btnBuscar = new Button();
         tcCanchas.SuspendLayout();
         tabCanchas.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)scCanchas).BeginInit();
         scCanchas.Panel1.SuspendLayout();
         scCanchas.Panel2.SuspendLayout();
         scCanchas.SuspendLayout();
+        lateralMenuTorneos.SuspendLayout();
         tabTiposCancha.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)scTipos).BeginInit();
         scTipos.Panel1.SuspendLayout();
         scTipos.Panel2.SuspendLayout();
         scTipos.SuspendLayout();
+        lateralMenuTipos.SuspendLayout();
         SuspendLayout();
         // 
         // cbFiltrar
@@ -78,23 +85,11 @@ partial class ucCanchas
         cbFiltrar.DropDownStyle = ComboBoxStyle.DropDownList;
         cbFiltrar.FormattingEnabled = true;
         cbFiltrar.Items.AddRange(new object[] { "Tipo", "Todas" });
-        cbFiltrar.Location = new Point(337, 5);
+        cbFiltrar.Location = new Point(339, 6);
         cbFiltrar.Margin = new Padding(4, 3, 4, 3);
         cbFiltrar.Name = "cbFiltrar";
         cbFiltrar.Size = new Size(98, 23);
         cbFiltrar.TabIndex = 14;
-        // 
-        // btnBuscar
-        // 
-        btnBuscar.BackColor = SystemColors.ControlLight;
-        btnBuscar.Location = new Point(625, 5);
-        btnBuscar.Margin = new Padding(4, 3, 4, 3);
-        btnBuscar.Name = "btnBuscar";
-        btnBuscar.Size = new Size(88, 24);
-        btnBuscar.TabIndex = 12;
-        btnBuscar.Text = "Buscar";
-        btnBuscar.UseVisualStyleBackColor = false;
-        btnBuscar.Click += btnBuscar_Click;
         // 
         // tcCanchas
         // 
@@ -135,16 +130,7 @@ partial class ucCanchas
         // scCanchas.Panel2
         // 
         scCanchas.Panel2.BackColor = Color.Transparent;
-        scCanchas.Panel2.Controls.Add(lblBloquearCancha);
-        scCanchas.Panel2.Controls.Add(btnBloquearCancha);
-        scCanchas.Panel2.Controls.Add(lblBajaCancha);
-        scCanchas.Panel2.Controls.Add(btnBajaCancha);
-        scCanchas.Panel2.Controls.Add(lblModificarCancha);
-        scCanchas.Panel2.Controls.Add(btnModificarCancha);
-        scCanchas.Panel2.Controls.Add(lblConsultarCancha);
-        scCanchas.Panel2.Controls.Add(btnConsultarCancha);
-        scCanchas.Panel2.Controls.Add(lblAgregarCancha);
-        scCanchas.Panel2.Controls.Add(btnAgregarCancha);
+        scCanchas.Panel2.Controls.Add(lateralMenuTorneos);
         scCanchas.Panel2.Padding = new Padding(10, 10, 10, 20);
         scCanchas.Size = new Size(715, 331);
         scCanchas.SplitterDistance = 462;
@@ -165,119 +151,112 @@ partial class ucCanchas
         listBoxCanchas.SelectedIndexChanged += listBoxCanchas_SelectedIndexChanged;
         listBoxCanchas.MouseDown += listBoxCanchas_MouseDown;
         // 
-        // lblBloquearCancha
+        // lateralMenuTorneos
         // 
-        lblBloquearCancha.AutoSize = true;
-        lblBloquearCancha.Location = new Point(8, 151);
-        lblBloquearCancha.Margin = new Padding(4, 0, 4, 0);
-        lblBloquearCancha.Name = "lblBloquearCancha";
-        lblBloquearCancha.Size = new Size(101, 15);
-        lblBloquearCancha.TabIndex = 20;
-        lblBloquearCancha.Text = "Bloquear cancha:";
+        lateralMenuTorneos.AutoSize = false;
+        lateralMenuTorneos.BackColor = SystemColors.ActiveCaption;
+        lateralMenuTorneos.Dock = DockStyle.None;
+        lateralMenuTorneos.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+        lateralMenuTorneos.GripMargin = new Padding(2, 2, 2, 5);
+        lateralMenuTorneos.GripStyle = ToolStripGripStyle.Hidden;
+        lateralMenuTorneos.Items.AddRange(new ToolStripItem[] { toolStripSeparator7, btnRegistrarCancha, toolStripSeparator8, btnConsultarCancha, toolStripSeparator9, btnModificarCancha, toolStripSeparator10, btnBloquearCancha, toolStripSeparator11, btnBajaCancha, toolStripSeparator12 });
+        lateralMenuTorneos.LayoutStyle = ToolStripLayoutStyle.VerticalStackWithOverflow;
+        lateralMenuTorneos.Location = new Point(10, 10);
+        lateralMenuTorneos.Name = "lateralMenuTorneos";
+        lateralMenuTorneos.RenderMode = ToolStripRenderMode.System;
+        lateralMenuTorneos.RightToLeft = RightToLeft.No;
+        lateralMenuTorneos.Size = new Size(229, 350);
+        lateralMenuTorneos.TabIndex = 26;
+        lateralMenuTorneos.Text = "Menú lateral";
         // 
-        // btnBloquearCancha
+        // toolStripSeparator7
         // 
-        btnBloquearCancha.BackColor = SystemColors.ControlLight;
-        btnBloquearCancha.Enabled = false;
-        btnBloquearCancha.Location = new Point(154, 145);
-        btnBloquearCancha.Margin = new Padding(4, 3, 4, 3);
-        btnBloquearCancha.Name = "btnBloquearCancha";
-        btnBloquearCancha.Size = new Size(88, 27);
-        btnBloquearCancha.TabIndex = 19;
-        btnBloquearCancha.Text = "Bloquear";
-        btnBloquearCancha.UseVisualStyleBackColor = false;
-        btnBloquearCancha.Click += btnBloquearCancha_Click;
+        toolStripSeparator7.Name = "toolStripSeparator7";
+        toolStripSeparator7.Size = new Size(227, 6);
         // 
-        // lblBajaCancha
+        // btnRegistrarCancha
         // 
-        lblBajaCancha.AutoSize = true;
-        lblBajaCancha.Location = new Point(8, 195);
-        lblBajaCancha.Margin = new Padding(4, 0, 4, 0);
-        lblBajaCancha.Name = "lblBajaCancha";
-        lblBajaCancha.Size = new Size(113, 15);
-        lblBajaCancha.TabIndex = 18;
-        lblBajaCancha.Text = "Dar de baja cancha:";
+        btnRegistrarCancha.AutoSize = false;
+        btnRegistrarCancha.DisplayStyle = ToolStripItemDisplayStyle.Text;
+        btnRegistrarCancha.Image = (Image)resources.GetObject("btnRegistrarCancha.Image");
+        btnRegistrarCancha.ImageTransparentColor = Color.Magenta;
+        btnRegistrarCancha.Name = "btnRegistrarCancha";
+        btnRegistrarCancha.Size = new Size(227, 48);
+        btnRegistrarCancha.Text = "Nueva cancha";
+        btnRegistrarCancha.Click += btnRegistrarCancha_Click;
         // 
-        // btnBajaCancha
+        // toolStripSeparator8
         // 
-        btnBajaCancha.BackColor = SystemColors.ControlLight;
-        btnBajaCancha.Enabled = false;
-        btnBajaCancha.Location = new Point(154, 189);
-        btnBajaCancha.Margin = new Padding(4, 3, 4, 3);
-        btnBajaCancha.Name = "btnBajaCancha";
-        btnBajaCancha.Size = new Size(88, 27);
-        btnBajaCancha.TabIndex = 17;
-        btnBajaCancha.Text = "Baja";
-        btnBajaCancha.UseVisualStyleBackColor = false;
-        btnBajaCancha.Click += btnBajaCancha_Click;
-        // 
-        // lblModificarCancha
-        // 
-        lblModificarCancha.AutoSize = true;
-        lblModificarCancha.Location = new Point(8, 107);
-        lblModificarCancha.Margin = new Padding(4, 0, 4, 0);
-        lblModificarCancha.Name = "lblModificarCancha";
-        lblModificarCancha.Size = new Size(134, 15);
-        lblModificarCancha.TabIndex = 16;
-        lblModificarCancha.Text = "Modificar propiedades:";
-        // 
-        // btnModificarCancha
-        // 
-        btnModificarCancha.BackColor = SystemColors.ControlLight;
-        btnModificarCancha.Enabled = false;
-        btnModificarCancha.Location = new Point(154, 101);
-        btnModificarCancha.Margin = new Padding(4, 3, 4, 3);
-        btnModificarCancha.Name = "btnModificarCancha";
-        btnModificarCancha.Size = new Size(88, 27);
-        btnModificarCancha.TabIndex = 15;
-        btnModificarCancha.Text = "Modificar";
-        btnModificarCancha.UseVisualStyleBackColor = false;
-        btnModificarCancha.Click += btnModificarCancha_Click;
-        // 
-        // lblConsultarCancha
-        // 
-        lblConsultarCancha.AutoSize = true;
-        lblConsultarCancha.Location = new Point(8, 63);
-        lblConsultarCancha.Margin = new Padding(4, 0, 4, 0);
-        lblConsultarCancha.Name = "lblConsultarCancha";
-        lblConsultarCancha.Size = new Size(133, 15);
-        lblConsultarCancha.TabIndex = 14;
-        lblConsultarCancha.Text = "Consultar propiedades:";
+        toolStripSeparator8.Name = "toolStripSeparator8";
+        toolStripSeparator8.Size = new Size(227, 6);
         // 
         // btnConsultarCancha
         // 
-        btnConsultarCancha.BackColor = SystemColors.ControlLight;
+        btnConsultarCancha.AutoSize = false;
+        btnConsultarCancha.DisplayStyle = ToolStripItemDisplayStyle.Text;
         btnConsultarCancha.Enabled = false;
-        btnConsultarCancha.Location = new Point(154, 57);
-        btnConsultarCancha.Margin = new Padding(4, 3, 4, 3);
+        btnConsultarCancha.Image = (Image)resources.GetObject("btnConsultarCancha.Image");
+        btnConsultarCancha.ImageTransparentColor = Color.Magenta;
         btnConsultarCancha.Name = "btnConsultarCancha";
-        btnConsultarCancha.Size = new Size(88, 27);
-        btnConsultarCancha.TabIndex = 13;
-        btnConsultarCancha.Text = "Consultar";
-        btnConsultarCancha.UseVisualStyleBackColor = false;
+        btnConsultarCancha.Size = new Size(227, 48);
+        btnConsultarCancha.Text = "Consultar propiedades";
         btnConsultarCancha.Click += btnConsultarCancha_Click;
         // 
-        // lblAgregarCancha
+        // toolStripSeparator9
         // 
-        lblAgregarCancha.AutoSize = true;
-        lblAgregarCancha.Location = new Point(8, 19);
-        lblAgregarCancha.Margin = new Padding(4, 0, 4, 0);
-        lblAgregarCancha.Name = "lblAgregarCancha";
-        lblAgregarCancha.Size = new Size(133, 15);
-        lblAgregarCancha.TabIndex = 12;
-        lblAgregarCancha.Text = "Agregar nueva cancha:";
+        toolStripSeparator9.Name = "toolStripSeparator9";
+        toolStripSeparator9.Size = new Size(227, 6);
         // 
-        // btnAgregarCancha
+        // btnModificarCancha
         // 
-        btnAgregarCancha.BackColor = SystemColors.ControlLight;
-        btnAgregarCancha.Location = new Point(154, 13);
-        btnAgregarCancha.Margin = new Padding(4, 3, 4, 3);
-        btnAgregarCancha.Name = "btnAgregarCancha";
-        btnAgregarCancha.Size = new Size(88, 27);
-        btnAgregarCancha.TabIndex = 11;
-        btnAgregarCancha.Text = "Agregar";
-        btnAgregarCancha.UseVisualStyleBackColor = false;
-        btnAgregarCancha.Click += btnAgregarCancha_Click;
+        btnModificarCancha.AutoSize = false;
+        btnModificarCancha.DisplayStyle = ToolStripItemDisplayStyle.Text;
+        btnModificarCancha.Enabled = false;
+        btnModificarCancha.Image = (Image)resources.GetObject("btnModificarCancha.Image");
+        btnModificarCancha.ImageTransparentColor = Color.Magenta;
+        btnModificarCancha.Name = "btnModificarCancha";
+        btnModificarCancha.Size = new Size(227, 48);
+        btnModificarCancha.Text = "Modificar cancha";
+        btnModificarCancha.Click += btnModificarCancha_Click;
+        // 
+        // toolStripSeparator10
+        // 
+        toolStripSeparator10.Name = "toolStripSeparator10";
+        toolStripSeparator10.Size = new Size(227, 6);
+        // 
+        // btnBloquearCancha
+        // 
+        btnBloquearCancha.AutoSize = false;
+        btnBloquearCancha.DisplayStyle = ToolStripItemDisplayStyle.Text;
+        btnBloquearCancha.Enabled = false;
+        btnBloquearCancha.Image = (Image)resources.GetObject("btnBloquearCancha.Image");
+        btnBloquearCancha.ImageTransparentColor = Color.Magenta;
+        btnBloquearCancha.Name = "btnBloquearCancha";
+        btnBloquearCancha.Size = new Size(227, 48);
+        btnBloquearCancha.Text = "Bloquear cancha";
+        btnBloquearCancha.Click += btnBloquearCancha_Click;
+        // 
+        // toolStripSeparator11
+        // 
+        toolStripSeparator11.Name = "toolStripSeparator11";
+        toolStripSeparator11.Size = new Size(227, 6);
+        // 
+        // btnBajaCancha
+        // 
+        btnBajaCancha.AutoSize = false;
+        btnBajaCancha.DisplayStyle = ToolStripItemDisplayStyle.Text;
+        btnBajaCancha.Enabled = false;
+        btnBajaCancha.Image = (Image)resources.GetObject("btnBajaCancha.Image");
+        btnBajaCancha.ImageTransparentColor = Color.Magenta;
+        btnBajaCancha.Name = "btnBajaCancha";
+        btnBajaCancha.Size = new Size(227, 48);
+        btnBajaCancha.Text = "Dar de baja cancha";
+        btnBajaCancha.Click += btnBajaCancha_Click;
+        // 
+        // toolStripSeparator12
+        // 
+        toolStripSeparator12.Name = "toolStripSeparator12";
+        toolStripSeparator12.Size = new Size(227, 6);
         // 
         // tabTiposCancha
         // 
@@ -306,16 +285,7 @@ partial class ucCanchas
         // scTipos.Panel2
         // 
         scTipos.Panel2.BackColor = Color.Transparent;
-        scTipos.Panel2.Controls.Add(lblReporteTipo);
-        scTipos.Panel2.Controls.Add(btnReporteTipos);
-        scTipos.Panel2.Controls.Add(lblEliminarTipo);
-        scTipos.Panel2.Controls.Add(btnEliminarTipo);
-        scTipos.Panel2.Controls.Add(lblModificarTipo);
-        scTipos.Panel2.Controls.Add(btnModificarTipo);
-        scTipos.Panel2.Controls.Add(lblConsultarTipo);
-        scTipos.Panel2.Controls.Add(btnConsultarTipo);
-        scTipos.Panel2.Controls.Add(lblAgregarTipo);
-        scTipos.Panel2.Controls.Add(btnAgregarTipo);
+        scTipos.Panel2.Controls.Add(lateralMenuTipos);
         scTipos.Size = new Size(715, 331);
         scTipos.SplitterDistance = 462;
         scTipos.SplitterWidth = 5;
@@ -335,127 +305,118 @@ partial class ucCanchas
         listBoxTiposCancha.SelectedIndexChanged += listBoxTiposCancha_SelectedIndexChanged;
         listBoxTiposCancha.MouseDown += listBoxTiposCancha_MouseDown;
         // 
-        // lblReporteTipo
+        // lateralMenuTipos
         // 
-        lblReporteTipo.AutoSize = true;
-        lblReporteTipo.Location = new Point(-2, 53);
-        lblReporteTipo.Margin = new Padding(4, 0, 4, 0);
-        lblReporteTipo.Name = "lblReporteTipo";
-        lblReporteTipo.Size = new Size(149, 15);
-        lblReporteTipo.TabIndex = 22;
-        lblReporteTipo.Text = "Generar reporte de tipos:";
+        lateralMenuTipos.AutoSize = false;
+        lateralMenuTipos.BackColor = SystemColors.ActiveCaption;
+        lateralMenuTipos.Dock = DockStyle.None;
+        lateralMenuTipos.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+        lateralMenuTipos.GripMargin = new Padding(2, 2, 2, 5);
+        lateralMenuTipos.GripStyle = ToolStripGripStyle.Hidden;
+        lateralMenuTipos.Items.AddRange(new ToolStripItem[] { toolStripSeparator1, btnRegistrarTipo, toolStripSeparator2, btnReporteTipos, toolStripSeparator3, btnConsultarTipo, toolStripSeparator4, btnModificarTipo, toolStripSeparator5, btnEliminarTipo, toolStripSeparator6 });
+        lateralMenuTipos.LayoutStyle = ToolStripLayoutStyle.VerticalStackWithOverflow;
+        lateralMenuTipos.Location = new Point(10, 10);
+        lateralMenuTipos.Name = "lateralMenuTipos";
+        lateralMenuTipos.RenderMode = ToolStripRenderMode.System;
+        lateralMenuTipos.RightToLeft = RightToLeft.No;
+        lateralMenuTipos.Size = new Size(229, 350);
+        lateralMenuTipos.TabIndex = 27;
+        lateralMenuTipos.Text = "Menú lateral";
+        // 
+        // toolStripSeparator1
+        // 
+        toolStripSeparator1.Name = "toolStripSeparator1";
+        toolStripSeparator1.Size = new Size(227, 6);
+        // 
+        // btnRegistrarTipo
+        // 
+        btnRegistrarTipo.AutoSize = false;
+        btnRegistrarTipo.DisplayStyle = ToolStripItemDisplayStyle.Text;
+        btnRegistrarTipo.Image = (Image)resources.GetObject("btnRegistrarTipo.Image");
+        btnRegistrarTipo.ImageTransparentColor = Color.Magenta;
+        btnRegistrarTipo.Name = "btnRegistrarTipo";
+        btnRegistrarTipo.Size = new Size(227, 48);
+        btnRegistrarTipo.Text = "Nuevo tipo de cancha";
+        btnRegistrarTipo.Click += btnRegistrarTipo_Click;
+        // 
+        // toolStripSeparator2
+        // 
+        toolStripSeparator2.Name = "toolStripSeparator2";
+        toolStripSeparator2.Size = new Size(227, 6);
         // 
         // btnReporteTipos
         // 
-        btnReporteTipos.BackColor = SystemColors.ControlLight;
-        btnReporteTipos.Location = new Point(154, 47);
-        btnReporteTipos.Margin = new Padding(4, 3, 4, 3);
+        btnReporteTipos.AutoSize = false;
+        btnReporteTipos.DisplayStyle = ToolStripItemDisplayStyle.Text;
+        btnReporteTipos.Image = (Image)resources.GetObject("btnReporteTipos.Image");
+        btnReporteTipos.ImageTransparentColor = Color.Magenta;
         btnReporteTipos.Name = "btnReporteTipos";
-        btnReporteTipos.Size = new Size(88, 27);
-        btnReporteTipos.TabIndex = 21;
-        btnReporteTipos.TabStop = false;
-        btnReporteTipos.Text = "Generar";
-        btnReporteTipos.UseVisualStyleBackColor = false;
+        btnReporteTipos.Size = new Size(227, 48);
+        btnReporteTipos.Text = "Generar reporte de tipos de cancha";
         btnReporteTipos.Click += btnReporteTipos_Click;
         // 
-        // lblEliminarTipo
+        // toolStripSeparator3
         // 
-        lblEliminarTipo.AutoSize = true;
-        lblEliminarTipo.Location = new Point(-2, 185);
-        lblEliminarTipo.Margin = new Padding(4, 0, 4, 0);
-        lblEliminarTipo.Name = "lblEliminarTipo";
-        lblEliminarTipo.Size = new Size(137, 15);
-        lblEliminarTipo.TabIndex = 20;
-        lblEliminarTipo.Text = "Eliminar tipo de cancha:";
-        // 
-        // btnEliminarTipo
-        // 
-        btnEliminarTipo.BackColor = SystemColors.ControlLight;
-        btnEliminarTipo.Enabled = false;
-        btnEliminarTipo.Location = new Point(154, 179);
-        btnEliminarTipo.Margin = new Padding(4, 3, 4, 3);
-        btnEliminarTipo.Name = "btnEliminarTipo";
-        btnEliminarTipo.Size = new Size(88, 27);
-        btnEliminarTipo.TabIndex = 19;
-        btnEliminarTipo.Text = "Eliminar";
-        btnEliminarTipo.UseVisualStyleBackColor = false;
-        btnEliminarTipo.Click += btnEliminarTipo_Click;
-        // 
-        // lblModificarTipo
-        // 
-        lblModificarTipo.AutoSize = true;
-        lblModificarTipo.Location = new Point(-2, 141);
-        lblModificarTipo.Margin = new Padding(4, 0, 4, 0);
-        lblModificarTipo.Name = "lblModificarTipo";
-        lblModificarTipo.Size = new Size(134, 15);
-        lblModificarTipo.TabIndex = 16;
-        lblModificarTipo.Text = "Modificar propiedades:";
-        // 
-        // btnModificarTipo
-        // 
-        btnModificarTipo.BackColor = SystemColors.ControlLight;
-        btnModificarTipo.Enabled = false;
-        btnModificarTipo.Location = new Point(154, 135);
-        btnModificarTipo.Margin = new Padding(4, 3, 4, 3);
-        btnModificarTipo.Name = "btnModificarTipo";
-        btnModificarTipo.Size = new Size(88, 27);
-        btnModificarTipo.TabIndex = 15;
-        btnModificarTipo.Text = "Modificar";
-        btnModificarTipo.UseVisualStyleBackColor = false;
-        btnModificarTipo.Click += btnModificarTipo_Click;
-        // 
-        // lblConsultarTipo
-        // 
-        lblConsultarTipo.AutoSize = true;
-        lblConsultarTipo.Location = new Point(-2, 97);
-        lblConsultarTipo.Margin = new Padding(4, 0, 4, 0);
-        lblConsultarTipo.Name = "lblConsultarTipo";
-        lblConsultarTipo.Size = new Size(133, 15);
-        lblConsultarTipo.TabIndex = 14;
-        lblConsultarTipo.Text = "Consultar propiedades:";
+        toolStripSeparator3.Name = "toolStripSeparator3";
+        toolStripSeparator3.Size = new Size(227, 6);
         // 
         // btnConsultarTipo
         // 
-        btnConsultarTipo.BackColor = SystemColors.ControlLight;
+        btnConsultarTipo.AutoSize = false;
+        btnConsultarTipo.DisplayStyle = ToolStripItemDisplayStyle.Text;
         btnConsultarTipo.Enabled = false;
-        btnConsultarTipo.Location = new Point(154, 91);
-        btnConsultarTipo.Margin = new Padding(4, 3, 4, 3);
+        btnConsultarTipo.Image = (Image)resources.GetObject("btnConsultarTipo.Image");
+        btnConsultarTipo.ImageTransparentColor = Color.Magenta;
         btnConsultarTipo.Name = "btnConsultarTipo";
-        btnConsultarTipo.Size = new Size(88, 27);
-        btnConsultarTipo.TabIndex = 13;
-        btnConsultarTipo.Text = "Consultar";
-        btnConsultarTipo.UseVisualStyleBackColor = false;
+        btnConsultarTipo.Size = new Size(227, 48);
+        btnConsultarTipo.Text = "Consultar propiedades";
         btnConsultarTipo.Click += btnConsultarTipo_Click;
         // 
-        // lblAgregarTipo
+        // toolStripSeparator4
         // 
-        lblAgregarTipo.AutoSize = true;
-        lblAgregarTipo.Location = new Point(-2, 9);
-        lblAgregarTipo.Margin = new Padding(4, 0, 4, 0);
-        lblAgregarTipo.Name = "lblAgregarTipo";
-        lblAgregarTipo.Size = new Size(118, 15);
-        lblAgregarTipo.TabIndex = 12;
-        lblAgregarTipo.Text = "Agregar nuevo tipo:";
+        toolStripSeparator4.Name = "toolStripSeparator4";
+        toolStripSeparator4.Size = new Size(227, 6);
         // 
-        // btnAgregarTipo
+        // btnModificarTipo
         // 
-        btnAgregarTipo.BackColor = SystemColors.ControlLight;
-        btnAgregarTipo.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-        btnAgregarTipo.Location = new Point(154, 3);
-        btnAgregarTipo.Margin = new Padding(4, 3, 4, 3);
-        btnAgregarTipo.Name = "btnAgregarTipo";
-        btnAgregarTipo.Size = new Size(88, 27);
-        btnAgregarTipo.TabIndex = 11;
-        btnAgregarTipo.Text = "Agregar";
-        btnAgregarTipo.UseVisualStyleBackColor = false;
-        btnAgregarTipo.Click += btnAgregarTipo_Click;
+        btnModificarTipo.AutoSize = false;
+        btnModificarTipo.DisplayStyle = ToolStripItemDisplayStyle.Text;
+        btnModificarTipo.Enabled = false;
+        btnModificarTipo.Image = (Image)resources.GetObject("btnModificarTipo.Image");
+        btnModificarTipo.ImageTransparentColor = Color.Magenta;
+        btnModificarTipo.Name = "btnModificarTipo";
+        btnModificarTipo.Size = new Size(227, 48);
+        btnModificarTipo.Text = "Modificar propiedades";
+        btnModificarTipo.Click += btnModificarTipo_Click;
+        // 
+        // toolStripSeparator5
+        // 
+        toolStripSeparator5.Name = "toolStripSeparator5";
+        toolStripSeparator5.Size = new Size(227, 6);
+        // 
+        // btnEliminarTipo
+        // 
+        btnEliminarTipo.AutoSize = false;
+        btnEliminarTipo.DisplayStyle = ToolStripItemDisplayStyle.Text;
+        btnEliminarTipo.Enabled = false;
+        btnEliminarTipo.Image = (Image)resources.GetObject("btnEliminarTipo.Image");
+        btnEliminarTipo.ImageTransparentColor = Color.Magenta;
+        btnEliminarTipo.Name = "btnEliminarTipo";
+        btnEliminarTipo.Size = new Size(227, 48);
+        btnEliminarTipo.Text = "Eliminar tipo de cancha";
+        btnEliminarTipo.Click += btnEliminarTipo_Click;
+        // 
+        // toolStripSeparator6
+        // 
+        toolStripSeparator6.Name = "toolStripSeparator6";
+        toolStripSeparator6.Size = new Size(227, 6);
         // 
         // cbEstados
         // 
         cbEstados.DropDownStyle = ComboBoxStyle.DropDownList;
         cbEstados.FormattingEnabled = true;
         cbEstados.Items.AddRange(new object[] { "Activas", "Bloqueadas", "Todas" });
-        cbEstados.Location = new Point(259, 5);
+        cbEstados.Location = new Point(261, 6);
         cbEstados.Margin = new Padding(4, 3, 4, 3);
         cbEstados.Name = "cbEstados";
         cbEstados.Size = new Size(70, 23);
@@ -463,7 +424,7 @@ partial class ucCanchas
         // 
         // txtBusqueda
         // 
-        txtBusqueda.Location = new Point(444, 5);
+        txtBusqueda.Location = new Point(444, 6);
         txtBusqueda.Name = "txtBusqueda";
         txtBusqueda.Size = new Size(174, 23);
         txtBusqueda.TabIndex = 16;
@@ -471,22 +432,32 @@ partial class ucCanchas
         // lblFiltrado
         // 
         lblFiltrado.AutoSize = true;
-        lblFiltrado.Location = new Point(187, 10);
+        lblFiltrado.Location = new Point(189, 10);
         lblFiltrado.Name = "lblFiltrado";
         lblFiltrado.Size = new Size(65, 15);
         lblFiltrado.TabIndex = 17;
         lblFiltrado.Text = "Filtrar por:";
+        // 
+        // btnBuscar
+        // 
+        btnBuscar.Enabled = false;
+        btnBuscar.Location = new Point(624, 6);
+        btnBuscar.Name = "btnBuscar";
+        btnBuscar.Size = new Size(75, 23);
+        btnBuscar.TabIndex = 35;
+        btnBuscar.Text = "Buscar";
+        btnBuscar.UseVisualStyleBackColor = true;
         // 
         // ucCanchas
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = SystemColors.ActiveCaption;
+        Controls.Add(btnBuscar);
         Controls.Add(lblFiltrado);
         Controls.Add(txtBusqueda);
         Controls.Add(cbEstados);
         Controls.Add(cbFiltrar);
-        Controls.Add(btnBuscar);
         Controls.Add(tcCanchas);
         Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
         Margin = new Padding(4, 3, 4, 3);
@@ -497,15 +468,17 @@ partial class ucCanchas
         tabCanchas.ResumeLayout(false);
         scCanchas.Panel1.ResumeLayout(false);
         scCanchas.Panel2.ResumeLayout(false);
-        scCanchas.Panel2.PerformLayout();
         ((System.ComponentModel.ISupportInitialize)scCanchas).EndInit();
         scCanchas.ResumeLayout(false);
+        lateralMenuTorneos.ResumeLayout(false);
+        lateralMenuTorneos.PerformLayout();
         tabTiposCancha.ResumeLayout(false);
         scTipos.Panel1.ResumeLayout(false);
         scTipos.Panel2.ResumeLayout(false);
-        scTipos.Panel2.PerformLayout();
         ((System.ComponentModel.ISupportInitialize)scTipos).EndInit();
         scTipos.ResumeLayout(false);
+        lateralMenuTipos.ResumeLayout(false);
+        lateralMenuTipos.PerformLayout();
         ResumeLayout(false);
         PerformLayout();
 
@@ -514,35 +487,39 @@ partial class ucCanchas
     #endregion
 
     private System.Windows.Forms.ComboBox cbFiltrar;
-    private System.Windows.Forms.Button btnBuscar;
     private System.Windows.Forms.TabControl tcCanchas;
     private System.Windows.Forms.TabPage tabCanchas;
     private System.Windows.Forms.TabPage tabTiposCancha;
     private System.Windows.Forms.SplitContainer scTipos;
-    private System.Windows.Forms.Label lblEliminarTipo;
-    private System.Windows.Forms.Button btnEliminarTipo;
-    private System.Windows.Forms.Label lblModificarTipo;
-    private System.Windows.Forms.Button btnModificarTipo;
-    private System.Windows.Forms.Label lblConsultarTipo;
-    private System.Windows.Forms.Button btnConsultarTipo;
-    private System.Windows.Forms.Label lblAgregarTipo;
-    private System.Windows.Forms.Button btnAgregarTipo;
     private System.Windows.Forms.SplitContainer scCanchas;
-    private System.Windows.Forms.Label lblBloquearCancha;
-    private System.Windows.Forms.Button btnBloquearCancha;
-    private System.Windows.Forms.Label lblBajaCancha;
-    private System.Windows.Forms.Button btnBajaCancha;
-    private System.Windows.Forms.Label lblModificarCancha;
-    private System.Windows.Forms.Button btnModificarCancha;
-    private System.Windows.Forms.Label lblConsultarCancha;
-    private System.Windows.Forms.Button btnConsultarCancha;
-    private System.Windows.Forms.Label lblAgregarCancha;
-    private System.Windows.Forms.Button btnAgregarCancha;
-    private System.Windows.Forms.Label lblReporteTipo;
-    private System.Windows.Forms.Button btnReporteTipos;
     private ComboBox cbEstados;
     private ListBox listBoxCanchas;
     private ListBox listBoxTiposCancha;
     private TextBox txtBusqueda;
     private Label lblFiltrado;
+    private ToolStrip lateralMenuTorneos;
+    private ToolStripSeparator toolStripSeparator7;
+    private ToolStripButton btnRegistrarCancha;
+    private ToolStripSeparator toolStripSeparator8;
+    private ToolStripButton btnConsultarCancha;
+    private ToolStripSeparator toolStripSeparator9;
+    private ToolStripButton btnModificarCancha;
+    private ToolStripSeparator toolStripSeparator10;
+    private ToolStripButton btnBloquearCancha;
+    private ToolStripSeparator toolStripSeparator11;
+    private ToolStripButton btnBajaCancha;
+    private ToolStripSeparator toolStripSeparator12;
+    private ToolStrip lateralMenuTipos;
+    private ToolStripSeparator toolStripSeparator1;
+    private ToolStripButton btnRegistrarTipo;
+    private ToolStripSeparator toolStripSeparator2;
+    private ToolStripButton btnReporteTipos;
+    private ToolStripSeparator toolStripSeparator3;
+    private ToolStripButton btnConsultarTipo;
+    private ToolStripSeparator toolStripSeparator4;
+    private ToolStripButton btnModificarTipo;
+    private ToolStripSeparator toolStripSeparator5;
+    private ToolStripButton btnEliminarTipo;
+    private ToolStripSeparator toolStripSeparator6;
+    private Button btnBuscar;
 }

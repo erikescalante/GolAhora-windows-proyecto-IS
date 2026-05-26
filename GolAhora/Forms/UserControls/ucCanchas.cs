@@ -78,7 +78,7 @@ public partial class ucCanchas : UserControl
     }
 
     /*Botones de la pestaña canchas*/
-    private void btnAgregarCancha_Click(object sender, EventArgs e)
+    private void btnRegistrarCancha_Click(object sender, EventArgs e)
     {
         //limpiamos selección de la lista
         listBoxCanchas.ClearSelected();
@@ -115,7 +115,8 @@ public partial class ucCanchas : UserControl
     }
 
     /*Botones de la pestaña tipos de cancha*/
-    private void btnAgregarTipo_Click(object sender, EventArgs e)
+    
+    private void btnRegistrarTipo_Click(object sender, EventArgs e)
     {
         //limpiamos selección de la lista
         listBoxTiposCancha.ClearSelected();
@@ -156,4 +157,5 @@ public partial class ucCanchas : UserControl
             MessageBoxButtons.YesNo,
             MessageBoxIcon.Question);
     }
+    
 }

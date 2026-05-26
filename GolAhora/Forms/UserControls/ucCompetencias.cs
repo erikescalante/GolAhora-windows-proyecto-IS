@@ -30,7 +30,7 @@ namespace GolAhora.Forms.UserControls
         private void listBoxTorneos_SelectedIndexChanged(object sender, EventArgs e)
         {
             bool torneoSeleccionado = (listBoxTorneos.SelectedIndex >= 0);
-
+            
             btnInscribirEquipoTorneo.Enabled = torneoSeleccionado;
             btnConfigurarTorneo.Enabled = torneoSeleccionado;
             btnRegistrarResultadosTorneo.Enabled = torneoSeleccionado;
@@ -72,6 +72,7 @@ namespace GolAhora.Forms.UserControls
 
 
         /*Botones de la pestaña ligas*/
+
         private void btnRegistrarLiga_Click(object sender, EventArgs e)
         {
             //limpiar selección de la lista

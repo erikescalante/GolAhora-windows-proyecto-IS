@@ -28,57 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucCapacitaciones));
             tcCapacitaciones = new TabControl();
             tabClases = new TabPage();
             scClases = new SplitContainer();
             listBoxClases = new ListBox();
-            label1 = new Label();
-            btnBajaAlumnoClase = new Button();
-            label2 = new Label();
-            btnReporteAsistenciaClase = new Button();
-            label3 = new Label();
-            btnInscribirAlumnoClase = new Button();
-            label4 = new Label();
-            btnAsistenciaClase = new Button();
-            label5 = new Label();
-            btnModificarClase = new Button();
-            label6 = new Label();
-            btnConsultarClase = new Button();
-            label7 = new Label();
-            btnRegistrarClase = new Button();
+            lateralMenuTorneos = new ToolStrip();
+            toolStripSeparator7 = new ToolStripSeparator();
+            btnRegistrarClase = new ToolStripButton();
+            toolStripSeparator8 = new ToolStripSeparator();
+            btnConsultarClase = new ToolStripButton();
+            toolStripSeparator9 = new ToolStripSeparator();
+            btnModificarClase = new ToolStripButton();
+            toolStripSeparator10 = new ToolStripSeparator();
+            btnInscribirAlumnoClase = new ToolStripButton();
+            toolStripSeparator11 = new ToolStripSeparator();
+            btnAsistenciaClase = new ToolStripButton();
+            toolStripSeparator12 = new ToolStripSeparator();
+            btnReporteAsistenciaClase = new ToolStripButton();
+            toolStripSeparator1 = new ToolStripSeparator();
+            btnBajaAlumnoClase = new ToolStripButton();
+            toolStripSeparator2 = new ToolStripSeparator();
             tabEntrenamientos = new TabPage();
             scEntrenamientos = new SplitContainer();
             listBoxEntrenamientos = new ListBox();
-            label8 = new Label();
-            btnBajaAlumnoEntrenamiento = new Button();
-            label9 = new Label();
-            btnReporteAsistenciaEntrenamiento = new Button();
-            label10 = new Label();
-            btnInscribirAlumnoEntrenamiento = new Button();
-            label11 = new Label();
-            btnAsistenciaEntrenamiento = new Button();
-            label12 = new Label();
-            btnModificarEntrenamiento = new Button();
-            label13 = new Label();
-            btnConsultarEntrenamiento = new Button();
-            label14 = new Label();
-            btnRegistrarEntrenamiento = new Button();
+            toolStrip1 = new ToolStrip();
+            toolStripSeparator3 = new ToolStripSeparator();
+            btnRegistrarEntrenamiento = new ToolStripButton();
+            toolStripSeparator4 = new ToolStripSeparator();
+            btnConsultarEntrenamiento = new ToolStripButton();
+            toolStripSeparator5 = new ToolStripSeparator();
+            btnModificarEntrenamiento = new ToolStripButton();
+            toolStripSeparator6 = new ToolStripSeparator();
+            btnInscribirAlumnoEntrenamiento = new ToolStripButton();
+            toolStripSeparator13 = new ToolStripSeparator();
+            btnAsistenciaEntrenamiento = new ToolStripButton();
+            toolStripSeparator14 = new ToolStripSeparator();
+            btnReporteAsistenciaEntrenamiento = new ToolStripButton();
+            toolStripSeparator15 = new ToolStripSeparator();
+            btnBajaAlumnoEntrenamiento = new ToolStripButton();
+            toolStripSeparator16 = new ToolStripSeparator();
             cbFiltrado = new ComboBox();
-            btnBuscar = new Button();
             cbEstado = new ComboBox();
             txtBusqueda = new TextBox();
             lblFiltrado = new Label();
+            btnBuscar = new Button();
             tcCapacitaciones.SuspendLayout();
             tabClases.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)scClases).BeginInit();
             scClases.Panel1.SuspendLayout();
             scClases.Panel2.SuspendLayout();
             scClases.SuspendLayout();
+            lateralMenuTorneos.SuspendLayout();
             tabEntrenamientos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)scEntrenamientos).BeginInit();
             scEntrenamientos.Panel1.SuspendLayout();
             scEntrenamientos.Panel2.SuspendLayout();
             scEntrenamientos.SuspendLayout();
+            toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // tcCapacitaciones
@@ -119,20 +126,7 @@
             // 
             // scClases.Panel2
             // 
-            scClases.Panel2.Controls.Add(label1);
-            scClases.Panel2.Controls.Add(btnBajaAlumnoClase);
-            scClases.Panel2.Controls.Add(label2);
-            scClases.Panel2.Controls.Add(btnReporteAsistenciaClase);
-            scClases.Panel2.Controls.Add(label3);
-            scClases.Panel2.Controls.Add(btnInscribirAlumnoClase);
-            scClases.Panel2.Controls.Add(label4);
-            scClases.Panel2.Controls.Add(btnAsistenciaClase);
-            scClases.Panel2.Controls.Add(label5);
-            scClases.Panel2.Controls.Add(btnModificarClase);
-            scClases.Panel2.Controls.Add(label6);
-            scClases.Panel2.Controls.Add(btnConsultarClase);
-            scClases.Panel2.Controls.Add(label7);
-            scClases.Panel2.Controls.Add(btnRegistrarClase);
+            scClases.Panel2.Controls.Add(lateralMenuTorneos);
             scClases.Panel2.Padding = new Padding(10, 10, 10, 20);
             scClases.Size = new Size(715, 331);
             scClases.SplitterDistance = 462;
@@ -153,165 +147,146 @@
             listBoxClases.SelectedIndexChanged += listBoxClases_SelectedIndexChanged;
             listBoxClases.MouseDown += listBoxClases_MouseDown;
             // 
-            // label1
+            // lateralMenuTorneos
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(7, 240);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(129, 15);
-            label1.TabIndex = 24;
-            label1.Text = "Reporte de asistencia:";
+            lateralMenuTorneos.AutoSize = false;
+            lateralMenuTorneos.BackColor = SystemColors.ActiveCaption;
+            lateralMenuTorneos.Dock = DockStyle.None;
+            lateralMenuTorneos.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lateralMenuTorneos.GripMargin = new Padding(2, 2, 2, 5);
+            lateralMenuTorneos.GripStyle = ToolStripGripStyle.Hidden;
+            lateralMenuTorneos.Items.AddRange(new ToolStripItem[] { toolStripSeparator7, btnRegistrarClase, toolStripSeparator8, btnConsultarClase, toolStripSeparator9, btnModificarClase, toolStripSeparator10, btnInscribirAlumnoClase, toolStripSeparator11, btnAsistenciaClase, toolStripSeparator12, btnReporteAsistenciaClase, toolStripSeparator1, btnBajaAlumnoClase, toolStripSeparator2 });
+            lateralMenuTorneos.LayoutStyle = ToolStripLayoutStyle.VerticalStackWithOverflow;
+            lateralMenuTorneos.Location = new Point(10, 10);
+            lateralMenuTorneos.Name = "lateralMenuTorneos";
+            lateralMenuTorneos.RenderMode = ToolStripRenderMode.System;
+            lateralMenuTorneos.RightToLeft = RightToLeft.No;
+            lateralMenuTorneos.Size = new Size(229, 350);
+            lateralMenuTorneos.TabIndex = 27;
+            lateralMenuTorneos.Text = "Menú lateral";
             // 
-            // btnBajaAlumnoClase
+            // toolStripSeparator7
             // 
-            btnBajaAlumnoClase.BackColor = SystemColors.ControlLight;
-            btnBajaAlumnoClase.Enabled = false;
-            btnBajaAlumnoClase.Location = new Point(146, 278);
-            btnBajaAlumnoClase.Margin = new Padding(4, 3, 4, 3);
-            btnBajaAlumnoClase.Name = "btnBajaAlumnoClase";
-            btnBajaAlumnoClase.Size = new Size(88, 27);
-            btnBajaAlumnoClase.TabIndex = 23;
-            btnBajaAlumnoClase.Text = "Baja";
-            btnBajaAlumnoClase.UseVisualStyleBackColor = false;
-            btnBajaAlumnoClase.Click += btnBajaAlumnoClase_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(7, 283);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(116, 15);
-            label2.TabIndex = 22;
-            label2.Text = "Dar de baja alumno:";
-            // 
-            // btnReporteAsistenciaClase
-            // 
-            btnReporteAsistenciaClase.BackColor = SystemColors.ControlLight;
-            btnReporteAsistenciaClase.Enabled = false;
-            btnReporteAsistenciaClase.Location = new Point(146, 234);
-            btnReporteAsistenciaClase.Margin = new Padding(4, 3, 4, 3);
-            btnReporteAsistenciaClase.Name = "btnReporteAsistenciaClase";
-            btnReporteAsistenciaClase.Size = new Size(88, 27);
-            btnReporteAsistenciaClase.TabIndex = 21;
-            btnReporteAsistenciaClase.Text = "Reporte";
-            btnReporteAsistenciaClase.UseVisualStyleBackColor = false;
-            btnReporteAsistenciaClase.Click += btnReporteAsistenciaClase_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(7, 152);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(99, 15);
-            label3.TabIndex = 20;
-            label3.Text = "Inscribir alumno:";
-            // 
-            // btnInscribirAlumnoClase
-            // 
-            btnInscribirAlumnoClase.BackColor = SystemColors.ControlLight;
-            btnInscribirAlumnoClase.Enabled = false;
-            btnInscribirAlumnoClase.Location = new Point(146, 146);
-            btnInscribirAlumnoClase.Margin = new Padding(4, 3, 4, 3);
-            btnInscribirAlumnoClase.Name = "btnInscribirAlumnoClase";
-            btnInscribirAlumnoClase.Size = new Size(88, 27);
-            btnInscribirAlumnoClase.TabIndex = 19;
-            btnInscribirAlumnoClase.Text = "Inscribir";
-            btnInscribirAlumnoClase.UseVisualStyleBackColor = false;
-            btnInscribirAlumnoClase.Click += btnInscribirAlumnoClase_Click;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(7, 196);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(117, 15);
-            label4.TabIndex = 18;
-            label4.Text = "Registrar asistencia:";
-            // 
-            // btnAsistenciaClase
-            // 
-            btnAsistenciaClase.BackColor = SystemColors.ControlLight;
-            btnAsistenciaClase.Enabled = false;
-            btnAsistenciaClase.Location = new Point(146, 190);
-            btnAsistenciaClase.Margin = new Padding(4, 3, 4, 3);
-            btnAsistenciaClase.Name = "btnAsistenciaClase";
-            btnAsistenciaClase.Size = new Size(88, 27);
-            btnAsistenciaClase.TabIndex = 17;
-            btnAsistenciaClase.Text = "Registrar";
-            btnAsistenciaClase.UseVisualStyleBackColor = false;
-            btnAsistenciaClase.Click += btnAsistenciaClase_Click;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(10, 108);
-            label5.Margin = new Padding(4, 0, 4, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(95, 15);
-            label5.TabIndex = 16;
-            label5.Text = "Modificar clases";
-            // 
-            // btnModificarClase
-            // 
-            btnModificarClase.BackColor = SystemColors.ControlLight;
-            btnModificarClase.Enabled = false;
-            btnModificarClase.Location = new Point(146, 102);
-            btnModificarClase.Margin = new Padding(4, 3, 4, 3);
-            btnModificarClase.Name = "btnModificarClase";
-            btnModificarClase.Size = new Size(88, 27);
-            btnModificarClase.TabIndex = 15;
-            btnModificarClase.Text = "Modificar";
-            btnModificarClase.UseVisualStyleBackColor = false;
-            btnModificarClase.Click += btnModificarClase_Click;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(9, 64);
-            label6.Margin = new Padding(4, 0, 4, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(95, 15);
-            label6.TabIndex = 14;
-            label6.Text = "Consultar datos:";
-            // 
-            // btnConsultarClase
-            // 
-            btnConsultarClase.BackColor = SystemColors.ControlLight;
-            btnConsultarClase.Enabled = false;
-            btnConsultarClase.Location = new Point(146, 58);
-            btnConsultarClase.Margin = new Padding(4, 3, 4, 3);
-            btnConsultarClase.Name = "btnConsultarClase";
-            btnConsultarClase.Size = new Size(88, 27);
-            btnConsultarClase.TabIndex = 13;
-            btnConsultarClase.Text = "Consultar";
-            btnConsultarClase.UseVisualStyleBackColor = false;
-            btnConsultarClase.Click += btnConsultarClase_Click;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(9, 19);
-            label7.Margin = new Padding(4, 0, 4, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(99, 15);
-            label7.TabIndex = 12;
-            label7.Text = "Programar clase:";
+            toolStripSeparator7.Name = "toolStripSeparator7";
+            toolStripSeparator7.Size = new Size(227, 6);
             // 
             // btnRegistrarClase
             // 
-            btnRegistrarClase.BackColor = SystemColors.ControlLight;
-            btnRegistrarClase.Location = new Point(146, 13);
-            btnRegistrarClase.Margin = new Padding(4, 3, 4, 3);
+            btnRegistrarClase.AutoSize = false;
+            btnRegistrarClase.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnRegistrarClase.Image = (Image)resources.GetObject("btnRegistrarClase.Image");
+            btnRegistrarClase.ImageTransparentColor = Color.Magenta;
             btnRegistrarClase.Name = "btnRegistrarClase";
-            btnRegistrarClase.Size = new Size(88, 27);
-            btnRegistrarClase.TabIndex = 11;
-            btnRegistrarClase.Text = "Registrar ";
-            btnRegistrarClase.UseVisualStyleBackColor = false;
+            btnRegistrarClase.Size = new Size(227, 32);
+            btnRegistrarClase.Text = "Nueva clase";
             btnRegistrarClase.Click += btnRegistrarClase_Click;
+            // 
+            // toolStripSeparator8
+            // 
+            toolStripSeparator8.Name = "toolStripSeparator8";
+            toolStripSeparator8.Size = new Size(227, 6);
+            // 
+            // btnConsultarClase
+            // 
+            btnConsultarClase.AutoSize = false;
+            btnConsultarClase.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnConsultarClase.Enabled = false;
+            btnConsultarClase.Image = (Image)resources.GetObject("btnConsultarClase.Image");
+            btnConsultarClase.ImageTransparentColor = Color.Magenta;
+            btnConsultarClase.Name = "btnConsultarClase";
+            btnConsultarClase.Size = new Size(227, 32);
+            btnConsultarClase.Text = "Consultar clase";
+            btnConsultarClase.Click += btnConsultarClase_Click;
+            // 
+            // toolStripSeparator9
+            // 
+            toolStripSeparator9.Name = "toolStripSeparator9";
+            toolStripSeparator9.Size = new Size(227, 6);
+            // 
+            // btnModificarClase
+            // 
+            btnModificarClase.AutoSize = false;
+            btnModificarClase.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnModificarClase.Enabled = false;
+            btnModificarClase.Image = (Image)resources.GetObject("btnModificarClase.Image");
+            btnModificarClase.ImageTransparentColor = Color.Magenta;
+            btnModificarClase.Name = "btnModificarClase";
+            btnModificarClase.Size = new Size(227, 32);
+            btnModificarClase.Text = "Modificar clase";
+            btnModificarClase.Click += btnModificarClase_Click;
+            // 
+            // toolStripSeparator10
+            // 
+            toolStripSeparator10.Name = "toolStripSeparator10";
+            toolStripSeparator10.Size = new Size(227, 6);
+            // 
+            // btnInscribirAlumnoClase
+            // 
+            btnInscribirAlumnoClase.AutoSize = false;
+            btnInscribirAlumnoClase.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnInscribirAlumnoClase.Enabled = false;
+            btnInscribirAlumnoClase.Image = (Image)resources.GetObject("btnInscribirAlumnoClase.Image");
+            btnInscribirAlumnoClase.ImageTransparentColor = Color.Magenta;
+            btnInscribirAlumnoClase.Name = "btnInscribirAlumnoClase";
+            btnInscribirAlumnoClase.Size = new Size(227, 32);
+            btnInscribirAlumnoClase.Text = "Inscribir alumno a clase";
+            btnInscribirAlumnoClase.Click += btnInscribirAlumnoClase_Click;
+            // 
+            // toolStripSeparator11
+            // 
+            toolStripSeparator11.Name = "toolStripSeparator11";
+            toolStripSeparator11.Size = new Size(227, 6);
+            // 
+            // btnAsistenciaClase
+            // 
+            btnAsistenciaClase.AutoSize = false;
+            btnAsistenciaClase.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnAsistenciaClase.Enabled = false;
+            btnAsistenciaClase.Image = (Image)resources.GetObject("btnAsistenciaClase.Image");
+            btnAsistenciaClase.ImageTransparentColor = Color.Magenta;
+            btnAsistenciaClase.Name = "btnAsistenciaClase";
+            btnAsistenciaClase.Size = new Size(227, 32);
+            btnAsistenciaClase.Text = "Registrar asistencia";
+            btnAsistenciaClase.Click += btnAsistenciaClase_Click;
+            // 
+            // toolStripSeparator12
+            // 
+            toolStripSeparator12.Name = "toolStripSeparator12";
+            toolStripSeparator12.Size = new Size(227, 6);
+            // 
+            // btnReporteAsistenciaClase
+            // 
+            btnReporteAsistenciaClase.AutoSize = false;
+            btnReporteAsistenciaClase.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnReporteAsistenciaClase.Enabled = false;
+            btnReporteAsistenciaClase.Image = (Image)resources.GetObject("btnReporteAsistenciaClase.Image");
+            btnReporteAsistenciaClase.ImageTransparentColor = Color.Magenta;
+            btnReporteAsistenciaClase.Name = "btnReporteAsistenciaClase";
+            btnReporteAsistenciaClase.Size = new Size(227, 32);
+            btnReporteAsistenciaClase.Text = "Generar reporte de asistencia";
+            btnReporteAsistenciaClase.Click += btnReporteAsistenciaClase_Click;
+            // 
+            // toolStripSeparator1
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(227, 6);
+            // 
+            // btnBajaAlumnoClase
+            // 
+            btnBajaAlumnoClase.AutoSize = false;
+            btnBajaAlumnoClase.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnBajaAlumnoClase.Enabled = false;
+            btnBajaAlumnoClase.Image = (Image)resources.GetObject("btnBajaAlumnoClase.Image");
+            btnBajaAlumnoClase.ImageTransparentColor = Color.Magenta;
+            btnBajaAlumnoClase.Name = "btnBajaAlumnoClase";
+            btnBajaAlumnoClase.Size = new Size(227, 32);
+            btnBajaAlumnoClase.Text = "Dar de baja alumno";
+            btnBajaAlumnoClase.Click += btnBajaAlumnoClase_Click;
+            // 
+            // toolStripSeparator2
+            // 
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new Size(227, 6);
             // 
             // tabEntrenamientos
             // 
@@ -339,20 +314,7 @@
             // 
             // scEntrenamientos.Panel2
             // 
-            scEntrenamientos.Panel2.Controls.Add(label8);
-            scEntrenamientos.Panel2.Controls.Add(btnBajaAlumnoEntrenamiento);
-            scEntrenamientos.Panel2.Controls.Add(label9);
-            scEntrenamientos.Panel2.Controls.Add(btnReporteAsistenciaEntrenamiento);
-            scEntrenamientos.Panel2.Controls.Add(label10);
-            scEntrenamientos.Panel2.Controls.Add(btnInscribirAlumnoEntrenamiento);
-            scEntrenamientos.Panel2.Controls.Add(label11);
-            scEntrenamientos.Panel2.Controls.Add(btnAsistenciaEntrenamiento);
-            scEntrenamientos.Panel2.Controls.Add(label12);
-            scEntrenamientos.Panel2.Controls.Add(btnModificarEntrenamiento);
-            scEntrenamientos.Panel2.Controls.Add(label13);
-            scEntrenamientos.Panel2.Controls.Add(btnConsultarEntrenamiento);
-            scEntrenamientos.Panel2.Controls.Add(label14);
-            scEntrenamientos.Panel2.Controls.Add(btnRegistrarEntrenamiento);
+            scEntrenamientos.Panel2.Controls.Add(toolStrip1);
             scEntrenamientos.Panel2.Padding = new Padding(10, 10, 10, 20);
             scEntrenamientos.Size = new Size(715, 331);
             scEntrenamientos.SplitterDistance = 462;
@@ -373,196 +335,164 @@
             listBoxEntrenamientos.SelectedIndexChanged += listBoxEntrenamientos_SelectedIndexChanged;
             listBoxEntrenamientos.MouseDown += listBoxEntrenamientos_MouseDown;
             // 
-            // label8
+            // toolStrip1
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(7, 240);
-            label8.Margin = new Padding(4, 0, 4, 0);
-            label8.Name = "label8";
-            label8.Size = new Size(129, 15);
-            label8.TabIndex = 24;
-            label8.Text = "Reporte de asistencia:";
+            toolStrip1.AutoSize = false;
+            toolStrip1.BackColor = SystemColors.ActiveCaption;
+            toolStrip1.Dock = DockStyle.None;
+            toolStrip1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            toolStrip1.GripMargin = new Padding(2, 2, 2, 5);
+            toolStrip1.GripStyle = ToolStripGripStyle.Hidden;
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripSeparator3, btnRegistrarEntrenamiento, toolStripSeparator4, btnConsultarEntrenamiento, toolStripSeparator5, btnModificarEntrenamiento, toolStripSeparator6, btnInscribirAlumnoEntrenamiento, toolStripSeparator13, btnAsistenciaEntrenamiento, toolStripSeparator14, btnReporteAsistenciaEntrenamiento, toolStripSeparator15, btnBajaAlumnoEntrenamiento, toolStripSeparator16 });
+            toolStrip1.LayoutStyle = ToolStripLayoutStyle.VerticalStackWithOverflow;
+            toolStrip1.Location = new Point(10, 10);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.RenderMode = ToolStripRenderMode.System;
+            toolStrip1.RightToLeft = RightToLeft.No;
+            toolStrip1.Size = new Size(229, 350);
+            toolStrip1.TabIndex = 28;
+            toolStrip1.Text = "Menú lateral";
             // 
-            // btnBajaAlumnoEntrenamiento
+            // toolStripSeparator3
             // 
-            btnBajaAlumnoEntrenamiento.BackColor = SystemColors.ControlLight;
-            btnBajaAlumnoEntrenamiento.Enabled = false;
-            btnBajaAlumnoEntrenamiento.Location = new Point(154, 278);
-            btnBajaAlumnoEntrenamiento.Margin = new Padding(4, 3, 4, 3);
-            btnBajaAlumnoEntrenamiento.Name = "btnBajaAlumnoEntrenamiento";
-            btnBajaAlumnoEntrenamiento.Size = new Size(88, 27);
-            btnBajaAlumnoEntrenamiento.TabIndex = 23;
-            btnBajaAlumnoEntrenamiento.Text = "Baja";
-            btnBajaAlumnoEntrenamiento.UseVisualStyleBackColor = false;
-            btnBajaAlumnoEntrenamiento.Click += btnBajaAlumnoEntrenamiento_Click;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(7, 283);
-            label9.Margin = new Padding(4, 0, 4, 0);
-            label9.Name = "label9";
-            label9.Size = new Size(116, 15);
-            label9.TabIndex = 22;
-            label9.Text = "Dar de baja alumno:";
-            // 
-            // btnReporteAsistenciaEntrenamiento
-            // 
-            btnReporteAsistenciaEntrenamiento.BackColor = SystemColors.ControlLight;
-            btnReporteAsistenciaEntrenamiento.Enabled = false;
-            btnReporteAsistenciaEntrenamiento.Location = new Point(154, 234);
-            btnReporteAsistenciaEntrenamiento.Margin = new Padding(4, 3, 4, 3);
-            btnReporteAsistenciaEntrenamiento.Name = "btnReporteAsistenciaEntrenamiento";
-            btnReporteAsistenciaEntrenamiento.Size = new Size(88, 27);
-            btnReporteAsistenciaEntrenamiento.TabIndex = 21;
-            btnReporteAsistenciaEntrenamiento.Text = "Reporte";
-            btnReporteAsistenciaEntrenamiento.UseVisualStyleBackColor = false;
-            btnReporteAsistenciaEntrenamiento.Click += btnReporteAsistenciaEntrenamiento_Click;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(7, 152);
-            label10.Margin = new Padding(4, 0, 4, 0);
-            label10.Name = "label10";
-            label10.Size = new Size(99, 15);
-            label10.TabIndex = 20;
-            label10.Text = "Inscribir alumno:";
-            // 
-            // btnInscribirAlumnoEntrenamiento
-            // 
-            btnInscribirAlumnoEntrenamiento.BackColor = SystemColors.ControlLight;
-            btnInscribirAlumnoEntrenamiento.Enabled = false;
-            btnInscribirAlumnoEntrenamiento.Location = new Point(154, 146);
-            btnInscribirAlumnoEntrenamiento.Margin = new Padding(4, 3, 4, 3);
-            btnInscribirAlumnoEntrenamiento.Name = "btnInscribirAlumnoEntrenamiento";
-            btnInscribirAlumnoEntrenamiento.Size = new Size(88, 27);
-            btnInscribirAlumnoEntrenamiento.TabIndex = 19;
-            btnInscribirAlumnoEntrenamiento.Text = "Inscribir";
-            btnInscribirAlumnoEntrenamiento.UseVisualStyleBackColor = false;
-            btnInscribirAlumnoEntrenamiento.Click += btnInscribirAlumnoEntrenamiento_Click;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(7, 196);
-            label11.Margin = new Padding(4, 0, 4, 0);
-            label11.Name = "label11";
-            label11.Size = new Size(117, 15);
-            label11.TabIndex = 18;
-            label11.Text = "Registrar asistencia:";
-            // 
-            // btnAsistenciaEntrenamiento
-            // 
-            btnAsistenciaEntrenamiento.BackColor = SystemColors.ControlLight;
-            btnAsistenciaEntrenamiento.Enabled = false;
-            btnAsistenciaEntrenamiento.Location = new Point(154, 190);
-            btnAsistenciaEntrenamiento.Margin = new Padding(4, 3, 4, 3);
-            btnAsistenciaEntrenamiento.Name = "btnAsistenciaEntrenamiento";
-            btnAsistenciaEntrenamiento.Size = new Size(88, 27);
-            btnAsistenciaEntrenamiento.TabIndex = 17;
-            btnAsistenciaEntrenamiento.Text = "Registrar";
-            btnAsistenciaEntrenamiento.UseVisualStyleBackColor = false;
-            btnAsistenciaEntrenamiento.Click += btnAsistenciaEntrenamiento_Click;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(10, 108);
-            label12.Margin = new Padding(4, 0, 4, 0);
-            label12.Name = "label12";
-            label12.Size = new Size(150, 15);
-            label12.TabIndex = 16;
-            label12.Text = "Modificar entrenamiento:";
-            // 
-            // btnModificarEntrenamiento
-            // 
-            btnModificarEntrenamiento.BackColor = SystemColors.ControlLight;
-            btnModificarEntrenamiento.Enabled = false;
-            btnModificarEntrenamiento.Location = new Point(154, 102);
-            btnModificarEntrenamiento.Margin = new Padding(4, 3, 4, 3);
-            btnModificarEntrenamiento.Name = "btnModificarEntrenamiento";
-            btnModificarEntrenamiento.Size = new Size(88, 27);
-            btnModificarEntrenamiento.TabIndex = 15;
-            btnModificarEntrenamiento.Text = "Modificar";
-            btnModificarEntrenamiento.UseVisualStyleBackColor = false;
-            btnModificarEntrenamiento.Click += btnModificarEntrenamiento_Click;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new Point(9, 64);
-            label13.Margin = new Padding(4, 0, 4, 0);
-            label13.Name = "label13";
-            label13.Size = new Size(95, 15);
-            label13.TabIndex = 14;
-            label13.Text = "Consultar datos:";
-            // 
-            // btnConsultarEntrenamiento
-            // 
-            btnConsultarEntrenamiento.BackColor = SystemColors.ControlLight;
-            btnConsultarEntrenamiento.Enabled = false;
-            btnConsultarEntrenamiento.Location = new Point(154, 58);
-            btnConsultarEntrenamiento.Margin = new Padding(4, 3, 4, 3);
-            btnConsultarEntrenamiento.Name = "btnConsultarEntrenamiento";
-            btnConsultarEntrenamiento.Size = new Size(88, 27);
-            btnConsultarEntrenamiento.TabIndex = 13;
-            btnConsultarEntrenamiento.Text = "Consultar";
-            btnConsultarEntrenamiento.UseVisualStyleBackColor = false;
-            btnConsultarEntrenamiento.Click += btnConsultarEntrenamiento_Click;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(9, 19);
-            label14.Margin = new Padding(4, 0, 4, 0);
-            label14.Name = "label14";
-            label14.Size = new Size(156, 15);
-            label14.TabIndex = 12;
-            label14.Text = "Programar entrenamiento:";
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            toolStripSeparator3.Size = new Size(227, 6);
             // 
             // btnRegistrarEntrenamiento
             // 
-            btnRegistrarEntrenamiento.BackColor = SystemColors.ControlLight;
-            btnRegistrarEntrenamiento.Location = new Point(154, 13);
-            btnRegistrarEntrenamiento.Margin = new Padding(4, 3, 4, 3);
+            btnRegistrarEntrenamiento.AutoSize = false;
+            btnRegistrarEntrenamiento.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnRegistrarEntrenamiento.Image = (Image)resources.GetObject("btnRegistrarEntrenamiento.Image");
+            btnRegistrarEntrenamiento.ImageTransparentColor = Color.Magenta;
             btnRegistrarEntrenamiento.Name = "btnRegistrarEntrenamiento";
-            btnRegistrarEntrenamiento.Size = new Size(88, 27);
-            btnRegistrarEntrenamiento.TabIndex = 11;
-            btnRegistrarEntrenamiento.Text = "Registrar ";
-            btnRegistrarEntrenamiento.UseVisualStyleBackColor = false;
+            btnRegistrarEntrenamiento.Size = new Size(227, 32);
+            btnRegistrarEntrenamiento.Text = "Nueva clase";
             btnRegistrarEntrenamiento.Click += btnRegistrarEntrenamiento_Click;
+            // 
+            // toolStripSeparator4
+            // 
+            toolStripSeparator4.Name = "toolStripSeparator4";
+            toolStripSeparator4.Size = new Size(227, 6);
+            // 
+            // btnConsultarEntrenamiento
+            // 
+            btnConsultarEntrenamiento.AutoSize = false;
+            btnConsultarEntrenamiento.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnConsultarEntrenamiento.Enabled = false;
+            btnConsultarEntrenamiento.Image = (Image)resources.GetObject("btnConsultarEntrenamiento.Image");
+            btnConsultarEntrenamiento.ImageTransparentColor = Color.Magenta;
+            btnConsultarEntrenamiento.Name = "btnConsultarEntrenamiento";
+            btnConsultarEntrenamiento.Size = new Size(227, 32);
+            btnConsultarEntrenamiento.Text = "Consultar clase";
+            btnConsultarEntrenamiento.Click += btnConsultarEntrenamiento_Click;
+            // 
+            // toolStripSeparator5
+            // 
+            toolStripSeparator5.Name = "toolStripSeparator5";
+            toolStripSeparator5.Size = new Size(227, 6);
+            // 
+            // btnModificarEntrenamiento
+            // 
+            btnModificarEntrenamiento.AutoSize = false;
+            btnModificarEntrenamiento.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnModificarEntrenamiento.Enabled = false;
+            btnModificarEntrenamiento.Image = (Image)resources.GetObject("btnModificarEntrenamiento.Image");
+            btnModificarEntrenamiento.ImageTransparentColor = Color.Magenta;
+            btnModificarEntrenamiento.Name = "btnModificarEntrenamiento";
+            btnModificarEntrenamiento.Size = new Size(227, 32);
+            btnModificarEntrenamiento.Text = "Modificar clase";
+            btnModificarEntrenamiento.Click += btnModificarEntrenamiento_Click;
+            // 
+            // toolStripSeparator6
+            // 
+            toolStripSeparator6.Name = "toolStripSeparator6";
+            toolStripSeparator6.Size = new Size(227, 6);
+            // 
+            // btnInscribirAlumnoEntrenamiento
+            // 
+            btnInscribirAlumnoEntrenamiento.AutoSize = false;
+            btnInscribirAlumnoEntrenamiento.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnInscribirAlumnoEntrenamiento.Enabled = false;
+            btnInscribirAlumnoEntrenamiento.Image = (Image)resources.GetObject("btnInscribirAlumnoEntrenamiento.Image");
+            btnInscribirAlumnoEntrenamiento.ImageTransparentColor = Color.Magenta;
+            btnInscribirAlumnoEntrenamiento.Name = "btnInscribirAlumnoEntrenamiento";
+            btnInscribirAlumnoEntrenamiento.Size = new Size(227, 32);
+            btnInscribirAlumnoEntrenamiento.Text = "Inscribir alumno a clase";
+            btnInscribirAlumnoEntrenamiento.Click += btnInscribirAlumnoEntrenamiento_Click;
+            // 
+            // toolStripSeparator13
+            // 
+            toolStripSeparator13.Name = "toolStripSeparator13";
+            toolStripSeparator13.Size = new Size(227, 6);
+            // 
+            // btnAsistenciaEntrenamiento
+            // 
+            btnAsistenciaEntrenamiento.AutoSize = false;
+            btnAsistenciaEntrenamiento.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnAsistenciaEntrenamiento.Enabled = false;
+            btnAsistenciaEntrenamiento.Image = (Image)resources.GetObject("btnAsistenciaEntrenamiento.Image");
+            btnAsistenciaEntrenamiento.ImageTransparentColor = Color.Magenta;
+            btnAsistenciaEntrenamiento.Name = "btnAsistenciaEntrenamiento";
+            btnAsistenciaEntrenamiento.Size = new Size(227, 32);
+            btnAsistenciaEntrenamiento.Text = "Registrar asistencia";
+            btnAsistenciaEntrenamiento.Click += btnAsistenciaEntrenamiento_Click;
+            // 
+            // toolStripSeparator14
+            // 
+            toolStripSeparator14.Name = "toolStripSeparator14";
+            toolStripSeparator14.Size = new Size(227, 6);
+            // 
+            // btnReporteAsistenciaEntrenamiento
+            // 
+            btnReporteAsistenciaEntrenamiento.AutoSize = false;
+            btnReporteAsistenciaEntrenamiento.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnReporteAsistenciaEntrenamiento.Enabled = false;
+            btnReporteAsistenciaEntrenamiento.Image = (Image)resources.GetObject("btnReporteAsistenciaEntrenamiento.Image");
+            btnReporteAsistenciaEntrenamiento.ImageTransparentColor = Color.Magenta;
+            btnReporteAsistenciaEntrenamiento.Name = "btnReporteAsistenciaEntrenamiento";
+            btnReporteAsistenciaEntrenamiento.Size = new Size(227, 32);
+            btnReporteAsistenciaEntrenamiento.Text = "Generar reporte de asistencia";
+            btnReporteAsistenciaEntrenamiento.Click += btnReporteAsistenciaEntrenamiento_Click;
+            // 
+            // toolStripSeparator15
+            // 
+            toolStripSeparator15.Name = "toolStripSeparator15";
+            toolStripSeparator15.Size = new Size(227, 6);
+            // 
+            // btnBajaAlumnoEntrenamiento
+            // 
+            btnBajaAlumnoEntrenamiento.AutoSize = false;
+            btnBajaAlumnoEntrenamiento.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnBajaAlumnoEntrenamiento.Enabled = false;
+            btnBajaAlumnoEntrenamiento.Image = (Image)resources.GetObject("btnBajaAlumnoEntrenamiento.Image");
+            btnBajaAlumnoEntrenamiento.ImageTransparentColor = Color.Magenta;
+            btnBajaAlumnoEntrenamiento.Name = "btnBajaAlumnoEntrenamiento";
+            btnBajaAlumnoEntrenamiento.Size = new Size(227, 32);
+            btnBajaAlumnoEntrenamiento.Text = "Dar de baja alumno";
+            btnBajaAlumnoEntrenamiento.Click += btnBajaAlumnoEntrenamiento_Click;
+            // 
+            // toolStripSeparator16
+            // 
+            toolStripSeparator16.Name = "toolStripSeparator16";
+            toolStripSeparator16.Size = new Size(227, 6);
             // 
             // cbFiltrado
             // 
             cbFiltrado.DropDownStyle = ComboBoxStyle.DropDownList;
             cbFiltrado.FormattingEnabled = true;
             cbFiltrado.Items.AddRange(new object[] { "Profesor", "Alumno" });
-            cbFiltrado.Location = new Point(337, 6);
+            cbFiltrado.Location = new Point(339, 6);
             cbFiltrado.Margin = new Padding(4, 3, 4, 3);
             cbFiltrado.Name = "cbFiltrado";
             cbFiltrado.Size = new Size(98, 23);
             cbFiltrado.TabIndex = 10;
-            // 
-            // btnBuscar
-            // 
-            btnBuscar.BackColor = SystemColors.ControlLight;
-            btnBuscar.FlatStyle = FlatStyle.System;
-            btnBuscar.Location = new Point(625, 6);
-            btnBuscar.Margin = new Padding(4, 3, 4, 3);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(88, 24);
-            btnBuscar.TabIndex = 8;
-            btnBuscar.Text = "Buscar";
-            btnBuscar.UseVisualStyleBackColor = false;
-            btnBuscar.Click += btnBuscar_Click;
             // 
             // cbEstado
             // 
             cbEstado.DropDownStyle = ComboBoxStyle.DropDownList;
             cbEstado.FormattingEnabled = true;
             cbEstado.Items.AddRange(new object[] { "Todos", "Actuales", "Pasados", "Futuros" });
-            cbEstado.Location = new Point(259, 6);
+            cbEstado.Location = new Point(261, 6);
             cbEstado.Margin = new Padding(4, 3, 4, 3);
             cbEstado.Name = "cbEstado";
             cbEstado.Size = new Size(70, 23);
@@ -578,22 +508,32 @@
             // lblFiltrado
             // 
             lblFiltrado.AutoSize = true;
-            lblFiltrado.Location = new Point(187, 11);
+            lblFiltrado.Location = new Point(189, 10);
             lblFiltrado.Name = "lblFiltrado";
             lblFiltrado.Size = new Size(65, 15);
             lblFiltrado.TabIndex = 18;
             lblFiltrado.Text = "Filtrar por:";
+            // 
+            // btnBuscar
+            // 
+            btnBuscar.Enabled = false;
+            btnBuscar.Location = new Point(624, 6);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(75, 23);
+            btnBuscar.TabIndex = 35;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
             // 
             // ucCapacitaciones
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
+            Controls.Add(btnBuscar);
             Controls.Add(lblFiltrado);
             Controls.Add(txtBusqueda);
             Controls.Add(cbEstado);
             Controls.Add(cbFiltrado);
-            Controls.Add(btnBuscar);
             Controls.Add(tcCapacitaciones);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Margin = new Padding(4, 3, 4, 3);
@@ -604,15 +544,17 @@
             tabClases.ResumeLayout(false);
             scClases.Panel1.ResumeLayout(false);
             scClases.Panel2.ResumeLayout(false);
-            scClases.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)scClases).EndInit();
             scClases.ResumeLayout(false);
+            lateralMenuTorneos.ResumeLayout(false);
+            lateralMenuTorneos.PerformLayout();
             tabEntrenamientos.ResumeLayout(false);
             scEntrenamientos.Panel1.ResumeLayout(false);
             scEntrenamientos.Panel2.ResumeLayout(false);
-            scEntrenamientos.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)scEntrenamientos).EndInit();
             scEntrenamientos.ResumeLayout(false);
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
 
@@ -624,41 +566,45 @@
         private System.Windows.Forms.TabPage tabClases;
         private System.Windows.Forms.TabPage tabEntrenamientos;
         private System.Windows.Forms.ComboBox cbFiltrado;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.SplitContainer scEntrenamientos;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btnBajaAlumnoEntrenamiento;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnReporteAsistenciaEntrenamiento;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button btnInscribirAlumnoEntrenamiento;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button btnAsistenciaEntrenamiento;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button btnModificarEntrenamiento;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button btnConsultarEntrenamiento;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button btnRegistrarEntrenamiento;
         private SplitContainer scClases;
-        private Label label1;
-        private Button btnBajaAlumnoClase;
-        private Label label2;
-        private Button btnReporteAsistenciaClase;
-        private Label label3;
-        private Button btnInscribirAlumnoClase;
-        private Label label4;
-        private Button btnAsistenciaClase;
-        private Label label5;
-        private Button btnModificarClase;
-        private Label label6;
-        private Button btnConsultarClase;
-        private Label label7;
-        private Button btnRegistrarClase;
         private ComboBox cbEstado;
         private ListBox listBoxClases;
         private ListBox listBoxEntrenamientos;
         private TextBox txtBusqueda;
         private Label lblFiltrado;
+        private ToolStrip lateralMenuTorneos;
+        private ToolStripSeparator toolStripSeparator7;
+        private ToolStripButton btnRegistrarClase;
+        private ToolStripSeparator toolStripSeparator8;
+        private ToolStripButton btnConsultarClase;
+        private ToolStripSeparator toolStripSeparator9;
+        private ToolStripButton btnModificarClase;
+        private ToolStripSeparator toolStripSeparator10;
+        private ToolStripButton btnInscribirAlumnoClase;
+        private ToolStripSeparator toolStripSeparator11;
+        private ToolStripButton btnAsistenciaClase;
+        private ToolStripSeparator toolStripSeparator12;
+        private ToolStripButton btnReporteAsistenciaClase;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripButton btnBajaAlumnoClase;
+        private ToolStripSeparator toolStripSeparator2;
+        private ToolStrip toolStrip1;
+        private ToolStripSeparator toolStripSeparator3;
+        private ToolStripButton btnRegistrarEntrenamiento;
+        private ToolStripSeparator toolStripSeparator4;
+        private ToolStripButton btnConsultarEntrenamiento;
+        private ToolStripSeparator toolStripSeparator5;
+        private ToolStripButton btnModificarEntrenamiento;
+        private ToolStripSeparator toolStripSeparator6;
+        private ToolStripButton btnInscribirAlumnoEntrenamiento;
+        private ToolStripSeparator toolStripSeparator13;
+        private ToolStripButton btnAsistenciaEntrenamiento;
+        private ToolStripSeparator toolStripSeparator14;
+        private ToolStripButton btnReporteAsistenciaEntrenamiento;
+        private ToolStripSeparator toolStripSeparator15;
+        private ToolStripButton btnBajaAlumnoEntrenamiento;
+        private ToolStripSeparator toolStripSeparator16;
+        private Button btnBuscar;
     }
 }

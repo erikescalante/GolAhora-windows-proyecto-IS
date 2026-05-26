@@ -33,9 +33,9 @@
             scInicioPanel = new SplitContainer();
             lblClubInfo = new Label();
             scAdmin = new SplitContainer();
-            lblAdminInfo = new Label();
-            iconImageList = new ImageList(components);
             iconLabel = new Label();
+            iconImageList = new ImageList(components);
+            lblAdminInfo = new Label();
             ((System.ComponentModel.ISupportInitialize)scInicioPanel).BeginInit();
             scInicioPanel.Panel1.SuspendLayout();
             scInicioPanel.Panel2.SuspendLayout();
@@ -101,22 +101,6 @@
             scAdmin.TabIndex = 0;
             scAdmin.TabStop = false;
             // 
-            // lblAdminInfo
-            // 
-            lblAdminInfo.Dock = DockStyle.Fill;
-            lblAdminInfo.Location = new Point(10, 10);
-            lblAdminInfo.Name = "lblAdminInfo";
-            lblAdminInfo.Size = new Size(249, 131);
-            lblAdminInfo.TabIndex = 0;
-            lblAdminInfo.Text = resources.GetString("lblAdminInfo.Text");
-            // 
-            // iconImageList
-            // 
-            iconImageList.ColorDepth = ColorDepth.Depth32Bit;
-            iconImageList.ImageStream = (ImageListStreamer)resources.GetObject("iconImageList.ImageStream");
-            iconImageList.TransparentColor = Color.Transparent;
-            iconImageList.Images.SetKeyName(0, "icon.png");
-            // 
             // iconLabel
             // 
             iconLabel.Dock = DockStyle.Fill;
@@ -127,6 +111,22 @@
             iconLabel.Name = "iconLabel";
             iconLabel.Size = new Size(249, 204);
             iconLabel.TabIndex = 0;
+            // 
+            // iconImageList
+            // 
+            iconImageList.ColorDepth = ColorDepth.Depth32Bit;
+            iconImageList.ImageStream = (ImageListStreamer)resources.GetObject("iconImageList.ImageStream");
+            iconImageList.TransparentColor = Color.Transparent;
+            iconImageList.Images.SetKeyName(0, "icon.png");
+            // 
+            // lblAdminInfo
+            // 
+            lblAdminInfo.Dock = DockStyle.Fill;
+            lblAdminInfo.Location = new Point(10, 10);
+            lblAdminInfo.Name = "lblAdminInfo";
+            lblAdminInfo.Size = new Size(249, 131);
+            lblAdminInfo.TabIndex = 0;
+            lblAdminInfo.Text = resources.GetString("lblAdminInfo.Text");
             // 
             // ucLobby
             // 

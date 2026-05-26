@@ -38,7 +38,6 @@ namespace GolAhora.Forms
             btnAyuda = new ToolStripDropDownButton();
             sobreNosotrosToolStripMenuItem = new ToolStripMenuItem();
             toolStripMenuItem2 = new ToolStripMenuItem();
-            infoToolStripMenuItem = new ToolStripMenuItem();
             lateralMenu = new ToolStrip();
             btnUsuarios = new ToolStripButton();
             btnReservas = new ToolStripButton();
@@ -83,7 +82,7 @@ namespace GolAhora.Forms
             // 
             btnAyuda.Alignment = ToolStripItemAlignment.Right;
             btnAyuda.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            btnAyuda.DropDownItems.AddRange(new ToolStripItem[] { sobreNosotrosToolStripMenuItem, toolStripMenuItem2, infoToolStripMenuItem });
+            btnAyuda.DropDownItems.AddRange(new ToolStripItem[] { sobreNosotrosToolStripMenuItem, toolStripMenuItem2 });
             btnAyuda.Image = (Image)resources.GetObject("btnAyuda.Image");
             btnAyuda.ImageTransparentColor = Color.Magenta;
             btnAyuda.Name = "btnAyuda";
@@ -96,22 +95,15 @@ namespace GolAhora.Forms
             // 
             sobreNosotrosToolStripMenuItem.Name = "sobreNosotrosToolStripMenuItem";
             sobreNosotrosToolStripMenuItem.RightToLeft = RightToLeft.No;
-            sobreNosotrosToolStripMenuItem.Size = new Size(164, 22);
+            sobreNosotrosToolStripMenuItem.Size = new Size(180, 22);
             sobreNosotrosToolStripMenuItem.Text = "Sobre nosotros";
             // 
             // toolStripMenuItem2
             // 
             toolStripMenuItem2.Name = "toolStripMenuItem2";
             toolStripMenuItem2.RightToLeft = RightToLeft.No;
-            toolStripMenuItem2.Size = new Size(164, 22);
+            toolStripMenuItem2.Size = new Size(180, 22);
             toolStripMenuItem2.Text = "Ir a nuestra web";
-            // 
-            // infoToolStripMenuItem
-            // 
-            infoToolStripMenuItem.Name = "infoToolStripMenuItem";
-            infoToolStripMenuItem.RightToLeft = RightToLeft.No;
-            infoToolStripMenuItem.Size = new Size(164, 22);
-            infoToolStripMenuItem.Text = "Info";
             // 
             // lateralMenu
             // 
@@ -291,7 +283,6 @@ namespace GolAhora.Forms
         private System.Windows.Forms.ToolStripDropDownButton btnAyuda;
         private System.Windows.Forms.ToolStripMenuItem sobreNosotrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ImageList imageListLateralMenu;
         private System.Windows.Forms.ToolStripButton btnCobros;

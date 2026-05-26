@@ -74,6 +74,7 @@ namespace GolAhora.Forms.UserControls
 
         }
 
+
         /*Botones de la pestaña clases*/
         private void btnRegistrarClase_Click(object sender, EventArgs e)
         {
